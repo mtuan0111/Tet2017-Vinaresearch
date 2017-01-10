@@ -1,0 +1,90 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+q:before, q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  min-height: 100vh;
+  background: url(../img/pattern-bg.png) repeat center; }
+
+#contents {
+  overflow: hidden;
+  min-width: 1200px; }
+
+#circle-world {
+  position: fixed;
+  background: #A53030;
+  border-radius: 100000px;
+  width: 600vh;
+  height: 600vh;
+  min-width: inherit;
+  left: calc(50% - 300vh);
+  top: 80%; }
+  #circle-world [class^='building-'] {
+    position: absolute;
+    right: 50%; }
+  #circle-world [id^='building-'] {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, -80%);
+    -ms-transform: translate(-50%, -80%);
+    -o-transform: translate(-50%, -80%);
+    transform: translate(-50%, -80%); }
+  #circle-world [class^='building'] [id*='01'] {
+    left: calc(50% - 30vw);
+    -webkit-transform: translate(-50%, -80%) rotate(-9deg);
+    -ms-transform: translate(-50%, -80%) rotate(-9deg);
+    -o-transform: translate(-50%, -80%) rotate(-9deg);
+    transform: translate(-50%, -80%) rotate(-9deg); }
+  #circle-world [class^='building'] [id*='02'] {
+    left: calc(50% - 10vw);
+    -webkit-transform: translate(-50%, -80%) rotate(-3deg);
+    -ms-transform: translate(-50%, -80%) rotate(-3deg);
+    -o-transform: translate(-50%, -80%) rotate(-3deg);
+    transform: translate(-50%, -80%) rotate(-3deg); }
+  #circle-world [class^='building'] [id*='03'] {
+    left: calc(50% + 10vw);
+    -webkit-transform: translate(-50%, -80%) rotate(3deg);
+    -ms-transform: translate(-50%, -80%) rotate(3deg);
+    -o-transform: translate(-50%, -80%) rotate(3deg);
+    transform: translate(-50%, -80%) rotate(3deg); }
+  #circle-world [class^='building'] [id*='04'] {
+    left: calc(50% + 30vw);
+    -webkit-transform: translate(-50%, -80%) rotate(9deg);
+    -ms-transform: translate(-50%, -80%) rotate(9deg);
+    -o-transform: translate(-50%, -80%) rotate(9deg);
+    transform: translate(-50%, -80%) rotate(9deg); }
+  #circle-world [class^='building'] #building-HCM-02 {
+    left: calc(50% - 14vw); }
+  #circle-world [class^='building'] #building-HCM-03 {
+    left: calc(50% + 6vw); }
+
+/*# sourceMappingURL=main.css.map */
