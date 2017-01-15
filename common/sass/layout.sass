@@ -1,52 +1,370 @@
+@import url('https://fonts.googleapis.com/css?family=Athiti:200,300,400,500,600,700|Bangers|Dancing+Script:400,700|Judson|Pacifico&subset=vietnamese')
+/* Let's get this party started */
+::-webkit-scrollbar
+    width: 4px
+
+/* Track */
+::-webkit-scrollbar-track
+    /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)*/
+    width: 10px
+    /*display:none*/
+    background: transparent
+
+/* Handle */
+::-webkit-scrollbar-thumb
+    // -webkit-border-radius: 10px
+    // border-radius: 10px
+    background: $red-light
+    /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5)*/
+::-webkit-scrollbar-thumb:window-inactive
+    /*background: rgba(255,0,0,0.4)*/
+
 body
     min-height: 100vh
     background: url(../img/pattern-bg.png) repeat center
+    font-size: 24px
+    // font-size: 2.5vm
+    // font-size: 2.5vmin
+
+    line-height: 1.5
+    font-family: 'Judson', serif
 
 #contents
     overflow: hidden
     min-width: 1200px
+    max-height: 100vh
+
+[id^='circle-light']
+    position: fixed
+    height: 200vh
+    // bottom: -100vh
+    // max-width: 150%
+    // left: -25%
+    // bottom: -15%
+    // transform: rotate(17deg)
+    left: 50%
+    @include transformOrigin()
+    &#circle-light
+        @extend .light-rotate-animation
+    // &#circle-light-slow
+    //     @extend .light-rotate-animation-slow
 
 #circle-world
     position: fixed
-    background: #A53030
+    background: $red-light
     border-radius: 100000px
     width: 600vh
     height: 600vh
     min-width: inherit
     left: calc(50% - 300vh)
-    top: 80%
+    top: calc(100vh - 180px)
 
-    [class^='building-']
+    @include transition(-webkit-transform 1s)
+
+    [class^='page-']
+        position: relative
+        width: 100vw
+        margin: 0 auto
+
         position: absolute
-        // pointer-events: none
-        right: 50%
-    [id^='building-']
-        position: absolute
-        top: 0
-        left: 50%
-        @include transform(translate(-50%,-80%))
+        left: calc(300vh - 50%)
+        right: 0
+        height: 300vh
 
-    @mixin appendTransform($transform)
-        @include transform(translate(-50%,-80%) $transform)
+        // @include transform(translateX(-50%))
+        @include transformOrigin(50% 100%)
 
-    [class^='building']
-        [id*='01']
-            left: calc(50% - 30vw)
-            @include appendTransform(rotate(-9deg))
-        [id*='02']
-            left: calc(50% - 10vw)
-            @include appendTransform(rotate(-3deg))
-        [id*='03']
-            left: calc(50% + 10vw)
-            @include appendTransform(rotate(3deg))
-        [id*='04']
-            left: calc(50% + 30vw)
-            @include appendTransform(rotate(9deg))
+        [id^='building-']
+            position: absolute
+            top: 0
+            left: 50%
+            @include transform(translate(-50%,-80%))
+        // @include transformOrigin(50% 100%)
 
-        #building-HCM-02
-            left: calc(50% - 14vw)
+    &.C
+        @include transform(rotate(-30deg))
 
-        #building-HCM-03
-            left: calc(50% + 6vw)
+    &.S
+        @include transform(rotate(-60deg))
+
+    [class^='page-']
+        .building
+            max-width: 1400px
+            min-width: 1200px
+            width: 100vw
+            position: absolute
+            left: 50%
+            @include transform(translate(-50%))
+            [id*='01']
+                left: 20%
+                @include appendTransform(rotate(-9deg))
+                @include transformOrigin(0% 100%)
+            [id*='02']
+                left: 40%
+                @include appendTransform(rotate(-3deg))
+                @include transformOrigin(33% 100%)
+            [id*='03']
+                left: 60%
+                @include appendTransform(rotate(3deg))
+                @include transformOrigin(66% 100%)
+            [id*='04']
+                left: 80%
+                @include appendTransform(rotate(9deg))
+                @include transformOrigin(100% 100%)
+
+        .rule-content
+            text-align: initial
+            & > *
+                margin-top: 10px
+            dt
+                font-weight: bold
+                color: $red-light
+                margin-top: 10px
+            ul
+                li
+                    list-style-type: circle
+        &.page-C
+            @include transform(rotate(30deg))
+
+        &.page-S
+            @include transform(rotate(60deg))
+
+            #building-S-02
+                left: 34%
+            #building-S-03
+                left: 55%
+        .wrapper-container
+            top: calc(-100vh + 180px)
+            position: absolute
+            height: 100vh
+            width: 100vw
+            text-align: center
+            .tree-bg
+                position: absolute
+                top: calc(-5vmin - 5vmax)
+                left: calc(-2.5vmin - 2.5vmax)
+                max-width: calc(100vw - 100px)
+                width: 80vw
+            .broad-obs
+                position: relative
+                margin: 0 auto
+                width: 80%
+                max-width: 1200px
+                min-width: 800px
+
+                z-index: 1
+                // margin-top: 260px
+                @include transitionTransform(1.5s)
+                @include transformOrigin(50% 0)
+                @include transitionTimingFunction(cubic-bezier(0.31, -0.24, 0.37, 1.26))
+                &:hover
+                    @include transform(skew(1deg,0.5deg))
+                &.small
+                    display: inline-block
+                    vertical-align: top
+                    width: 500px
+                    min-width: initial
+                    left: 100px
+                    .broad-content
+                        padding: 50px
+                .broadBar-top, .broadBar-bottom
+                    position: relative
+                    height: 15px
+                    background: url(../img/broadBar_bg.png) repeat-x center $yellow
+                    padding: 0 5px
+                    border-radius: 6px
+                    background-size: contain
+                    background-position-x: 0
+                    @include transition(background-position-x 0.8s)
+                    -webkit-box-shadow: inset 0px -6px 0px 0px rgba(0, 0, 0, 0.5)
+                    -moz-box-shadow: inset 0px -6px 0px 0px rgba(0, 0, 0, 0.5)
+                    box-shadow: inset 0px -6px 0px 0px rgba(0, 0, 0, 0.5)
+                    &:before,&:after
+                        content: ""
+                        background: url(../img/broadBar_end.png) no-repeat right
+                        position: absolute
+                        /* height: 150% */
+                        width: 100%
+                        /* left: 0 */
+                        bottom: -5px
+                        top: -5px
+                        right: -5px
+                        background-size: contain
+                        // background: rgba(0,0,0,0.1)
+                    &:before
+                        @include transform(scaleX(-1))
+                        right: 5px
+                    .pendant_obs
+                        position: absolute
+                        top: 100%
+                        height: 120px
+                        width: 40px
+                        background: url(../img/pendant_obs01.png) no-repeat center top
+                        background-size: contain
+                        &.left
+                            left: 10px
+                            &.middle
+                                left: 33%
+                        &.right
+                            right: 10px
+                            &.middle
+                                right: 33%
+                        &.large
+                            background: url(../img/pendant_obs02.png) no-repeat center top
+                            background-size: contain
+                            height: 180px
+                            width: 60px
+                .broad-content
+                    position: relative
+                    background: rgba(255,255,255,0.98)
+                    width: calc(95% - 60px)
+                    margin: 0 auto
+                    text-align: center
+                    padding: 50px 100px
+                    min-height: 10vh
+                    max-height: 55vh
+                    overflow-y: scroll
+                    overflow-y: overlay
+                    @include boxSizing()
+                    -webkit-box-shadow: inset 0px -50px 50px -50px $yellow
+                    -moz-box-shadow: inset 0px -50px 50px -50px $yellow
+                    box-shadow: inset 0px -50px 50px -50px $yellow
+                    .broad-title
+                        font-family: 'Pacifico', cursive
+                        font-size: $titleSize
+                        color: $red-light
+                        display: inline-block
+                        align-items: center
+                        &:before, &:after
+                            content: ""
+                            background: url(../img/title_01.png) no-repeat center
+                            background-size: contain
+                            display: inline-block
+                            width: 100px
+                            height: 50px
+                            margin: 0 20px
+                        &:after
+                            @include transform(scaleX(-1))
+                    table
+                        width: 100%
+                        margin-top: 10px
+                        th
+                            padding: 10px 0
+                            border-bottom: solid 1px $red-light
+                            color: $red-dark
+                            font-weight: bold
+                        td
+                            padding: 5px 0
+                    .frame-top
+                        position: absolute
+                        left: 0
+                        right: 0
+                        top: 0
+                        &:before, &:after
+                            content: ""
+                            background: url(../img/frame_01.png) no-repeat
+                            background-size: contain
+                            position: absolute
+                            top: 10px
+                            left: 10px
+                            width: 90px
+                            height: 90px
+                            max-width: 10%
+                        &:after
+                            @include transform(scaleX(-1))
+                            right: 10px
+                            left: initial
+
+                    .frame-bottom
+                        @include transform(scaleY(-1))
+                        position: absolute
+                        width: 100%
+                        height: 90px
+                        left: 0
+                        top: initial
+                        margin-top: -45px
+                        &:before, &:after
+                            content: ""
+                            background: url(../img/frame_01.png) no-repeat
+                            background-size: contain
+                            position: absolute
+                            top: 10px
+                            left: 10px
+                            width: 90px
+                            height: 90px
+                            max-width: 10%
+                        &:after
+                            right: 10px
+                            left: initial
+                            @include transform(scaleX(-1))
+                    @include transition(max-height 0.8s)
+                    &:hover
+                        max-height: 60vh
+                        & + .broadBar-bottom
+                            background-position-x: 120px
+
+                .broadSling
+                    position: relative
+                    margin-bottom: -10px
+                    text-align: center
+                    z-index: -1
+                    .lineSling
+                        width: 4px
+                        background: $red-dark
+                        height: 80px
+                        margin: 0 auto
+                        margin-bottom: -2px
+                    img
+                        width: 90%
+                        margin: 0 auto -5px
+            .wheel-obs
+                // background: url(../img/wheel_round.png) no-repeat center
+                // background-size: contain
+                // width: 600px
+                // height: 600px
+                display: inline-block
+                .wheelSling
+                    .lineSling
+                .wheelPart
+                    // position: absolute
+                    background: url(../img/wheel_round.png) no-repeat center
+                    background-size: contain
+                    width: 600px
+                    height: 600px
+                    position: relative
+                    .wheel_num
+                        background: url(../img/wheelPart.png) no-repeat top
+                        background-size: contain
+                        position: absolute
+                        top: 20px
+                        height: 280px
+                        width: 40px
+                        left: calc(50% - 20px)
+                        @for $i from 1 through 20
+                            &[data-number='{$i}']
+                                width: 60px + $i
+
 
 #circle-footer
+    position: fixed
+    background: $red-dark
+    border-radius: 100000px
+    width: 800vh
+    height: 800vh
+    min-width: inherit
+    left: calc(50% - 400vh)
+    top: calc(100vh - 120px)
+    text-align: center
+    .countdown-broad
+        position: absolute
+        top: 25px
+        left: calc(50% - 140px)
+        width: 280px
+        background: url(../img/footer_broad.png) no-repeat center
+        background-size: contain
+        text-align: center
+        span[class^='countdown-']
+            padding: 20px 5px
+            display: inline-block
+            font-size: 120%
+            color: $yellow

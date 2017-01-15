@@ -1,0 +1,55 @@
+.light-rotate-animation, .light-rotate-animation-slow
+  animation: lightRotate linear 6s
+  animation-iteration-count: infinite
+  -webkit-animation: lightRotate linear 6s
+  -webkit-animation-iteration-count: infinite
+  -moz-animation: lightRotate linear 6s
+  -moz-animation-iteration-count: infinite
+  -o-animation: lightRotate linear 6s
+  -o-animation-iteration-count: infinite
+  -ms-animation: lightRotate linear 6s
+  -ms-animation-iteration-count: infinite
+  // @include transform-origin(50% 50%)
+
+.light-rotate-animation-slow
+  animation: lightRotate linear 10s
+  animation-iteration-count: infinite
+  -webkit-animation: lightRotate linear 10s
+  -webkit-animation-iteration-count: infinite
+  -moz-animation: lightRotate linear 10s
+  -moz-animation-iteration-count: infinite
+  -o-animation: lightRotate linear 10s
+  -o-animation-iteration-count: infinite
+  -ms-animation: lightRotate linear 10s
+  -ms-animation-iteration-count: infinite
+
+
+@keyframes lightRotate
+  0%
+    transform: translate(-50%) rotate(0deg)
+  100%
+    transform: translate(-50%) rotate(30deg)
+
+@-moz-keyframes lightRotate
+  0%
+    -moz-transform: translate(-50%) rotate(0deg)
+  100%
+    -moz-transform: translate(-50%) rotate(30deg)
+
+@-webkit-keyframes lightRotate
+  0%
+    -webkit-transform: translate(-50%) rotate(0deg)
+  100%
+    -webkit-transform: translate(-50%) rotate(30deg)
+
+@-o-keyframes lightRotate
+  0%
+    -o-transform: translate(-50%) rotate(0deg)
+  100%
+    -o-transform: translate(-50%) rotate(30deg)
+
+@-ms-keyframes lightRotate
+  0%
+    -ms-transform: translate(-50%) rotate(0deg)
+  100%
+    -ms-transform: translate(-50%) rotate(30deg)
