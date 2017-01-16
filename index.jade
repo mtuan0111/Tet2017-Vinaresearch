@@ -25,7 +25,7 @@ html(lang="en")
                     .broad-obs
                         .broadSling
                             .lineSling
-                            img(src="common/img/broadSling.png")
+                            .lineSling
                         .broadBar-top
                             span.pendant_obs.left
                             span.pendant_obs.right
@@ -84,10 +84,12 @@ html(lang="en")
                         .wheelSling
                             span.lineSling
                         .wheelPart
-                            //- .wheel_num01
-                            - for (var i=1; i<=20; i++)
-                                .wheel_num(data-number=i)
-
+                            .wheelRotate.autoWheel
+                                - for (var i=1; i<=20; i++)
+                                    .wheel_num(data-number=i)
+                                        span.pointValue 100
+                            .wheelCenter
+                            span.pendant_obs.large.middle
                     .broad-obs.small
                         .broadSling
                             .lineSling
@@ -97,54 +99,27 @@ html(lang="en")
                             span.pendant_obs.right
                         .broad-content
                             .frame-top
-                            span.broad-title Thể lệ
-                            .rule-content
-                                p Nhân dịp Tết Nguyên Đán Đinh Dậu 2017 sắp đến, Ban Quản Trị cộng đồng khảo sát trực tuyến Vinaresearch tổ chức chương trình Vòng quay may mắn - Khai xuân đón lộc để thay lời cảm ơn chân thành nhất gửi đến các bạn thành viên đã đồng hành, tin tưởng Vinaresearch trong suốt thời gian vừa qua.
-                                p Hòa vào không khí náo nhiệt chuẩn bị cho năm mới sắp đến, Vòng quay may mắn - sân chơi quen thuộc cùng những bất ngờ mới sẽ giúp bạn thử vận may của mình trong dịp đầu năm Đinh Dậu, đừng quên đăng nhập mỗi ngày để tham gia nhé.
-
-                                dl
-                                    dt Thời gian
-                                    dd Chương trình bắt đầu từ 9h30 ngày 23/01/2017 đến 23h59' ngày 06/02/2017
-                                    dt Cách thức tham gia
-                                    dd Truy cập vào trang web sau để tham gia chương trình: [link]
-                                    dt Thể lệ
-                                    dd
-                                        ul
-                                            li Mỗi ngày, mỗi thành viên sẽ đuợc tặng một lượt quay may mắn sau khi đăng nhập tại website Vinaresearch.net.
-                                            li Khi Vòng quay may mắn bắt đầu khởi động, thành viên có cơ hội nhận được những số điểm thưởng tương ứng trên vòng quay.
-                                            li Số điểm lớn nhất được tặng mỗi ngày của Vòng quay may mắn là Bao lì xì tương ứng với 300 điểm thưởng.
-                                        p Ngoài ra, trong suốt thời gian diễn ra Vòng quay may mắn - Khai Xuân Đón Lộc sẽ có duy nhất 1 Giải đặc biệt - 1000 điểm dành cho thành viên may mắn nhất quay trúng vào ô có hình Gà May Mắn.
-
-                                    dt Lưu ý
-                                    dd Mỗi ngày chương trình chỉ tặng tối đa 2,031 phần quà (tương ứng các mức điểm thưởng khác nhau). Trong trường hợp số phần quà đã chạm ngưỡng cho phép thì vòng quay sẽ không quay được nữa và sẽ được khởi động lại vào 09h30 ngày hôm sau.
-                                    dt Điều kiện tham gia
-                                    dd
-                                        ul
-                                            li Là thành viên của cộng đồng khảo sát trực tuyến Vinaresearch.
-                                            li Chủ tài khoản là người thật, không vi phạm bất kỳ quy định nào trên cộng đồng khảo sát trực tuyến Vinaresearch.
-                                    dt Quy định
-                                    dd
-                                        ul
-                                            li Thành viên không được sử dụng phần mềm để gây rối, điều chỉnh kết quả của Vòng quay may mắn. Nếu vi phạm quy định này và bị phát hiện, thành viên sẽ bị khóa tài khoản vĩnh viễn tại Vinaresearch.
-                                            li Trong một ngày, mỗi thành viên chỉ có tối đa 1 lượt quay. Trong truờng hợp có lỗi kĩ thuật và thành viên có thể quay đuợc vào lần thứ 2, kết quả lần này sẽ không đuợc tính.
-                                            li Trong mọi truờng hợp tranh chấp về luật chơi này, BQT Vinaresearch là người có quyết định cuối cùng.
-                                    p Mọi thắc mắc xin liên hệ bộ phận hỗ trợ (Hotline: 083 848 3732) hoặc hộp thư: support@vinaresearch.net
-                                    p Thân ái 
-                                    p Ban Quản trị Vinaresearch
-
+                            span.broad-title Đăng nhập
+                            //- .rule-content
+                            form.login-form
+                                //- label(for='username') Tài khoản
+                                input#username.type(type='text' name='username' placeholder='Tài khoản')
+                                //- label(for='password') Mật khẩu
+                                input#password.type(type='password' name='password' placeholder='Mật khẩu')
+                                label(for="rememberMe") Nhớ tài khoản
+                                input#rememberMe(type="checkbox")
+                                input#submit(type="submit" value="Đăng nhập")
                             .frame-bottom
                         .broadBar-bottom
                             span.pendant_obs.left
                             span.pendant_obs.right
-                            span.pendant_obs.large.left.middle
-                            span.pendant_obs.large.right.middle
+                            span.pendant_obs.large.middle
             .page-S
                 div.building
                     img#building-S-01(src="common/img/building_HCM01.png")
                     img#building-S-02(src="common/img/building_HCM02.png")
                     img#building-S-03(src="common/img/building_HCM03.png")
                     img#building-S-04(src="common/img/building_HCM04.png")
-
                 .wrapper-container
                     img.tree-bg(src="common/img/tree_S.png" alt="")
                     .broad-obs
@@ -258,8 +233,19 @@ html(lang="en")
             span.countdown-hours 23
             span.countdown-minutes 2
             span.countdown-seconds 56
-
+          .loginUser
+            a.loginButton(href="javascript:void(0)") Đăng nhập
+            //- Check login
+            .span.userInfo Username Account
+            .span.userPoint(data-pointText="Điểm") 43
+          .newYear
+            //- img(src="common/img/newYear.png" alt="Bính thân 2017")
+          nav.bottomMenu
+            a(href="javascript:void(0)" data-page-target='S') Thể lệ
+            a(href="javascript:void(0)" data-page-target='C') Vòng quay
+            a(href="javascript:void(0)" data-page-target='S') Kết quả
         .content-inner
     script(type='text/javascript' src="common/js/jquery-2.2.1.min.js")
-    script(type='text/javascript' src="common/js/common.js")
+    script(type='text/javascript' src="common/js/wheelObs.js")
+    script(type='text/javascript' src="common/js/init.js")
     script(type='text/javascript').

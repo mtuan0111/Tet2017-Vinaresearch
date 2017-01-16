@@ -36,3 +36,12 @@
     -webkit-transition-timing-function: $timingFunction
     -o-transition-timing-function: $timingFunction
     transition-timing-function: $timingFunction
+
+@mixin setRotate($selectNumber)
+    &[data-number='#{$selectNumber}']
+        $degRotate: 18 * ($selectNumber - 1)
+        @include transform(rotate($degRotate+deg))
+
+@mixin firefox-message($selector)
+    body.firefox #{$selector}:before
+        content: "Hi, Firefox users!"
