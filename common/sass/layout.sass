@@ -141,7 +141,7 @@ body
                 margin: 0 auto
                 width: 80%
                 width: 80vw
-                // max-width: 1200px
+                max-width: 1200px
                 // min-width: 800px
                 z-index: 1
                 @include transitionTransform(1.5s)
@@ -202,6 +202,7 @@ body
                             border-radius: 30px 30px 10px 10px
                             border-top: 5px solid $red-dark
                             border-bottom: 5px solid $red-dark
+                            cursor: pointer
                     label[for="rememberMe"]
                         font-size: 80%
 
@@ -276,6 +277,13 @@ body
                             font-weight: bold
                         td
                             padding: 5px 0
+                    .notificationMessage
+                        margin: 10% 0
+                        font-size: 120%
+                        .pointValue
+                            color: $red-light
+                            &:before, &:after
+                                content: " "
                     .frame-top
                         position: absolute
                         left: 0
@@ -356,11 +364,12 @@ body
                         height: 8vmin
                         margin: 0 auto
                         margin-bottom: -2px
-                .wheelRotate
+                #wheelRotate
                     width: 600px
                     height: 600px
                     width: calc(50vmin)
                     height: calc(50vmin)
+
                     position: relative
                 .wheelPart
                     // position: absolute
@@ -368,6 +377,8 @@ body
                     background-size: contain
                     width: 100%
                     height: 100%
+                    border-radius: 50vmin
+                    cursor: pointer
                     position: relative
                     .wheel_num
                         background: url(../img/wheelPart.png) no-repeat top
@@ -382,11 +393,11 @@ body
                             @include setRotate($i)
                         .pointValue
                             margin-top: 50px
-                            margin-top: 50%
+                            margin-top: 60%
                             display: inline-block
                             @include transform(rotate(-90deg))
                             font-size: 120%
-                            font-size: 4vmin
+                            font-size: 3vmin
                             color: $red-dark
                 .wheelCenter
                     position: absolute
@@ -397,6 +408,14 @@ body
                     @include transform(translate(-50%,-50%))
                     background: url(../img/wheelCenter.png) no-repeat center
                     background-size: contain
+                .pointPointer
+                    position: absolute
+                    background: $red-light
+                    height: 10%
+                    width: 5%
+                    right: -3%
+                    top: 50%
+                    @include transform(translate(-50%, -50%))
             .pendant_obs
                 position: absolute
                 top: 100%

@@ -1,6 +1,10 @@
-$(document).ready(function(){
+$(window).load(function(){
+    // alert(123);
     var wheel = new Wheel();
-    // wheel.rotate();
+    wheel.clickToPlay(1000);
+
+    var notiBroad = new notificationBroad($(".broad-obs.small"));
+
 })
 
 $(document).on("click",".bottomMenu a",function(){

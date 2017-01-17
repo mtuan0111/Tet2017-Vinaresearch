@@ -26,7 +26,7 @@
                 <div class="broad-content">
                   <div class="frame-top"></div><span class="broad-title">Thể lệ</span>
                   <div class="rule-content">
-                    <p>Nhân dịp Tết Nguyên Đán Đinh Dậu 2017 sắp đến, Ban Quản Trị cộng đồng khảo sát trực tuyến Vinaresearch tổ chức chương trình Vòng quay may mắn - Khai xuân đón lộc để thay lời cảm ơn chân thành nhất gửi đến các bạn thành viên đã đồng hành, tin tưởng Vinaresearch trong suốt thời gian vừa qua.</p>
+                    <p>Nhân dịp Tết Nguyên Đán Đinh Dậu 2017, Ban Quản Trị cộng đồng khảo sát trực tuyến Vinaresearch tổ chức chương trình Vòng quay may mắn - Khai xuân đón lộc để thay lời cảm ơn chân thành nhất gửi đến các bạn thành viên đã đồng hành, tin tưởng Vinaresearch trong suốt thời gian vừa qua.</p>
                     <p>Hòa vào không khí náo nhiệt chuẩn bị cho năm mới sắp đến, Vòng quay may mắn - sân chơi quen thuộc cùng những bất ngờ mới sẽ giúp bạn thử vận may của mình trong dịp đầu năm Đinh Dậu, đừng quên đăng nhập mỗi ngày để tham gia nhé.</p>
                     <dl>
                       <dt>Thời gian</dt>
@@ -76,7 +76,7 @@
               <div class="wheel-obs">
                 <div class="wheelSling"><span class="lineSling"></span></div>
                 <div class="wheelPart">
-                  <div class="wheelRotate autoWheel">
+                  <div id="wheelRotate" class="autoWheel">
                     <div data-number='1' class="wheel_num"><span class="pointValue">100</span></div>
                     <div data-number='2' class="wheel_num"><span class="pointValue">100</span></div>
                     <div data-number='3' class="wheel_num"><span class="pointValue">100</span></div>
@@ -98,7 +98,7 @@
                     <div data-number='19' class="wheel_num"><span class="pointValue">100</span></div>
                     <div data-number='20' class="wheel_num"><span class="pointValue">100</span></div>
                   </div>
-                  <div class="wheelCenter"></div><span class="pendant_obs large middle"></span>
+                  <div class="wheelCenter"></div><span class="pendant_obs large middle"></span><span class="pointPointer"></span>
                 </div>
               </div>
               <div class="broad-obs small">
@@ -246,16 +246,18 @@
       </div>
       <div id="footer">
         <div id="circle-footer">
-          <div class="loginUser"><span class="userInfo">Username</span>
+          <div class="loginUser"><a href="javascript:void(0)" class="loginButton">Đăng nhập</a>
           </div>
           <div class="newYear">
           </div>
-          <nav class="bottomMenu"><a href="javascript:void(0)" data-page-target="N">Thể lệ</a><span>|</span><a href="javascript:void(1)" data-page-target="C">Vòng quay</a><span>|</span><a href="javascript:void(2)" data-page-target="S">Kết quả</a><span>|</span><a href="javascript:void(2)" data-page-target="">Đăng xuất</a></nav>
+          <nav class="bottomMenu"><a href="javascript:void(0)" data-page-target="N">Thể lệ</a><span>|</span><a href="javascript:void(0)" data-page-target="C">Vòng quay</a><span>|</span><a href="javascript:void(0)" data-page-target="S">Kết quả</a><span>|</span><a href="javascript:void(0)" data-page-target="">Đăng xuất</a></nav>
         </div>
         <div class="content-inner"></div>
       </div>
     </div>
     <script type="text/javascript" src="common/js/jquery-2.2.1.min.js"></script>
+    <script type="text/javascript" src="common/js/jquery-ui.js"></script>
+    <script type="text/javascript" src="common/js/notificationBroad.js"></script>
     <script type="text/javascript" src="common/js/wheelObs.js"></script>
     <script type="text/javascript" src="common/js/init.js"></script>
     <script type="text/javascript"></script>

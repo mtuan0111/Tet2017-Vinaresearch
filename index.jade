@@ -33,7 +33,7 @@ html(lang="en")
                             .frame-top
                             span.broad-title Thể lệ
                             .rule-content
-                                p Nhân dịp Tết Nguyên Đán Đinh Dậu 2017 sắp đến, Ban Quản Trị cộng đồng khảo sát trực tuyến Vinaresearch tổ chức chương trình Vòng quay may mắn - Khai xuân đón lộc để thay lời cảm ơn chân thành nhất gửi đến các bạn thành viên đã đồng hành, tin tưởng Vinaresearch trong suốt thời gian vừa qua.
+                                p Nhân dịp Tết Nguyên Đán Đinh Dậu 2017, Ban Quản Trị cộng đồng khảo sát trực tuyến Vinaresearch tổ chức chương trình Vòng quay may mắn - Khai xuân đón lộc để thay lời cảm ơn chân thành nhất gửi đến các bạn thành viên đã đồng hành, tin tưởng Vinaresearch trong suốt thời gian vừa qua.
                                 p Hòa vào không khí náo nhiệt chuẩn bị cho năm mới sắp đến, Vòng quay may mắn - sân chơi quen thuộc cùng những bất ngờ mới sẽ giúp bạn thử vận may của mình trong dịp đầu năm Đinh Dậu, đừng quên đăng nhập mỗi ngày để tham gia nhé.
 
                                 dl
@@ -84,12 +84,13 @@ html(lang="en")
                         .wheelSling
                             span.lineSling
                         .wheelPart
-                            .wheelRotate.autoWheel
+                            #wheelRotate.autoWheel
                                 - for (var i=1; i<=20; i++)
                                     .wheel_num(data-number=i)
                                         span.pointValue 100
                             .wheelCenter
                             span.pendant_obs.large.middle
+                            span.pointPointer
                     .broad-obs.small
                         .broadSling
                             .lineSling
@@ -100,7 +101,6 @@ html(lang="en")
                         .broad-content
                             .frame-top
                             span.broad-title Đăng nhập
-                            //- .rule-content
                             form.login-form
                                 //- label(for='username') Tài khoản
                                 input#username.type(type='text' name='username' placeholder='Tài khoản')
@@ -109,6 +109,12 @@ html(lang="en")
                                 label(for="rememberMe") Nhớ tài khoản
                                 input#rememberMe(type="checkbox")
                                 input#submit(type="submit" value="Đăng nhập")
+                            //- span.broad-title Thông báo
+                            //- .notificationMessage
+                            //-   p
+                            //-     |Bạn đã quay được vào ô
+                            //-     span.pointValue 1
+                            //-     | điểm
                             .frame-bottom
                         .broadBar-bottom
                             span.pendant_obs.left
@@ -235,22 +241,24 @@ html(lang="en")
           //-   span.countdown-minutes 2
           //-   span.countdown-seconds 56
           .loginUser
-              //- a.loginButton(href="javascript:void(0)") Đăng nhập
+              a.loginButton(href="javascript:void(0)") Đăng nhập
               //- Check login
-              span.userInfo Username
+              //- span.userInfo Username
             //- .span.userPoint(data-pointText="Điểm") 43
           .newYear
             //- img(src="common/img/newYear.png" alt="Bính thân 2017")
           nav.bottomMenu
             a(href="javascript:void(0)" data-page-target='N') Thể lệ
             span |
-            a(href="javascript:void(1)" data-page-target='C') Vòng quay
+            a(href="javascript:void(0)" data-page-target='C') Vòng quay
             span |
-            a(href="javascript:void(2)" data-page-target='S') Kết quả
+            a(href="javascript:void(0)" data-page-target='S') Kết quả
             span |
-            a(href="javascript:void(2)" data-page-target='') Đăng xuất
+            a(href="javascript:void(0)" data-page-target='') Đăng xuất
         .content-inner
     script(type='text/javascript' src="common/js/jquery-2.2.1.min.js")
+    script(type='text/javascript' src="common/js/jquery-ui.js")
+    script(type='text/javascript' src="common/js/notificationBroad.js")
     script(type='text/javascript' src="common/js/wheelObs.js")
     script(type='text/javascript' src="common/js/init.js")
     script(type='text/javascript').
