@@ -513,6 +513,7 @@ body {
           margin-bottom: -2px; }
         #circle-world [class^='page-'] .wrapper-container .broad-obs .broadSling img {
           width: 90%;
+          height: 5vh;
           margin: 0 auto -5px; }
     #circle-world [class^='page-'] .wrapper-container .wheel-obs {
       display: inline-block; }
@@ -758,8 +759,9 @@ body {
       #circle-footer .loginUser a:after, #circle-footer .loginUser span:after {
         top: initial;
         bottom: -5px; }
-      #circle-footer .loginUser a:hover, #circle-footer .loginUser span:hover {
-        background-color: #932222; }
+      #circle-footer .loginUser a:hover:not(span), #circle-footer .loginUser span:hover:not(span) {
+        color: #932222;
+        background-color: #FFCB4E; }
     #circle-footer .loginUser:before, #circle-footer .loginUser:after {
       content: url(../img/broadLogin.png);
       position: absolute;

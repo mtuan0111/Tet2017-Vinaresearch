@@ -339,6 +339,7 @@ body
                         margin-bottom: -2px
                     img
                         width: 90%
+                        height: 5vh
                         margin: 0 auto -5px
             .wheel-obs
                 // background: url(../img/wheel_round.png) no-repeat center
@@ -476,8 +477,9 @@ body
             &:after
                 top: initial
                 bottom: -5px
-            &:hover
-                background-color: $red-dark
+            &:hover:not(span)
+                color: $red-dark
+                background-color: $yellow
         &:before, &:after
             content: url(../img/broadLogin.png)
             position: absolute
