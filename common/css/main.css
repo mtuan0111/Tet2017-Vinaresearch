@@ -126,7 +126,7 @@ table {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #A53030;
+  background-color: #A53030;
   /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5) */ }
 
 ::-webkit-scrollbar-thumb:window-inactive {
@@ -156,7 +156,7 @@ body {
 
 #circle-world {
   position: fixed;
-  background: #A53030;
+  background-color: #A53030;
   border-radius: 100000px;
   width: 600vh;
   height: 600vh;
@@ -164,8 +164,8 @@ body {
   left: calc(50% - 300vh);
   top: calc(100vh - 180px);
   -webkit-transition: -webkit-transform 1s;
-  -o-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s; }
+  -o-transition: -o-transform 1s;
+  transition: transform 1s, -o-transform 1s; }
   #circle-world [class^='page-'] {
     position: relative;
     width: 100vw;
@@ -188,15 +188,15 @@ body {
       -o-transform: translate(-50%, -80%);
       transform: translate(-50%, -80%); }
   #circle-world.C {
-    -webkit-transform: rotate(-30deg);
-    -ms-transform: rotate(-30deg);
-    -o-transform: rotate(-30deg);
-    transform: rotate(-30deg); }
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
   #circle-world.S {
-    -webkit-transform: rotate(-60deg);
-    -ms-transform: rotate(-60deg);
-    -o-transform: rotate(-60deg);
-    transform: rotate(-60deg); }
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg); }
   #circle-world [class^='page-'] .building {
     max-width: 1400px;
     min-width: 1200px;
@@ -262,15 +262,15 @@ body {
     #circle-world [class^='page-'] .rule-content ul li {
       list-style-type: circle; }
   #circle-world [class^='page-'].page-C {
-    -webkit-transform: rotate(30deg);
-    -ms-transform: rotate(30deg);
-    -o-transform: rotate(30deg);
-    transform: rotate(30deg); }
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg); }
   #circle-world [class^='page-'].page-S {
-    -webkit-transform: rotate(60deg);
-    -ms-transform: rotate(60deg);
-    -o-transform: rotate(60deg);
-    transform: rotate(60deg); }
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg); }
     #circle-world [class^='page-'].page-S #building-S-02 {
       left: 34%; }
     #circle-world [class^='page-'].page-S #building-S-03 {
@@ -281,7 +281,8 @@ body {
     height: 100vh;
     width: 100vw;
     text-align: center;
-    min-width: 1180px; }
+    min-width: 1180px;
+    min-width: initial; }
     #circle-world [class^='page-'] .wrapper-container .tree-bg {
       position: absolute;
       top: calc(-5vmin - 5vmax);
@@ -292,8 +293,7 @@ body {
       position: relative;
       margin: 0 auto;
       width: 80%;
-      max-width: 1200px;
-      min-width: 800px;
+      width: 80vw;
       z-index: 1;
       -webkit-transition: -webkit-transform 1.5s;
       -o-transition: -o-transform 1.5s;
@@ -315,8 +315,11 @@ body {
         display: inline-block;
         vertical-align: top;
         width: 500px;
+        width: calc(50vmin);
+        height: calc(50vmin);
         min-width: initial;
-        left: 100px; }
+        margin-left: -10px;
+        margin-left: calc((100vw - 100vmin - 10px)/4); }
         #circle-world [class^='page-'] .wrapper-container .broad-obs.small .broad-content {
           padding: 50px; }
           #circle-world [class^='page-'] .wrapper-container .broad-obs.small .broad-content .broad-title {
@@ -349,7 +352,7 @@ body {
       #circle-world [class^='page-'] .wrapper-container .broad-obs .login-form input[type='submit'] {
         display: block;
         margin: 40px auto 10px;
-        background: #A53030;
+        background-color: #A53030;
         border: none;
         padding: 4%;
         font-family: initial;
@@ -398,6 +401,7 @@ body {
         margin: 0 auto;
         text-align: center;
         padding: 50px 100px;
+        padding: 5vmin 10vmin;
         min-height: 10vh;
         max-height: 55vh;
         overflow-y: scroll;
@@ -502,8 +506,9 @@ body {
         z-index: -1; }
         #circle-world [class^='page-'] .wrapper-container .broad-obs .broadSling .lineSling {
           width: 4px;
-          background: #932222;
+          background-color: #932222;
           height: 80px;
+          height: 8vmin;
           margin: 0 auto;
           margin-bottom: -2px; }
         #circle-world [class^='page-'] .wrapper-container .broad-obs .broadSling img {
@@ -516,11 +521,14 @@ body {
         width: 4px;
         background: #932222;
         height: 80px;
+        height: 8vmin;
         margin: 0 auto;
         margin-bottom: -2px; }
       #circle-world [class^='page-'] .wrapper-container .wheel-obs .wheelRotate {
         width: 600px;
         height: 600px;
+        width: calc(50vmin);
+        height: calc(50vmin);
         position: relative; }
       #circle-world [class^='page-'] .wrapper-container .wheel-obs .wheelPart {
         background: url(../img/wheel_round.png) no-repeat center;
@@ -532,10 +540,10 @@ body {
           background: url(../img/wheelPart.png) no-repeat top;
           background-size: contain;
           position: absolute;
-          top: 30px;
-          height: 270px;
-          width: 78px;
-          left: calc(50% - 39px);
+          top: 5%;
+          height: 45%;
+          width: 13%;
+          left: calc(50% - 6.5%);
           -webkit-transform-origin: 50% 100%;
           -moz-transform-origin: 50% 100%;
           -ms-transform-origin: 50% 100%;
@@ -643,17 +651,19 @@ body {
             transform: rotate(342deg); }
           #circle-world [class^='page-'] .wrapper-container .wheel-obs .wheelPart .wheel_num .pointValue {
             margin-top: 50px;
+            margin-top: 50%;
             display: inline-block;
             -webkit-transform: rotate(-90deg);
             -ms-transform: rotate(-90deg);
             -o-transform: rotate(-90deg);
             transform: rotate(-90deg);
             font-size: 120%;
+            font-size: 4vmin;
             color: #932222; }
       #circle-world [class^='page-'] .wrapper-container .wheel-obs .wheelCenter {
         position: absolute;
-        height: 300px;
-        width: 300px;
+        height: 50%;
+        width: 50%;
         left: 50%;
         top: 50%;
         -webkit-transform: translate(-50%, -50%);
@@ -693,7 +703,7 @@ body {
 
 #circle-footer {
   position: fixed;
-  background: #932222;
+  background-color: #932222;
   border-radius: 800vh;
   width: 800vh;
   height: 800vh;
@@ -730,10 +740,13 @@ body {
       border: 2px solid #FFCB4E;
       padding: 5px 15px;
       border-radius: 10px;
-      background: #A53030;
+      background-color: #A53030;
       display: inline-block;
       position: relative;
-      z-index: 1; }
+      z-index: 1;
+      -webkit-transition: background-color 0.4s;
+      -o-transition: background-color 0.4s;
+      transition: background-color 0.4s; }
       #circle-footer .loginUser a:before, #circle-footer .loginUser a:after, #circle-footer .loginUser span:before, #circle-footer .loginUser span:after {
         content: "";
         position: absolute;
@@ -745,6 +758,8 @@ body {
       #circle-footer .loginUser a:after, #circle-footer .loginUser span:after {
         top: initial;
         bottom: -5px; }
+      #circle-footer .loginUser a:hover, #circle-footer .loginUser span:hover {
+        background-color: #932222; }
     #circle-footer .loginUser:before, #circle-footer .loginUser:after {
       content: url(../img/broadLogin.png);
       position: absolute;

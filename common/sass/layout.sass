@@ -14,7 +14,7 @@
 ::-webkit-scrollbar-thumb
     // -webkit-border-radius: 10px
     // border-radius: 10px
-    background: $red-light
+    background-color: $red-light
     /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5)*/
 ::-webkit-scrollbar-thumb:window-inactive
     /*background: rgba(255,0,0,0.4)*/
@@ -44,7 +44,7 @@ body
 
 #circle-world
     position: fixed
-    background: $red-light
+    background-color: $red-light
     border-radius: 100000px
     width: 600vh
     height: 600vh
@@ -52,7 +52,7 @@ body
     left: calc(50% - 300vh)
     top: calc(100vh - 180px)
 
-    @include transition(-webkit-transform 1s)
+    @include transitionTransform(1s)
 
     [class^='page-']
         position: relative
@@ -71,10 +71,10 @@ body
             @include transform(translate(-50%,-80%))
 
     &.C
-        @include transform(rotate(-30deg))
+        @include transform(rotate(-45deg))
 
     &.S
-        @include transform(rotate(-60deg))
+        @include transform(rotate(-90deg))
 
     [class^='page-']
         .building
@@ -113,10 +113,10 @@ body
                 li
                     list-style-type: circle
         &.page-C
-            @include transform(rotate(30deg))
+            @include transform(rotate(45deg))
 
         &.page-S
-            @include transform(rotate(60deg))
+            @include transform(rotate(90deg))
 
             #building-S-02
                 left: 34%
@@ -129,6 +129,7 @@ body
             width: 100vw
             text-align: center
             min-width: 1180px
+            min-width: initial
             .tree-bg
                 position: absolute
                 top: calc(-5vmin - 5vmax)
@@ -139,8 +140,9 @@ body
                 position: relative
                 margin: 0 auto
                 width: 80%
-                max-width: 1200px
-                min-width: 800px
+                width: 80vw
+                // max-width: 1200px
+                // min-width: 800px
                 z-index: 1
                 @include transitionTransform(1.5s)
                 @include transformOrigin(50% 0)
@@ -151,8 +153,11 @@ body
                     display: inline-block
                     vertical-align: top
                     width: 500px
+                    width: calc(50vmin)
+                    height: calc(50vmin)
                     min-width: initial
-                    left: 100px
+                    margin-left: -10px
+                    margin-left: calc((100vw - 100vmin - 10px)/4)
                     .broad-content
                         padding: 50px
                         .broad-title
@@ -188,7 +193,7 @@ body
                         &[type='submit']
                             display: block
                             margin: 40px auto 10px
-                            background: $red-light
+                            background-color: $red-light
                             border: none
                             padding: 4%
                             font-family: initial
@@ -236,6 +241,7 @@ body
                     margin: 0 auto
                     text-align: center
                     padding: 50px 100px
+                    padding: 5vmin 10vmin
                     min-height: 10vh
                     max-height: 55vh
                     overflow-y: scroll
@@ -326,8 +332,9 @@ body
                     z-index: -1
                     .lineSling
                         width: 4px
-                        background: $red-dark
+                        background-color: $red-dark
                         height: 80px
+                        height: 8vmin
                         margin: 0 auto
                         margin-bottom: -2px
                     img
@@ -345,11 +352,14 @@ body
                         width: 4px
                         background: #932222
                         height: 80px
+                        height: 8vmin
                         margin: 0 auto
                         margin-bottom: -2px
                 .wheelRotate
                     width: 600px
                     height: 600px
+                    width: calc(50vmin)
+                    height: calc(50vmin)
                     position: relative
                 .wheelPart
                     // position: absolute
@@ -362,23 +372,25 @@ body
                         background: url(../img/wheelPart.png) no-repeat top
                         background-size: contain
                         position: absolute
-                        top: 30px
-                        height: 270px
-                        width: 78px
-                        left: calc(50% - 39px)
+                        top: 5%
+                        height: 45%
+                        width: 13%
+                        left: calc(50% - 6.5%)
                         @include transformOrigin(50% 100%)
                         @for $i from 1 through 20
                             @include setRotate($i)
                         .pointValue
                             margin-top: 50px
+                            margin-top: 50%
                             display: inline-block
                             @include transform(rotate(-90deg))
                             font-size: 120%
+                            font-size: 4vmin
                             color: $red-dark
                 .wheelCenter
                     position: absolute
-                    height: 300px
-                    width: 300px
+                    height: 50%
+                    width: 50%
                     left: 50%
                     top: 50%
                     @include transform(translate(-50%,-50%))
@@ -411,7 +423,7 @@ body
                     width: 60px
 #circle-footer
     position: fixed
-    background: $red-dark
+    background-color: $red-dark
     border-radius: 800vh
     width: 800vh
     height: 800vh
@@ -448,10 +460,11 @@ body
             border: 2px solid $yellow
             padding: 5px 15px
             border-radius: 10px
-            background: $red-light
+            background-color: $red-light
             display: inline-block
             position: relative
             z-index: 1
+            @include transition(background-color 0.4s)
             &:before, &:after
                 content: ''
                 position: absolute
@@ -463,6 +476,8 @@ body
             &:after
                 top: initial
                 bottom: -5px
+            &:hover
+                background-color: $red-dark
         &:before, &:after
             content: url(../img/broadLogin.png)
             position: absolute
