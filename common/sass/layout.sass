@@ -422,12 +422,13 @@ body
     @include transition(top 0.4s)
     &:hover
         top: calc(100vh - 180px)
-    .countdown-broad
+    // .countdown-broad
+    .loginUser
         position: absolute
-        top: 25px
-        left: calc(50% - 140px)
-        width: 280px
-        background: url(../img/footer_broad.png) no-repeat center
+        // top: 25px
+        // left: calc(50%)
+        // width: 280px
+        // background: url(../img/footer_broad.png) no-repeat center
         background-size: contain
         text-align: center
         span[class^='countdown-']
@@ -438,14 +439,47 @@ body
     .loginUser
         color: $yellow
         position: absolute
-        left: calc(50% + 180px)
-        top: 30px
-        a
+        top: 60px
+        left: calc(50%)
+        @include transform(translate(-50%, -50%))
+        a,span
             color: $yellow
             text-decoration: none
-            // position: absolute
-            // left: calc(50% + 180px)
-            // top: 30px
+            border: 2px solid $yellow
+            padding: 5px 15px
+            border-radius: 10px
+            background: $red-light
+            display: inline-block
+            position: relative
+            z-index: 1
+            &:before, &:after
+                content: ''
+                position: absolute
+                height: 2px
+                width: 100%
+                top: -5px
+                left: 0
+                background-color: $yellow
+            &:after
+                top: initial
+                bottom: -5px
+        &:before, &:after
+            content: url(../img/broadLogin.png)
+            position: absolute
+            content: ''
+            height: 150%
+            width: 100%
+            top: -25%
+            left: calc(-50% - 18px)
+            background: url(../img/broadLogin.png) no-repeat center
+            background-size: contain
+        &:after
+            @include transform(scaleX(-1))
+            right: calc(-50% - 18px)
+            left: initial
+            // margin-: -18px
+
+
         .span[class*='user']
             // padding: 20px 5px
             font-size: 80%
@@ -463,6 +497,14 @@ body
         left: 50%
         @include transform(translateX(-50%))
         a
-            color: $yellow
-            text-decoration: none
-            margin: 0 10px
+            margin: auto 10px
+            // & + a
+            //     &:before
+            //         content: "|"
+            //         margin: auto 10px
+            //         pointer-events: none
+    a,span
+        color: $yellow
+        text-decoration: none
+        // margin: 0 10px
+

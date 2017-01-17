@@ -228,22 +228,27 @@ html(lang="en")
         .content-inner
       #footer
         #circle-footer
-          .countdown-broad
-            span.countdown-days 2
-            span.countdown-hours 23
-            span.countdown-minutes 2
-            span.countdown-seconds 56
+          //- .countdown-broad
+          //-   a.loginButton(href="javascript:void(0)") Đăng nhập
+          //-   span.countdown-days 2
+          //-   span.countdown-hours 23
+          //-   span.countdown-minutes 2
+          //-   span.countdown-seconds 56
           .loginUser
-            a.loginButton(href="javascript:void(0)") Đăng nhập
-            //- Check login
-            .span.userInfo Username Account
-            .span.userPoint(data-pointText="Điểm") 43
+              a.loginButton(href="javascript:void(0)") Đăng nhập
+              //- Check login
+              //- span.userInfo Username
+            //- .span.userPoint(data-pointText="Điểm") 43
           .newYear
             //- img(src="common/img/newYear.png" alt="Bính thân 2017")
           nav.bottomMenu
             a(href="javascript:void(0)" data-page-target='S') Thể lệ
-            a(href="javascript:void(0)" data-page-target='C') Vòng quay
-            a(href="javascript:void(0)" data-page-target='S') Kết quả
+            span |
+            a(href="javascript:void(1)" data-page-target='C') Vòng quay
+            span |
+            a(href="javascript:void(2)" data-page-target='S') Kết quả
+            span |
+            a(href="javascript:void(2)" data-page-target='S') Đăng xuất
         .content-inner
     script(type='text/javascript' src="common/js/jquery-2.2.1.min.js")
     script(type='text/javascript' src="common/js/wheelObs.js")
