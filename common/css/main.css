@@ -285,10 +285,13 @@ body {
     min-width: initial; }
     #circle-world [class^='page-'] .wrapper-container .tree-bg {
       position: absolute;
-      top: calc(-5vmin - 5vmax);
-      left: calc(-2.5vmin - 2.5vmax);
-      max-width: calc(100vw - 100px);
-      width: 80vw; }
+      top: 0;
+      left: 0;
+      max-width: 100vw;
+      -webkit-transform: translate(-10%, -30%);
+      -ms-transform: translate(-10%, -30%);
+      -o-transform: translate(-10%, -30%);
+      transform: translate(-10%, -30%); }
     #circle-world [class^='page-'] .wrapper-container .broad-obs {
       position: relative;
       margin: 0 auto;

@@ -132,10 +132,10 @@ body
             min-width: initial
             .tree-bg
                 position: absolute
-                top: calc(-5vmin - 5vmax)
-                left: calc(-2.5vmin - 2.5vmax)
-                max-width: calc(100vw - 100px)
-                width: 80vw
+                top: 0
+                left: 0
+                max-width: 100vw
+                @include transform(translate(-10%,-30%))
             .broad-obs
                 position: relative
                 margin: 0 auto
