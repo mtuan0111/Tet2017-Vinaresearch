@@ -25,10 +25,12 @@ $(document).ready(function(){
     for(var i=0; i<arrCount ;i++){
       // console.log(arr[i])
       count++ ;
-      arr[i].onload = function(){
+      // arr[i].onload = function(){
+      //   console.log("loaded: " + count);
+      // }
+      $(arr[i]).load(function(){
         console.log("loaded: " + count);
-      }
-
+      })
     }
     // arr.forEach(function(element) {
     //     console.log(element);
