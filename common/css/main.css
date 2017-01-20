@@ -843,6 +843,9 @@ body {
       width: calc(90%); }
       #circle-world [class^='page-'] .wrapper-container .broad-obs .broad-content .broad-title:before, #circle-world [class^='page-'] .wrapper-container .broad-obs .broad-content .broad-title:after {
         content: initial; }
+    #circle-world [class^='page-'] .wrapper-container .broad-obs.small {
+      width: calc(90vmin);
+      margin-left: calc((100vw - 90vmin)/10); }
 
   #circle-footer {
     .loginUsertop: 5vmax; } }
