@@ -139,6 +139,12 @@ body {
   line-height: 1.5;
   font-family: "Judson", serif; }
 
+a {
+  color: #A53030;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
 #contents {
   overflow: hidden;
   min-width: 1200px;
@@ -261,6 +267,11 @@ body {
       margin-top: 10px; }
     #circle-world [class^='page-'] .rule-content ul li {
       list-style-type: circle; }
+    #circle-world [class^='page-'] .rule-content .orgSign {
+      text-align: right; }
+      #circle-world [class^='page-'] .rule-content .orgSign div {
+        display: inline-block;
+        text-align: center; }
   #circle-world [class^='page-'].page-C {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -677,7 +688,7 @@ body {
             -o-transform: rotate(-90deg);
             transform: rotate(-90deg);
             font-size: 120%;
-            font-size: 3vmin;
+            font-size: 4vmin;
             color: #932222; }
       #circle-world [class^='page-'] .wrapper-container .wheel-obs .wheelCenter {
         position: absolute;
@@ -857,6 +868,11 @@ body {
       margin-left: calc((100vw - 90vmin)/10); }
       #circle-world [class^='page-'] .wrapper-container .broad-obs.small .broad-content {
         padding: 5vmin 10vmin; }
+  #circle-world [class^='page-'] .wrapper-container .wheel-obs .wheelPart {
+    border-radius: 65vmin; }
+    #circle-world [class^='page-'] .wrapper-container .wheel-obs .wheelPart #wheelRotate {
+      width: 65vmin;
+      height: 65vmin; }
 
   #circle-footer {
     .loginUsertop: 5vmax; } }

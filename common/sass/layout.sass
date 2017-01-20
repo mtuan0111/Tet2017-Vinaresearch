@@ -29,6 +29,11 @@ body
     line-height: 1.5
     font-family: 'Judson', serif
 
+a
+    color: $red-light
+    text-decoration: none
+    &:hover
+        text-decoration: underline
 #contents
     overflow: hidden
     min-width: 1200px
@@ -112,6 +117,11 @@ body
             ul
                 li
                     list-style-type: circle
+            .orgSign
+                text-align: right
+                div
+                    display: inline-block
+                    text-align: center
         &.page-C
             @include transform(rotate(45deg))
 
@@ -411,7 +421,7 @@ body
                             display: inline-block
                             @include transform(rotate(-90deg))
                             font-size: 120%
-                            font-size: 3vmin
+                            font-size: 4vmin
                             color: $red-dark
                 .wheelCenter
                     position: absolute
