@@ -500,7 +500,7 @@ body {
             left: 10px;
             width: 90px;
             height: 90px;
-            max-width: 10%; }
+            max-width: 20%; }
           #circle-world [class^='page-'] .wrapper-container .broad-obs .broad-content .frame-bottom:after {
             right: 10px;
             left: initial;
@@ -742,7 +742,7 @@ body {
   -o-transition: top 0.4s;
   transition: top 0.4s; }
   #circle-footer:hover {
-    top: calc(100vh - 20vmax); }
+    top: calc(100vh - 18vmax); }
   #circle-footer .loginUser {
     position: absolute;
     background-size: contain;
@@ -829,14 +829,16 @@ body {
 
 @media (max-width: 640px) {
   body {
-    font-size: 3.5vmin; }
+    font-size: 4vmin; }
 
   #circle-world [class^='page-'] .wrapper-container .broad-obs {
-    width: 95%; }
-    #circle-world [class^='page-'] .wrapper-container .broad-obs .broad-content .broad-title:before, #circle-world [class^='page-'] .wrapper-container .broad-obs .broad-content .broad-title:after {
-      content: initial; }
+    width: 96%; }
+    #circle-world [class^='page-'] .wrapper-container .broad-obs .broad-content {
+      width: calc(90%); }
+      #circle-world [class^='page-'] .wrapper-container .broad-obs .broad-content .broad-title:before, #circle-world [class^='page-'] .wrapper-container .broad-obs .broad-content .broad-title:after {
+        content: initial; }
 
-  #circle-footer .loginUser {
-    top: 5vmax; } }
+  #circle-footer {
+    .loginUsertop: 5vmax; } }
 
 /*# sourceMappingURL=main.css.map */
