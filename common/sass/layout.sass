@@ -214,16 +214,16 @@ body
 
                 .broadBar-top, .broadBar-bottom
                     position: relative
-                    height: 15px
+                    height: 3vmin
+                    max-height: 15px
                     background: url(../img/broadBar_bg.png) repeat-x center $yellow
-                    padding: 0 5px
                     border-radius: 6px
                     background-size: contain
                     background-position-x: 0
                     @include transition(background-position-x 0.8s)
                     -webkit-box-shadow: inset 0px -6px 0px 0px rgba(0, 0, 0, 0.5)
                     -moz-box-shadow: inset 0px -6px 0px 0px rgba(0, 0, 0, 0.5)
-                    box-shadow: inset 0px -6px 0px 0px rgba(0, 0, 0, 0.5)
+                    box-shadow: inset 0px -1vmin 0px 0px rgba(0, 0, 0, 0.5)
                     &:before,&:after
                         content: ""
                         background: url(../img/broadBar_end.png) no-repeat right
@@ -309,7 +309,7 @@ body
                             left: 10px
                             width: 90px
                             height: 90px
-                            max-width: 20%
+                            max-width: 20vmin
                         &:after
                             @include transform(scaleX(-1))
                             right: 10px
@@ -333,7 +333,7 @@ body
                             left: 10px
                             width: 90px
                             height: 90px
-                            max-width: 20%
+                            max-width: 20vmin
                         &:after
                             right: 10px
                             left: initial
@@ -430,8 +430,10 @@ body
             .pendant_obs
                 position: absolute
                 top: 100%
-                height: 120px
-                width: 40px
+                height: 20vmin
+                max-height: 120px
+                width: 6vmin
+                max-width: 40px
                 background: url(../img/pendant_obs01.png) no-repeat center top
                 background-size: contain
                 &.left
@@ -444,14 +446,19 @@ body
                         right: 33%
                 &.middle:not(.left):not(.right)
                     left: 50%
-                    height: 280px
-                    width: 70px
+                    height: 28vmin
+                    max-height: 180px
+                    width: 12vmin
+                    max-width: 60px
                     @include transform(translate(-50%, -8px))
                 &.large
                     background: url(../img/pendant_obs02.png) no-repeat center top
                     background-size: contain
-                    height: 180px
-                    width: 60px
+                    height: 28vmin
+                    max-height: 180px
+                    width: 12vmin
+                    max-width: 60px
+
 #circle-footer
     position: fixed
     background-color: $red-dark

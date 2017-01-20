@@ -369,9 +369,9 @@ body {
         color: #A53030; }
       #circle-world [class^='page-'] .wrapper-container .broad-obs .broadBar-top, #circle-world [class^='page-'] .wrapper-container .broad-obs .broadBar-bottom {
         position: relative;
-        height: 15px;
+        height: 3vmin;
+        max-height: 15px;
         background: url(../img/broadBar_bg.png) repeat-x center #FFCB4E;
-        padding: 0 5px;
         border-radius: 6px;
         background-size: contain;
         background-position-x: 0;
@@ -380,7 +380,7 @@ body {
         transition: background-position-x 0.8s;
         -webkit-box-shadow: inset 0px -6px 0px 0px rgba(0, 0, 0, 0.5);
         -moz-box-shadow: inset 0px -6px 0px 0px rgba(0, 0, 0, 0.5);
-        box-shadow: inset 0px -6px 0px 0px rgba(0, 0, 0, 0.5); }
+        box-shadow: inset 0px -1vmin 0px 0px rgba(0, 0, 0, 0.5); }
         #circle-world [class^='page-'] .wrapper-container .broad-obs .broadBar-top:before, #circle-world [class^='page-'] .wrapper-container .broad-obs .broadBar-top:after, #circle-world [class^='page-'] .wrapper-container .broad-obs .broadBar-bottom:before, #circle-world [class^='page-'] .wrapper-container .broad-obs .broadBar-bottom:after {
           content: "";
           background: url(../img/broadBar_end.png) no-repeat right;
@@ -471,7 +471,7 @@ body {
             left: 10px;
             width: 90px;
             height: 90px;
-            max-width: 20%; }
+            max-width: 20vmin; }
           #circle-world [class^='page-'] .wrapper-container .broad-obs .broad-content .frame-top:after {
             -webkit-transform: scaleX(-1);
             -ms-transform: scaleX(-1);
@@ -500,7 +500,7 @@ body {
             left: 10px;
             width: 90px;
             height: 90px;
-            max-width: 20%; }
+            max-width: 20vmin; }
           #circle-world [class^='page-'] .wrapper-container .broad-obs .broad-content .frame-bottom:after {
             right: 10px;
             left: initial;
@@ -702,8 +702,10 @@ body {
     #circle-world [class^='page-'] .wrapper-container .pendant_obs {
       position: absolute;
       top: 100%;
-      height: 120px;
-      width: 40px;
+      height: 20vmin;
+      max-height: 120px;
+      width: 6vmin;
+      max-width: 40px;
       background: url(../img/pendant_obs01.png) no-repeat center top;
       background-size: contain; }
       #circle-world [class^='page-'] .wrapper-container .pendant_obs.left {
@@ -716,8 +718,10 @@ body {
           right: 33%; }
       #circle-world [class^='page-'] .wrapper-container .pendant_obs.middle:not(.left):not(.right) {
         left: 50%;
-        height: 280px;
-        width: 70px;
+        height: 28vmin;
+        max-height: 180px;
+        width: 12vmin;
+        max-width: 60px;
         -webkit-transform: translate(-50%, -8px);
         -ms-transform: translate(-50%, -8px);
         -o-transform: translate(-50%, -8px);
@@ -725,8 +729,10 @@ body {
       #circle-world [class^='page-'] .wrapper-container .pendant_obs.large {
         background: url(../img/pendant_obs02.png) no-repeat center top;
         background-size: contain;
-        height: 180px;
-        width: 60px; }
+        height: 28vmin;
+        max-height: 180px;
+        width: 12vmin;
+        max-width: 60px; }
 
 #circle-footer {
   position: fixed;
