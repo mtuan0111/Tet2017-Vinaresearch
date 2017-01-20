@@ -1,9 +1,13 @@
+
 $(window).load(function(){
     // alert(123);
     var wheel = new Wheel();
-    wheel.clickToPlay(1000);
+    wheel.clickToPlay();
 
     var notiBroad = new notificationBroad($(".broad-obs.small"));
+    $(document).on("click",".loginButton",function(){
+        notiBroad.setLoginForm();
+    })
 
 })
 

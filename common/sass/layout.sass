@@ -203,8 +203,13 @@ body
                             border-top: 5px solid $red-dark
                             border-bottom: 5px solid $red-dark
                             cursor: pointer
-                    label[for="rememberMe"]
-                        font-size: 80%
+                        label[for="rememberMe"]
+
+
+                .error-message
+                    display: none
+                    font-size: 80%
+                    color: $red-light
 
 
                 .broadBar-top, .broadBar-bottom
@@ -277,6 +282,12 @@ body
                             font-weight: bold
                         td
                             padding: 5px 0
+                        .current-user
+                            color: $red-light
+                            // td:last-child
+                            //     &:after
+                            //         content: ""
+
                     .notificationMessage
                         margin: 10% 0
                         font-size: 120%
@@ -298,7 +309,7 @@ body
                             left: 10px
                             width: 90px
                             height: 90px
-                            max-width: 10%
+                            max-width: 20%
                         &:after
                             @include transform(scaleX(-1))
                             right: 10px

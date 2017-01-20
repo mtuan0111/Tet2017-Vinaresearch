@@ -13,7 +13,7 @@ html(lang="en")
       #contents
         img#circle-light(src="common/img/light_bg.png" alt="")
         //- img#circle-light-slow(src="common/img/light_bg5.png" alt="")
-        #circle-world.C
+        #circle-world.S
             .page-N
                 div.building
                     img#building-N-01(src="common/img/building_HCM01.png")
@@ -103,11 +103,12 @@ html(lang="en")
                             span.broad-title Đăng nhập
                             form.login-form
                                 //- label(for='username') Tài khoản
-                                input#username.type(type='text' name='username' placeholder='Tài khoản')
+                                input#username.type(type='text' name='lg_Username' placeholder='Tài khoản')
                                 //- label(for='password') Mật khẩu
-                                input#password.type(type='password' name='password' placeholder='Mật khẩu')
+                                input#password.type(type='password' name='lg_Password' placeholder='Mật khẩu')
                                 label(for="rememberMe") Nhớ tài khoản
-                                input#rememberMe(type="checkbox")
+                                input#rememberMe(type="checkbox" name='lg_rememberMe' value="1")
+                                p.error-message Lỗi đây
                                 input#submit(type="submit" value="Đăng nhập")
                             //- span.broad-title Thông báo
                             //- .notificationMessage
@@ -144,7 +145,7 @@ html(lang="en")
                                 th Tài khoản
                                 th Điểm
                                 th Thời gian
-                              tr
+                              tr.current-user
                                 td 1
                                 td Username1
                                 td 102
@@ -260,5 +261,6 @@ html(lang="en")
     script(type='text/javascript' src="common/js/jquery-ui.js")
     script(type='text/javascript' src="common/js/notificationBroad.js")
     script(type='text/javascript' src="common/js/wheelObs.js")
+    script(type='text/javascript' src="common/js/loginUser.js")
     script(type='text/javascript' src="common/js/init.js")
     script(type='text/javascript').

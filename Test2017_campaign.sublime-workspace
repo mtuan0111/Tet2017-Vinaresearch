@@ -1,0 +1,2758 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"current",
+				"current_user\t(index.html)"
+			],
+			[
+				"login",
+				"loginForm"
+			],
+			[
+				"set",
+				"setMessage\t(notificationBroad.js)"
+			],
+			[
+				"message",
+				"messageAppend"
+			],
+			[
+				"noti",
+				"notificationBroad"
+			],
+			[
+				"broad",
+				"broad-obs\t(index.html)"
+			],
+			[
+				"notification",
+				"notificationBroad\t(notificationBroad.js)"
+			],
+			[
+				"cur",
+				"cur:a\tcursor:auto"
+			],
+			[
+				"proto",
+				"prototype"
+			],
+			[
+				"click",
+				"clickToPlay\t(wheelObs.js)"
+			],
+			[
+				"auto",
+				"auto-wheel"
+			],
+			[
+				"prot",
+				"prototype"
+			],
+			[
+				"rota",
+				"rotateObjs"
+			],
+			[
+				"point",
+				"points_array"
+			],
+			[
+				"data",
+				"data-number\t(index.html)"
+			],
+			[
+				"page",
+				"page_target"
+			],
+			[
+				"pos",
+				"pos:a\tposition:absolute"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"$",
+				"$red-dark"
+			],
+			[
+				"border",
+				"border"
+			],
+			[
+				"$red",
+				"$red-light"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"Wheel",
+				"wheelObs.js"
+			],
+			[
+				"W",
+				"wheelObs.js"
+			],
+			[
+				"ab",
+				"absolute\t(layout.sass)"
+			],
+			[
+				"card",
+				"cardId"
+			],
+			[
+				"document",
+				"document.getElementById(\"setBonusPointBtn_\"+id"
+			],
+			[
+				"TOt",
+				"CalTotalAfterUpdate"
+			],
+			[
+				"var",
+				"var_dump($array_card\t(ChristmasCard.php)"
+			],
+			[
+				"va",
+				"var_dump\t(getSearchCard.php)"
+			],
+			[
+				"sa",
+				"saveAs"
+			],
+			[
+				"vardu",
+				"var_dump\t(updateFbId.php)"
+			],
+			[
+				"for",
+				"foreach\t(card-list.php)"
+			],
+			[
+				"pre",
+				"preventDefault"
+			],
+			[
+				"ele",
+				"elem"
+			],
+			[
+				"fade",
+				"fadeIn\t(make-card.php)"
+			],
+			[
+				"e",
+				"elem"
+			],
+			[
+				"load",
+				"loadmore"
+			],
+			[
+				"conos",
+				"console.log"
+			],
+			[
+				"consol",
+				"console.log(\"data\t(make-card.php)"
+			],
+			[
+				"con",
+				"content\t(card-detail.php)"
+			],
+			[
+				"Upload",
+				"Upload.php"
+			],
+			[
+				"$_",
+				"$_\tREQUEST['…']"
+			],
+			[
+				"make-ca",
+				"make-card.php\t(index.php)"
+			],
+			[
+				"hea",
+				"header"
+			],
+			[
+				"forea",
+				"foreach\t<?php foreach (…) … <?php endforeach ?>"
+			],
+			[
+				"javsc",
+				"javascript:void\t(card-detail.php)"
+			],
+			[
+				"shre",
+				"shareBtn"
+			],
+			[
+				"update",
+				"updateOgIdbyId\t(ChristmasCard.php)"
+			],
+			[
+				"$json",
+				"$json_url\t(point_Managerment.php)"
+			],
+			[
+				"getid",
+				"getIDbyfileCard\t(ChristmasCard.php)"
+			],
+			[
+				"poin",
+				"pointLike"
+			],
+			[
+				"req",
+				"require_once\t(card-detail.php)"
+			],
+			[
+				"file",
+				"fileCard\t(submit-card.php)"
+			],
+			[
+				"$re",
+				"$response"
+			],
+			[
+				"inset",
+				"insert"
+			],
+			[
+				"$image",
+				"$imageFile"
+			],
+			[
+				"$i",
+				"$imageData"
+			],
+			[
+				"Def",
+				"Default_Model_ChristmasCard\t(ChristmasCard)"
+			],
+			[
+				"$this",
+				"$this->_ssUserInfo\t(IndexController.php)"
+			],
+			[
+				"submi",
+				"submit-card.php"
+			],
+			[
+				"var_dum",
+				"var_dump($now);die\t(IndexController.php)"
+			],
+			[
+				"main",
+				"main-menu.php"
+			],
+			[
+				"trans",
+				"transform"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"wi",
+				"window"
+			],
+			[
+				"605",
+				"605/1400*bxWrapper.width\t(top.js)"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"settime",
+				"setTimeout"
+			],
+			[
+				"lcu",
+				"lucky-wheel-regular.js"
+			],
+			[
+				"Juqery",
+				"jQuery221"
+			],
+			[
+				"jquery",
+				"jquery-2.2.1.min.js"
+			],
+			[
+				"luc",
+				"lucky-wheel-monthly"
+			],
+			[
+				"ke",
+				"keyCode"
+			],
+			[
+				"jque",
+				"jquery.min.js\t(login.php)"
+			],
+			[
+				"get",
+				"getCookie"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"a",
+				"auto"
+			],
+			[
+				"class",
+				"class='value_title"
+			],
+			[
+				"re",
+				"relative"
+			],
+			[
+				"border-right",
+				"border-right-width"
+			],
+			[
+				"rel",
+				"relative"
+			],
+			[
+				"box-s",
+				"box-sizing"
+			],
+			[
+				"ver",
+				"vertical-align"
+			],
+			[
+				"bind",
+				"bind(\"click\t(init.js)"
+			],
+			[
+				"b",
+				"block"
+			],
+			[
+				"survey_thu",
+				"survey_thumbnails.jpg\tw:82 h:62"
+			],
+			[
+				"survey_",
+				"survey_details.html"
+			],
+			[
+				"survey_re",
+				"survey_result.html"
+			],
+			[
+				"survet",
+				"survey_details.html"
+			],
+			[
+				"service",
+				"service_content"
+			],
+			[
+				"before",
+				"before_login\t(index_new.html)"
+			],
+			[
+				"survey",
+				"survey_block"
+			],
+			[
+				"ser",
+				"service_sites\t(blog_home.html)"
+			],
+			[
+				"background-",
+				"background-color"
+			],
+			[
+				"box-",
+				"box-sizing"
+			],
+			[
+				"sur",
+				"survey_image"
+			],
+			[
+				"toggle",
+				"toggleClass\t(init.js)"
+			],
+			[
+				"circle",
+				"circle_btn"
+			],
+			[
+				"review_details",
+				"review_details.html"
+			],
+			[
+				"margin-",
+				"margin-left"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"ital",
+				"italic"
+			],
+			[
+				"opcat",
+				"opacity"
+			],
+			[
+				"func",
+				"function(){function"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"attr",
+				"attr()"
+			],
+			[
+				"banner",
+				"blog_article_banner\t(merge_pc.css)"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"verti",
+				"vertical-align"
+			],
+			[
+				"align",
+				"align-items"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"icon_arrow_",
+				"icon_arrow_right_grey"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"href",
+				"href\tAttr"
+			],
+			[
+				"child",
+				"child"
+			],
+			[
+				"over",
+				"overflow"
+			],
+			[
+				"icon_arro",
+				"icon_arrow\t(search.html)"
+			],
+			[
+				"triger",
+				"trigger(\"click"
+			],
+			[
+				"icon_search",
+				"icon_searchtog\t(search.html)"
+			],
+			[
+				"trigger",
+				"trigger(\"click"
+			],
+			[
+				"read",
+				"ready\t(index_new.html)"
+			],
+			[
+				"search_",
+				"search_slider\t(index_new.html)"
+			],
+			[
+				"al",
+				"alt='Apple"
+			],
+			[
+				"icon_searc",
+				"icon_searchtog.png\tw:48 h:48"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"slod",
+				"solid"
+			],
+			[
+				"orang",
+				"orange_text\t(index_new.css)"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.jade",
+			"settings":
+			{
+				"buffer_size": 14077,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "common/js/loginUser.js",
+			"settings":
+			{
+				"buffer_size": 2359,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/wamp/www/vinaresearch/application/modules/default/controllers/IndexController.php",
+			"settings":
+			{
+				"buffer_size": 130721,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/wamp/www/vinaresearch/public/christmas2016/login.php",
+			"settings":
+			{
+				"buffer_size": 4682,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "common/js/init.js",
+			"settings":
+			{
+				"buffer_size": 470,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 15457,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "common/sass/layout.sass",
+			"settings":
+			{
+				"buffer_size": 19648,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "common/sass/function.sass",
+			"settings":
+			{
+				"buffer_size": 1599,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "common/sass/import.sass",
+			"settings":
+			{
+				"buffer_size": 159,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "common/sass/layout_sp.sass",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 320.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"jade",
+				"Snippet: Jade5"
+			],
+			[
+				"javasc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"javscript",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"javs",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"",
+				"About"
+			],
+			[
+				"ipc",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: instal",
+				"Package Control: Install Package"
+			],
+			[
+				"pcip",
+				"Package Control: Install Package"
+			],
+			[
+				"refle",
+				"Emmet: Reflect CSS Value"
+			],
+			[
+				"ss sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"Package Control: int",
+				"Package Control: Install Package"
+			],
+			[
+				"remove c",
+				"Package Control: Remove Channel"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"pcrp",
+				"Package Control: Remove Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"a",
+				"Autoprefix CSS"
+			],
+			[
+				"au",
+				"Autoprefix CSS"
+			],
+			[
+				"auto",
+				"Autoprefix CSS"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"packa",
+				"Package Control: Remove Repository"
+			],
+			[
+				"package",
+				"Preferences: Package Control Settings – User"
+			],
+			[
+				"pcr",
+				"Package Control: Remove Package"
+			]
+		],
+		"width": 446.0
+	},
+	"console":
+	{
+		"height": 457.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/wamp/www/Tet2017_campaign",
+		"/C/wamp/www/Tet2017_campaign/common",
+		"/C/wamp/www/Tet2017_campaign/common/js",
+		"/C/wamp/www/Tet2017_campaign/common/sass"
+	],
+	"file_history":
+	[
+		"/C/wamp/www/vinaresearch/application/modules/admin/controllers/IndexController.php",
+		"/C/wamp/www/vinaresearch/public/Tet2017_campaign/common/js/loginUser.js",
+		"/C/wamp/www/vinaresearch/public/Tet2017_campaign/common/js/notificationBroad.js",
+		"/C/wamp/www/vinaresearch/application/modules/api-campaign/models/LuckyWheelPrize.php",
+		"/C/wamp/www/vinaresearch/application/modules/api-campaign/models/LuckyWheelHistory.php",
+		"/C/wamp/www/vinaresearch/application/modules/game/models/GameWheelQuota.php",
+		"/C/wamp/www/vinaresearch/public/Tet2017_campaign/index.php",
+		"/C/wamp/www/vinaresearch/application/modules/game/views/scripts/index/golden-wheel.phtml",
+		"/C/wamp/www/Tet2017_campaign/common/js/wheelObs.js",
+		"/C/wamp/www/vinaresearch/public/Tet2017_campaign/func_LoginForm.php",
+		"/C/wamp/www/Tet2017_campaign/index.jade",
+		"/C/wamp/www/Tet2017_campaign/index.html",
+		"/C/wamp/www/Tet2017_campaign/common/js/loginUser.js",
+		"/C/wamp/www/Tet2017_campaign/common/js/init.js",
+		"/C/wamp/www/Tet2017_campaign/common/js/notificationBroad.js",
+		"/C/wamp/www/vinaresearch/public/christmas2016/func_LoginForm.php",
+		"/C/wamp/www/vinaresearch/public/christmas2016/getList_card.php",
+		"/C/wamp/www/Tet2017_campaign/common/sass/animate.sass",
+		"/C/wamp/www/Tet2017_campaign/common/sass/function.sass",
+		"/C/wamp/www/Tet2017_campaign/common/css/main.css",
+		"/C/wamp/www/Tet2017_campaign/common/sass/import.sass",
+		"/C/wamp/www/vinaresearch/public/Vong-quay-may-man-2017",
+		"/C/wamp/www/vinaresearch/public/libs/ckeditor/ckeditor.js",
+		"/C/wamp/www/Tet2017_campaign/common/sass/layout.sass",
+		"/C/wamp/www/Tet2017_campaign/common/sass/reset.sass",
+		"/C/wamp/www/vinaresearch/application/modules/admin/controllers/CmpController.php",
+		"/C/wamp/www/vinaresearch/application/modules/default/models/ChristmasCard.php",
+		"/C/wamp/www/vinaresearch/application/modules/admin/views/scripts/cmp/christmas-campaign.phtml",
+		"/C/wamp/www/vinaresearch/public/christmas2016/card-list.php",
+		"/C/wamp/www/vinaresearch/public/christmas2016/getDetail_card.php",
+		"/C/wamp/www/vinaresearch/public/christmas2016/card-detail.php",
+		"/C/wamp/www/vinaresearch/library/VnLib/Controller/Action.php",
+		"/C/wamp/www/vinaresearch/library/VnLib/Controller/Action/Helper/Register.php",
+		"/C/wamp/www/vinaresearch/public/christmas2016/index.php",
+		"/C/wamp/www/vinaresearch/public/christmas2016/submit-card.php",
+		"/C/wamp/www/vinaresearch/public/christmas2016/make-card.php",
+		"/C/wamp/www/vinaresearch/public/christmas2016/common/js/FBloadAjax.js",
+		"/C/wamp/www/vinaresearch/application/files/Emails_blacklist.txt",
+		"/C/wamp/www/vinaresearch/application/modules/default/controllers/RegisterController.php",
+		"/C/wamp/www/vinaresearch/application/modules/api/controllers/RegisterController.php",
+		"/C/wamp/www/vinaresearch/application/modules/default/models/User.php",
+		"/C/wamp/www/vinaresearch/public/christmas2016/getSearchCard.php",
+		"/C/wamp/www/vinaresearch/application/files/vn_ip_range.php",
+		"/C/wamp/www/vinaresearch/application/modules/default/models/HistoryBonus.php",
+		"/C/wamp/www/vinaresearch/library/VnLib/Controller/Action/Helper/Upload.php",
+		"/C/wamp/www/vinaresearch/public/christmas2016/updateFbId.php",
+		"/C/wamp/www/vinaresearch/public/christmas2016/common/js/canvas.js",
+		"/C/wamp/www/vinaresearch/public/christmas2016/common/js/FileSaver.min.js",
+		"/C/wamp/www/vinaresearch/library/Zend/Db/Adapter/Abstract.php",
+		"/C/wamp/www/vinaresearch/library/Zend/Db/Select.php",
+		"/C/wamp/www/vinaresearch/public/christmas2016/updateFbId",
+		"/C/wamp/www/vinaresearch/public/christmas2016/login.php",
+		"/C/wamp/www/vinaresearch/application/modules/default/controllers/IndexController.php",
+		"/C/wamp/www/vinaresearch/public/fancybox/jquery.fancybox-1.3.4.js",
+		"/C/wamp/www/vinaresearch/public/christmas2016/meta.php",
+		"/C/wamp/www/vinaresearch/public/christmas2016/func_ZendBootstrap.php",
+		"/C/wamp/www/vinaresearch/library/VnLib/Controller/Action/Helper/Users.php",
+		"/C/wamp/www/vinaresearch/application/modules/api/controllers/UserController.php",
+		"/C/wamp/www/vinaresearch/public/christmas2016/common/css/main.css",
+		"/C/wamp/www/vinaresearch/public/christmas2016/func_FbAjax.php",
+		"/C/wamp/www/vinaresearch/public/christmas2016/func_FbAjax",
+		"/C/wamp/www/vinaresearch/application/modules/admin/controllers/SurveyController.php",
+		"/C/wamp/www/vinaresearch/library/VnLib/Controller/Action/Helper/Admin/HttpsChecker.php",
+		"/C/Users/BOM/Desktop/New_Christmas/CmpController.php",
+		"/C/wamp/www/vinaresearch/application/modules/default/controllers/UserController.php",
+		"/C/wamp/www/vinaresearch/public/christmas2016/common/js/init.js",
+		"/C/wamp/www/vinaresearch/public/christmas2016/main-menu.php",
+		"/C/wamp/www/vinaresearch/public/christmas2016/header.php",
+		"/C/wamp/www/vinaresearch/public/christmas2016/mail_card.php",
+		"/C/wamp/www/vinaresearch/application/modules/admin/controllers/OthersController.php",
+		"/C/wamp/www/vinaresearch/public/christmas2016/function_LoadAjax.php",
+		"/C/wamp/www/vinaresearch/public/christmas2016/submit-card.html",
+		"/C/wamp/www/vinaresearch/application/templates/mobile/afterlogin/afterlogin.phtml",
+		"/C/Users/BOM/AppData/Roaming/Skype/My Skype Received Files/canvas(6).js",
+		"/C/wamp/www/vinaresearch/public/christmas2016/vendor/facebook/graph-sdk/src/Facebook/Authentication/AccessToken.php",
+		"/C/wamp/www/vinaresearch/public/christmas2016/point_Managerment.php",
+		"/C/wamp/www/vinaresearch/application/new_design/default_index_login.php",
+		"/C/wamp/www/vinaresearch/public/christmas2016/vendor/facebook/graph-sdk/src/Facebook/FacebookRequest.php",
+		"/C/wamp/www/vinaresearch/library/Zend/Db/Table.php",
+		"/C/wamp/www/vinaresearch/library/Zend/Db/Table/Abstract.php",
+		"/C/wamp/www/vinaresearch/application/modules/api/controllers/PointController.php",
+		"/C/wamp/www/vinaresearch/library/Zend/Controller/Action/Helper/Json.php",
+		"/C/wamp/www/vinaresearch/application/modules/default/models/CintSession.php",
+		"/C/wamp/www/vinaresearch/public/christmas2016/common/Upload",
+		"/C/Users/BOM/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/wamp/www/vinaresearch/min/lib/Minify/HTML/Helper.php",
+		"/C/wamp/www/vinaresearch/library/VnLib/Controller/Action/Helper/Upload",
+		"/C/wamp/www/vinaresearch/application/modules/default/views/scripts/index/login-popup.phtml",
+		"/C/wamp/www/vinaresearch/application/modules/default/views/scripts/index/login-popup-new.phtml",
+		"/C/wamp/www/vinaresearch/application/batch/configs/configBatch.php",
+		"/C/wamp/www/vinaresearch/application/modules/game/views/scripts/othello/logout.phtml",
+		"/C/wamp/www/vinaresearch/library/VnLib/View/Helper/CreateWheelToken.php",
+		"/C/wamp/www/vinaresearch/public/vong-quay-may-man/func_LoginForm.php",
+		"/C/wamp/www/vinaresearch/public/Christmas2016/func_LoginForm.php",
+		"/C/wamp/www/vinaresearch/library/VnLib/View/Helper/CreateChristmasToken.php",
+		"/C/wamp/www/vinaresearch/public/vong-quay-may-man-2015/index.php",
+		"/C/wamp/www/vinaresearch/application/modules/default/views/scripts/index/public-survey.phtml",
+		"/C/wamp/www/vinaresearch/application/templates/default/afterlogin/css/7-inpage.css",
+		"/C/wamp/www/vinaresearch/application/modules/default/views/scripts/survey/predosurvey.phtml",
+		"/C/wamp/www/vinaresearch/application/templates/landing/css/reset.css",
+		"/C/wamp/www/vinaresearch/public/gioi-thieu-ban/common/css/reset.css",
+		"/C/wamp/www/vinaresearch/application/templates/tet2017_campaign/common/css/main.css",
+		"/C/wamp/www/vinaresearch/application/modules/default/views/scripts/survey/tet-survey.phtml",
+		"/C/wamp/www/vinaresearch/application/modules/default/views/scripts/survey/tet-survey-thank.phtml",
+		"/C/Users/BOM/AppData/Local/Temp/fz3temp-2/top.js.bk20161116",
+		"/C/Users/BOM/AppData/Local/Temp/fz3temp-2/top.js",
+		"/C/Users/BOM/AppData/Local/Temp/fz3temp-1/top.js",
+		"/C/Users/BOM/AppData/Local/Temp/fz3temp-2/inpage.css",
+		"/C/wamp/www/vinaresearch/public/remojob-survey/common/js/members.js",
+		"/C/wamp/www/vinaresearch/public/remojob-survey/common/css/import.css",
+		"/C/wamp/www/vinaresearch/application/templates/default/afterlogin/css/lucky-wheel-monthly/main.css",
+		"/C/wamp/www/vinaresearch/application/templates/default/afterlogin/js/lucky-wheel-monthly/lucky-wheel-regular.js",
+		"/C/wamp/www/vinaresearch/application/templates/default/afterlogin/js/lucky-wheel-monthly/ranout.js",
+		"/C/wamp/www/vinaresearch/public/remojob-survey/index.php",
+		"/C/Users/BOM/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/wamp/www/vinaresearch/application/modules/default/views/scripts/index/resultqquestion.phtml",
+		"/C/wamp/www/vinaresearch/application/modules/default/views/scripts/index/single-quick-survey.phtml",
+		"/C/wamp/www/vinaresearch/application/modules/default/views/scripts/index/private-survey.phtml",
+		"/C/wamp/www/vinaresearch/public/remojob-survey/members.php",
+		"/C/wamp/www/vinaresearch/public/remojob-survey/layout/login.php",
+		"/C/wamp/www/vinaresearch/public/remojob-survey/prize.php",
+		"/C/wamp/www/vinaresearch/public/remojob-survey/common/js/init.js",
+		"/C/wamp/www/vinaresearch/public/remojob-survey/rule.php",
+		"/C/wamp/www/vinaresearch/public/remojob-survey/layout/footer.php",
+		"/C/wamp/www/vinaresearch/public/remojob-survey/layout/header.php",
+		"/C/wamp/www/vinaresearch/public/vong-quay-may-man/index.php",
+		"/C/wamp/www/vinaresearch/public/vong-quay-may-man/common/js/init.js",
+		"/C/wamp/www/vinaresearch/application/templates/_common/app_id_iOS_android.php"
+	],
+	"find":
+	{
+		"height": 74.0
+	},
+	"find_in_files":
+	{
+		"height": 158.0,
+		"where_history":
+		[
+			"C:\\wamp\\www\\vinaresearch\\public\\",
+			"C:\\wamp\\www\\vinaresearch\\public\\christmas2016",
+			"C:\\wamp\\www\\vinaresearch\\",
+			"C:\\wamp\\www\\vinaresearch\\public\\christmas2016",
+			"C:\\wamp\\www\\vinaresearch\\puclic\\christmas2016",
+			"C:\\wamp\\www\\vinaresearch\\application",
+			"<open folders>",
+			"",
+			"C:\\wamp\\www\\Remojob_Ph2\\htdocs\\company",
+			"",
+			".html",
+			"",
+			"*.phtml",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"ajax",
+			"uckyWheelPrize",
+			"this",
+			"rememberMe",
+			"username",
+			"form",
+			"login",
+			"(2)",
+			"//",
+			"shuffleArray",
+			"(\"click\",_this.rotateObject",
+			"this",
+			"shuffleArray",
+			"wheelRotate",
+			"background: $",
+			"vmin",
+			"5vmin",
+			"overflow",
+			"70vh",
+			"300px",
+			"data-",
+			"15p",
+			"brightness(1)",
+			"brightness",
+			"       ",
+			"      ",
+			"     ",
+			"    ",
+			"50%",
+			";",
+			"{",
+			"$selector",
+			"translate(-50%,-80%) ",
+			"        -webkit-transform: translate(-50%,-80%)\n        -ms-transform: translate(-50%,-80%)\n        -o-transform: translate(-50%,-80%)\n        transform: translate(-50%,-80%)",
+			")\n",
+			"30%",
+			"30vw",
+			"translateY(-80%)",
+			"8",
+			"80",
+			"_",
+			";",
+			"$cardThumb",
+			"Round",
+			").",
+			"bonusPoint_",
+			"int((",
+			"intO",
+			"int",
+			"$data",
+			"$value",
+			"width: 45%",
+			"display: 100%",
+			"pointOrg1",
+			"bonusPts",
+			"$(this)",
+			"setBonusPointBtn_",
+			"onfocus='setBonusPoint()'",
+			"data-idcard",
+			"setBonusPoint",
+			"updateFBIdbyUserID",
+			"$value",
+			"validateBlockedDomain",
+			"+",
+			"unblock_list",
+			"sendmailbanaccount",
+			"\\",
+			"register",
+			"validateBlockedDomain",
+			"application\\files",
+			"validateBlockedDomain",
+			"id",
+			"->toArray()",
+			"from(\"user\"",
+			"like",
+			"LIKE",
+			"like",
+			"$where",
+			"Username LIKE ?",
+			"where",
+			"Username LIKE ?",
+			"toBlob",
+			"backgroundEle",
+			"mouseMove",
+			"mousemove",
+			"mouseMove",
+			"mousemove",
+			"mouseMove",
+			"const",
+			"let",
+			"drawImage",
+			"_draw",
+			"FB",
+			"popup",
+			"Login",
+			"ajax",
+			"Direction",
+			"imagecopyresized",
+			"Avatar",
+			"$path",
+			"$url",
+			"str_replace('\\n'",
+			"array('\\r\\n', '\\r'), ",
+			"str_replace(array('\\r', '\\n')",
+			"Title));?",
+			"str_replace(array('\\r', '\\n'),'',",
+			"'/\\r|\\n/'",
+			"/\\r|\\n/",
+			"PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\"",
+			"http://",
+			"hasObject",
+			"\\",
+			"\"",
+			"removeParam(\"share\",window.location.href)",
+			"$data->ogId",
+			"=======",
+			"======",
+			"=====",
+			"<<<<<<",
+			"<<<<<",
+			"<<<<",
+			"<<<<<<<",
+			"requestAnimationFrame",
+			"\\",
+			"TheMagicFromLove",
+			"23TheMagicFromLove",
+			"href=\"javascript:void\">",
+			"$cardImageFolder"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"common/css/merge_pc.css",
+			"data-report_id",
+			"data-ori-src",
+			"data-report_id",
+			".slider_rw_block",
+			"<nav class=\"fr\" id=\"nav_03\">\n                <",
+			"class=\"align_r\"",
+			"class=\"align_r ",
+			"class=\"align_r\"",
+			"class=\"align_c add_container\"",
+			"class=\"align_c\"",
+			"class=\"align_c ",
+			" class=\"align_r ",
+			" class=\"align_r\"",
+			" class=\"fr\"",
+			"blue_lighter_btn ",
+			"data-approve-ceo",
+			"dy Lau <img class=\"fr user_arrow\" src=\"img/icon_next_on.png\" alt=\"\" />",
+			"<a href=\"#\" class=\"change_point_btn circle_btn sp\">Change Points</a",
+			".change_point_btn",
+			"",
+			".search_btn",
+			"gray_btn",
+			"Before they sold out meggings irony, scenester tofu gentr...",
+			"<p class=\"blog_title\">\n\t\t\t\t\t\t\t\t\t\t\t\tSkateboard williamsburg\n\t\t\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t\t\t\t<p class=\"review_text\">",
+			"<p class=\"blog_title\">\n\t\t\t\t\t\t\t\t\t\t\t\tSkateboard williamsburg\n\t\t\t\t\t\t\t\t\t\t\t</p><p class=\"review_text\">",
+			"review_text",
+			"<a href=\"#\"><h2 class=\"blog_title\">Godard thundercats health goth</h2></a>",
+			"<a class=\"author_name orange_text\" href=\"#\">Adelle ",
+			"Adelle Charles</a>",
+			"<a class=\"author_name orange_text\">",
+			"aria-valuenow=\"\"",
+			"aria-valuemax=\"\" aria-valuenow=\"\"",
+			"aria-valuemax=\" aria-valuenow=\"",
+			"data-text-search",
+			"data-count-num",
+			"",
+			"data-show-text",
+			"search_selection",
+			"<a href=\"javascript:void(0)\" class=\"grid-qes",
+			"</a>\n\t\t\t\t\t\t\t\t\t<p class=\"grid-ans\">",
+			"a class=\"grid-qes",
+			"revert",
+			"class=\"radar_chart",
+			"Write your answer4\n\t\t\t\t\t\t\t\t\t\tWrite your answer",
+			"Write your answer3\n\t\t\t\t\t\t\t\t\t\tWrite your answer",
+			"Write your answer2\n\t\t\t\t\t\t\t\t\t\tWrite your answer",
+			"data-spl_ans",
+			"current-ins-ar-step",
+			"current-ins-ar-done",
+			"_des_step_02.png",
+			"label",
+			"",
+			": ",
+			"",
+			"\t",
+			"",
+			"\t",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14077,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9891,
+								9891
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme-Darker.tmTheme",
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 6867.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "common/js/loginUser.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2359,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								2359
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										2358,
+										2359
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										97,
+										98
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme-Darker.tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 308.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/wamp/www/vinaresearch/application/modules/default/controllers/IndexController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 130721,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme-Darker.tmTheme",
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 36911.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/wamp/www/vinaresearch/public/christmas2016/login.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4682,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4396,
+								4396
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										4417,
+										4418
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										4352,
+										4353
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme-Darker.tmTheme",
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2285.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "common/js/init.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 470,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								266,
+								266
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										265,
+										266
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/round_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										15,
+										16
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme-Darker.tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 15457,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9124,
+								9088
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										9122,
+										9123
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/tag.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										9089,
+										9090
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme-Darker.tmTheme",
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 7099.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 6,
+					"file": "common/sass/layout.sass",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 19648,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9988,
+								9988
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme-Darker.tmTheme",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 7766.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "common/sass/function.sass",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1599,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1416,
+								1414
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme-Darker.tmTheme",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 435.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "common/sass/import.sass",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 159,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								159,
+								159
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme-Darker.tmTheme",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "common/sass/layout_sp.sass",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme-Darker.tmTheme",
+							"open_with_edit": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 36.0
+	},
+	"input":
+	{
+		"height": 69.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.466198979592,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.find_results":
+	{
+		"height": 130.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 130.0
+	},
+	"pinned_build_system": "",
+	"project": "Test2017_campaign.sublime-project",
+	"replace":
+	{
+		"height": 68.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"indexcontroller",
+				"vinaresearch\\application\\modules\\default\\controllers\\IndexController.php"
+			],
+			[
+				"modelwheelprize",
+				"vinaresearch\\application\\modules\\api-campaign\\models\\LuckyWheelPrize.php"
+			],
+			[
+				"modelwheel",
+				"vinaresearch\\application\\modules\\game\\views\\scripts\\index\\golden-wheel.phtml"
+			],
+			[
+				"wheel",
+				"Tet2017_campaign\\common\\js\\wheelObs.js"
+			],
+			[
+				"modelprize",
+				"vinaresearch\\application\\modules\\api-campaign\\models\\LuckyWheelPrize.php"
+			],
+			[
+				"layout",
+				"Tet2017_campaign\\common\\sass\\layout.sass"
+			],
+			[
+				"christmas-cam",
+				"vinaresearch\\application\\modules\\admin\\views\\scripts\\cmp\\christmas-campaign.phtml"
+			],
+			[
+				"cmpcontro",
+				"vinaresearch\\application\\modules\\admin\\controllers\\CmpController.php"
+			],
+			[
+				"registercontroller",
+				"vinaresearch\\application\\modules\\default\\controllers\\RegisterController.php"
+			],
+			[
+				"registercon",
+				"vinaresearch\\application\\modules\\api\\controllers\\RegisterController.php"
+			],
+			[
+				"vn",
+				"vinaresearch\\application\\files\\vn_ip_range.php"
+			],
+			[
+				"action",
+				"vinaresearch\\library\\VnLib\\Controller\\Action.php"
+			],
+			[
+				"modulechri",
+				"vinaresearch\\application\\modules\\default\\models\\ChristmasCard.php"
+			],
+			[
+				"modulehis",
+				"vinaresearch\\application\\modules\\default\\models\\HistoryBonus.php"
+			],
+			[
+				"fancybox-1.3.4.js",
+				"vinaresearch\\public\\fancybox\\jquery.fancybox-1.3.4.js"
+			],
+			[
+				"defaultindexctl",
+				"vinaresearch\\application\\modules\\default\\controllers\\IndexController.php"
+			],
+			[
+				"indexcontroler",
+				"vinaresearch\\application\\modules\\admin\\controllers\\IndexController.php"
+			],
+			[
+				"usercon",
+				"vinaresearch\\application\\modules\\api\\controllers\\UserController.php"
+			],
+			[
+				"library/vnlib/controller/action/helper/upload.php",
+				"vinaresearch\\library\\VnLib\\Controller\\Action\\Helper\\Upload.php"
+			],
+			[
+				"public/christmas2016/submit-card.php",
+				"vinaresearch\\public\\christmas2016\\submit-card.php"
+			],
+			[
+				"public/christmas2016/meta.php",
+				"vinaresearch\\public\\christmas2016\\meta.php"
+			],
+			[
+				"public/christmas2016/make-card.php",
+				"vinaresearch\\public\\christmas2016\\make-card.php"
+			],
+			[
+				"",
+				"vinaresearch\\public\\christmas2016\\common\\js\\FBloadAjax.js"
+			],
+			[
+				"public/christmas2016/index.php",
+				"vinaresearch\\public\\christmas2016\\index.php"
+			],
+			[
+				"public/christmas2016/common/js/fbloadajax.js",
+				"vinaresearch\\public\\christmas2016\\common\\js\\FBloadAjax.js"
+			],
+			[
+				"public/christmas2016/card-list.php",
+				"vinaresearch\\public\\christmas2016\\card-list.php"
+			],
+			[
+				"public/christmas2016/card-detail.php",
+				"vinaresearch\\public\\christmas2016\\card-detail.php"
+			],
+			[
+				"christman",
+				"vinaresearch\\application\\modules\\admin\\views\\scripts\\cmp\\christmas-campaign.phtml"
+			],
+			[
+				"chris",
+				"vinaresearch\\application\\modules\\default\\models\\ChristmasCard.php"
+			],
+			[
+				"httpschecker",
+				"vinaresearch\\library\\VnLib\\Controller\\Action\\Helper\\Admin\\HttpsChecker.php"
+			],
+			[
+				"func_zendbootstrap.php",
+				"vinaresearch\\public\\christmas2016\\func_ZendBootstrap.php"
+			],
+			[
+				"public/christmas2016/getdetail_card.php",
+				"vinaresearch\\public\\christmas2016\\getDetail_card.php"
+			],
+			[
+				"usercontr",
+				"vinaresearch\\application\\modules\\api\\controllers\\UserController.php"
+			],
+			[
+				"usercontro",
+				"vinaresearch\\application\\modules\\default\\controllers\\UserController.php"
+			],
+			[
+				"chritstm",
+				"vinaresearch\\application\\modules\\admin\\views\\scripts\\cmp\\christmas-campaign.phtml"
+			],
+			[
+				"canvas",
+				"vinaresearch\\public\\christmas2016\\common\\js\\canvas.js"
+			],
+			[
+				"login",
+				"vinaresearch\\public\\christmas2016\\login.php"
+			],
+			[
+				"user",
+				"vinaresearch\\application\\modules\\default\\models\\User.php"
+			],
+			[
+				"userc",
+				"vinaresearch\\application\\modules\\api\\controllers\\UserController.php"
+			],
+			[
+				"indexcon",
+				"vinaresearch\\application\\modules\\default\\controllers\\IndexController.php"
+			],
+			[
+				"application/templates/mobile/afterlogin/afterlogin.phtml",
+				"vinaresearch\\application\\templates\\mobile\\afterlogin\\afterlogin.phtml"
+			],
+			[
+				"application/new_design/default_index_login.php",
+				"vinaresearch\\application\\new_design\\default_index_login.php"
+			],
+			[
+				"pointcon",
+				"vinaresearch\\application\\modules\\api\\controllers\\PointController.php"
+			],
+			[
+				"upload",
+				"vinaresearch\\library\\VnLib\\Controller\\Action\\Helper\\Upload.php"
+			],
+			[
+				"modeluser",
+				"vinaresearch\\application\\modules\\default\\models\\User.php"
+			],
+			[
+				"submit",
+				"vinaresearch\\public\\christmas2016\\submit-card.php"
+			],
+			[
+				"pointcontroll",
+				"vinaresearch\\application\\modules\\api\\controllers\\PointController.php"
+			],
+			[
+				"indexcontr",
+				"vinaresearch\\application\\modules\\admin\\controllers\\IndexController.php"
+			],
+			[
+				"helper",
+				"vinaresearch\\min\\lib\\Minify\\HTML\\Helper.php"
+			],
+			[
+				"default_index_login",
+				"vinaresearch\\application\\new_design\\default_index_login.php"
+			],
+			[
+				"default/indexcontrol",
+				"vinaresearch\\application\\modules\\default\\controllers\\IndexController.php"
+			],
+			[
+				"logout",
+				"vinaresearch\\application\\modules\\game\\views\\scripts\\othello\\logout.phtml"
+			],
+			[
+				"configba",
+				"vinaresearch\\application\\batch\\configs\\configBatch.php"
+			],
+			[
+				"create",
+				"vinaresearch\\library\\VnLib\\View\\Helper\\CreateChristmasToken.php"
+			],
+			[
+				"createwheeltoken",
+				"vinaresearch\\library\\VnLib\\View\\Helper\\CreateWheelToken.php"
+			],
+			[
+				"et-survey-thank.phtml",
+				"vinaresearch\\application\\modules\\default\\views\\scripts\\survey\\tet-survey-thank.phtml"
+			],
+			[
+				"tet-survey.phtml",
+				"vinaresearch\\application\\modules\\default\\views\\scripts\\survey\\tet-survey.phtml"
+			],
+			[
+				"/application/templates/tet2017_campaign/common/",
+				"vinaresearch\\application\\templates\\tet2017_campaign\\common\\css\\main.css"
+			],
+			[
+				"css/reset.css",
+				"public\\gioi-thieu-ban\\common\\css\\reset.css"
+			],
+			[
+				"reset.css",
+				"application\\templates\\landing\\css\\reset.css"
+			],
+			[
+				"main.css",
+				"application\\templates\\default\\afterlogin\\css\\lucky-wheel-monthly\\main.css"
+			],
+			[
+				"lucky-wheel-regular",
+				"application\\templates\\default\\afterlogin\\js\\lucky-wheel-monthly\\lucky-wheel-regular.js"
+			],
+			[
+				"andriod",
+				"application\\templates\\mobile\\default\\common\\js\\detect_android.js"
+			],
+			[
+				"mani",
+				"manifest.json"
+			],
+			[
+				"info-sut",
+				"application\\modules\\default\\views\\scripts\\index\\info-survey.phtml"
+			],
+			[
+				"info-s",
+				"application\\modules\\admin\\views\\scripts\\survey\\info-survey.phtml"
+			],
+			[
+				"resultqq",
+				"application\\modules\\default\\views\\scripts\\index\\resultqquestion.phtml"
+			],
+			[
+				"public-",
+				"application\\modules\\default\\views\\scripts\\index\\public-survey.phtml"
+			],
+			[
+				"private-sur",
+				"application\\modules\\default\\views\\scripts\\index\\private-survey.phtml"
+			],
+			[
+				"application/templates/default/default/index.phtml",
+				"application\\templates\\default\\default\\index.phtml"
+			],
+			[
+				"public/vina-app/index.html",
+				"public\\vina-app\\index.html"
+			],
+			[
+				"application/modules/default/views/scripts/index/index.phtml",
+				"application\\modules\\default\\views\\scripts\\index\\index.phtml"
+			],
+			[
+				"dindex.pthml",
+				"application\\templates\\default\\default\\index.phtml"
+			],
+			[
+				"defaultindex.pht",
+				"application\\modules\\default\\views\\scripts\\index\\index.phtml"
+			],
+			[
+				"merge_p",
+				"common\\css\\merge_pc.css"
+			],
+			[
+				"job_de",
+				"job_details.html"
+			],
+			[
+				"init.js",
+				"common\\js\\init.js"
+			],
+			[
+				"index",
+				"index_new.html"
+			],
+			[
+				"index_new",
+				"index_new.html"
+			],
+			[
+				"pro",
+				"profile_resume.html"
+			],
+			[
+				"review",
+				"review_details.html"
+			],
+			[
+				"profile",
+				"profile_resume.html"
+			],
+			[
+				"init",
+				"common\\js\\init.js"
+			],
+			[
+				"inde",
+				"index_new.html"
+			],
+			[
+				"blog",
+				"blog_home.html"
+			],
+			[
+				"imp",
+				"common\\css\\import.css"
+			],
+			[
+				"index_nte",
+				"index_new.html"
+			],
+			[
+				"merge",
+				"common\\css\\merge_pc.css"
+			],
+			[
+				"bx",
+				"common\\css\\jquery.bxslider.css"
+			],
+			[
+				"merge_pc.css",
+				"common\\css\\merge_pc.css"
+			],
+			[
+				"common",
+				"common\\js\\common.js"
+			],
+			[
+				"index_new.html",
+				"index_new.html"
+			],
+			[
+				"header",
+				"min\\vendor\\tubalmartin\\cssmin\\tests\\yui\\dollar-header.css"
+			],
+			[
+				"merg",
+				"common\\css\\merge_pc.css"
+			],
+			[
+				"search",
+				"search.html"
+			],
+			[
+				"slara",
+				"salary_search.html"
+			],
+			[
+				"indec",
+				"common\\css\\index_new.css"
+			],
+			[
+				"import",
+				"common\\css\\import.css"
+			],
+			[
+				"after",
+				"after_login.html"
+			],
+			[
+				"merge_pc",
+				"common\\css\\merge_pc.css"
+			],
+			[
+				"chart",
+				"common\\js\\Chart.js"
+			],
+			[
+				"merge_sp",
+				"common\\css\\merge_sp.css"
+			],
+			[
+				"add",
+				"add_review.html"
+			],
+			[
+				"mers",
+				"common\\css\\merge_sp.css"
+			],
+			[
+				"addreiv",
+				"public\\layout\\user\\afterlogin\\js\\add_review.js"
+			],
+			[
+				"addrevi",
+				"public\\layout\\user\\afterlogin\\js\\add_review.js"
+			],
+			[
+				"mer",
+				"public\\layout\\user\\common\\common\\css\\merge_pc.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\wamp\\www\\vinaresearch.sublime-project"
+			],
+			[
+				"yim",
+				"C:\\wamp\\www\\yimresearch.sublime-project"
+			],
+			[
+				"re",
+				"C:\\wamp\\www\\remo\\remo.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 1,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 352.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

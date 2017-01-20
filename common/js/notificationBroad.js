@@ -1,7 +1,8 @@
 function notificationBroad(obs="") {
-    this.Obj = obs;
-    this.title = this.Obj.find(".broad-title");
-    this.messageContent = this.Obj.find(".notificationMessage");
+    var _this = this;
+    _this.Obj = obs;
+    _this.title = _this.Obj.find(".broad-title");
+    _this.messageContent = _this.Obj.find(".notificationMessage");
 }
 
 // notificationBroad.prototype
@@ -25,7 +26,24 @@ notificationBroad.prototype.setTakePoint = function(pointValue){
     // messageAppend
     var message = "Bạn đã quay được vào ô"
     messageAppend.append(message);
-    messageAppend.appendChild(pointAppend);
-    messageAppend.appendChild(document.createTextNode(" điểm"));
+    messageAppend.append(pointAppend);
+    messageAppend.append(document.createTextNode(" điểm"));
     _this.setMessage(messageAppend);
+}
+
+notificationBroad.prototype.setLoginForm = function(){
+    var _this = this;
+    _this.slideUp();
+    setTimeout(function(){
+        _this.setTitle("Đăng nhập");
+
+        var lgUser = new loginUser();
+        _this.setMessage(lgUser.createForm());
+    },300)
+}
+
+notificationBroad.prototype.slideUp = function(){
+    var _this = this;
+    // console.log(1);
+    _this.messageContent.children().slideUp();
 }

@@ -5,8 +5,10 @@ function Wheel() {
     this.rotateObject = this.selector.find('#wheelRotate');
     this.rotateObjs = this.rotateObject.find("[data-number]");
 
-    var points_array = [1, 1, 1, 1, 1, 1, 1, 1, 5, 5, 5, 5, 20, 20, 20, 30, 30, 50, 300, 1000];
-    this.shuffleArray = shuffle(points_array);
+    // var points_array = [1, 1, 1, 1, 1, 1, 1, 1, 5, 5, 5, 5, 20, 20, 20, 30, 30, 50, 300, 1000];
+    var points_array = [1, 20, 1, 5, 1, 1000, 1, 20, 5, 300, 1, 20,1, 5, 30, 5, 1, 30,  1, 50];
+    this.shuffleArray = points_array;
+    // this.shuffleArray = shuffle(points_array);
 
     this.bindingPoint = function() {
         for (i = 0; i < this.shuffleArray.length; i++) {
