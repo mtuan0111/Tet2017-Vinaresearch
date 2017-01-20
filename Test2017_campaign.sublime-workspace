@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"init",
+				"initial\t(main.css)"
+			],
+			[
 				"current",
 				"current_user\t(index.html)"
 			],
@@ -510,10 +514,6 @@
 			[
 				"slod",
 				"solid"
-			],
-			[
-				"orang",
-				"orange_text\t(index_new.css)"
 			]
 		]
 	},
@@ -541,7 +541,7 @@
 			"file": "/C/wamp/www/vinaresearch/application/modules/default/controllers/IndexController.php",
 			"settings":
 			{
-				"buffer_size": 131142,
+				"buffer_size": 131144,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -603,7 +603,7 @@
 			"file": "common/sass/layout_sp.sass",
 			"settings":
 			{
-				"buffer_size": 679,
+				"buffer_size": 1031,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -621,7 +621,7 @@
 			"file": "common/css/main.css",
 			"settings":
 			{
-				"buffer_size": 35693,
+				"buffer_size": 35935,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -1258,8 +1258,8 @@
 						"selection":
 						[
 							[
-								1174,
-								1174
+								2034,
+								1986
 							]
 						],
 						"settings":
@@ -1271,15 +1271,15 @@
 								{
 									"1":
 									[
-										2358,
-										2359
+										2033,
+										2034
 									]
 								},
 								"icon":
 								{
 									"1":
 									[
-										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"Packages/BracketHighlighter/icons/round_bracket.png",
 										"brackethighlighter.default"
 									]
 								},
@@ -1287,8 +1287,8 @@
 								{
 									"1":
 									[
-										97,
-										98
+										2018,
+										2019
 									]
 								},
 								"unmatched":
@@ -1357,7 +1357,7 @@
 							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 308.0,
+						"translation.y": 1352.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
@@ -1369,7 +1369,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 131142,
+						"buffer_size": 131144,
 						"regions":
 						{
 						},
@@ -2060,8 +2060,8 @@
 						"selection":
 						[
 							[
-								2118,
-								2118
+								3948,
+								3948
 							]
 						],
 						"settings":
@@ -2071,12 +2071,27 @@
 							{
 								"close":
 								{
+									"1":
+									[
+										3947,
+										3948
+									]
 								},
 								"icon":
 								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/round_bracket.png",
+										"brackethighlighter.default"
+									]
 								},
 								"open":
 								{
+									"1":
+									[
+										3942,
+										3943
+									]
 								},
 								"unmatched":
 								{
@@ -2144,10 +2159,10 @@
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 2523.0,
+						"translation.y": 3915.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -2156,15 +2171,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 679,
+						"buffer_size": 1031,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								455,
-								455
+								706,
+								706
 							]
 						],
 						"settings":
@@ -2248,10 +2263,10 @@
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 270.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -2354,7 +2369,7 @@
 						"translation.y": 435.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
@@ -2363,7 +2378,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 35693,
+						"buffer_size": 35935,
 						"regions":
 						{
 						},
@@ -2371,7 +2386,7 @@
 						[
 							[
 								0,
-								35693
+								35935
 							]
 						],
 						"settings":
@@ -2459,7 +2474,7 @@
 							"syntax": "Packages/CSS/CSS.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 24150.0,
+						"translation.y": 23280.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,

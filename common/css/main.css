@@ -860,5 +860,10 @@ body {
 
   #circle-footer {
     .loginUsertop: 5vmax; } }
+@media (max-width: 800px) and (orientation: portrait) {
+  #circle-world .page-C .wrapper-container .broad-obs .broad-content {
+    max-height: 30vh; }
+  #circle-world .page-C .wrapper-container .broad-obs:hover {
+    max-height: initial; } }
 
 /*# sourceMappingURL=main.css.map */
