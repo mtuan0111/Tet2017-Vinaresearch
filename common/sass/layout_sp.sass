@@ -32,8 +32,6 @@ body
     .loginUsertop: 5vmax
 
 @media (orientation:portrait)
-    body
-        // background: red
     #circle-world
         .page-C
             .wrapper-container
@@ -43,4 +41,14 @@ body
                         max-height: 30vh
                     &:hover
                         max-height: initial
+
+@media (orientation:landscape)
+    #circle-footer
+        top: calc(100vh - 16vh)
+        .loginUser
+            top: 8vh
+        .bottomMenu
+            top: 16vh
+        &:hover
+            top: calc(100vh - 24vh)
 

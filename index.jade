@@ -20,7 +20,7 @@ html(lang="en")
                     img#building-N-02(src="common/img/building_HCM02.png")
                     img#building-N-03(src="common/img/building_HCM03.png")
                     img#building-N-04(src="common/img/building_HCM04.png")
-                .wrapper-container
+                .wrapper-container(draggable="true")
                     img.tree-bg(src="common/img/tree_S.png" alt="")
                     .broad-obs
                         .broadSling
@@ -80,7 +80,7 @@ html(lang="en")
                     img#building-C-02(src="common/img/building_HCM02.png")
                     img#building-C-03(src="common/img/building_HCM03.png")
                     img#building-C-04(src="common/img/building_HCM04.png")
-                .wrapper-container
+                .wrapper-container(draggable="true")
                     img.tree-bg(src="common/img/tree_S.png" alt="")
                     .wheel-obs
                         .wheelSling
@@ -129,7 +129,7 @@ html(lang="en")
                     img#building-S-02(src="common/img/building_HCM02.png")
                     img#building-S-03(src="common/img/building_HCM03.png")
                     img#building-S-04(src="common/img/building_HCM04.png")
-                .wrapper-container
+                .wrapper-container(draggable="true")
                     img.tree-bg(src="common/img/tree_S.png" alt="")
                     .broad-obs
                         .broadSling
@@ -251,11 +251,11 @@ html(lang="en")
           .newYear
             //- img(src="common/img/newYear.png" alt="Bính thân 2017")
           nav.bottomMenu
-            a(href="javascript:void(0)" data-page-target='N') Thể lệ
+            a(href="#N" data-page-target='N') Thể lệ
             span |
-            a(href="javascript:void(0)" data-page-target='C') Vòng quay
+            a(href="#C" data-page-target='C') Vòng quay
             span |
-            a(href="javascript:void(0)" data-page-target='S') Kết quả
+            a(href="#S" data-page-target='S') Kết quả
             span |
             a(href="javascript:void(0)" data-page-target='') Đăng xuất
         .content-inner

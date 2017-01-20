@@ -145,6 +145,11 @@ a {
   a:hover {
     text-decoration: underline; }
 
+.strongText {
+  color: #A53030;
+  font-weight: bold;
+  font-size: 125%; }
+
 #contents {
   overflow: hidden;
   min-width: 1200px;
@@ -845,7 +850,7 @@ a {
     -o-transform: translateX(-50%);
     transform: translateX(-50%); }
     #circle-footer .bottomMenu a {
-      margin: auto 10px; }
+      padding: 2vh; }
   #circle-footer a, #circle-footer span {
     color: #FFCB4E;
     text-decoration: none; }
@@ -881,5 +886,14 @@ a {
     max-height: 30vh; }
   #circle-world .page-C .wrapper-container .broad-obs:hover {
     max-height: initial; } }
+@media (max-width: 800px) and (orientation: landscape) {
+  #circle-footer {
+    top: calc(100vh - 16vh); }
+    #circle-footer .loginUser {
+      top: 8vh; }
+    #circle-footer .bottomMenu {
+      top: 16vh; }
+    #circle-footer:hover {
+      top: calc(100vh - 24vh); } }
 
 /*# sourceMappingURL=main.css.map */

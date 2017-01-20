@@ -34,6 +34,10 @@ a
     text-decoration: none
     &:hover
         text-decoration: underline
+.strongText
+    color: $red-light
+    font-weight: bold
+    font-size: 125%
 #contents
     overflow: hidden
     min-width: 1200px
@@ -567,7 +571,7 @@ a
         left: 50%
         @include transform(translateX(-50%))
         a
-            margin: auto 10px
+            padding: 2vh
             // & + a
             //     &:before
             //         content: "|"
