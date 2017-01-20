@@ -14,7 +14,25 @@ $(document).ready(function(){
         $("#circle-world").attr("class",page_target);
     });
 
+    // console.log($("*").length);
+    var arr = document.getElementsByTagName("img");
+    console.log(arr);
+    var arrCount = arr.length;
+      // typeof(arr)
+    // console.log(typeof(arr));
+    // console.log(arr);
+    var count = 0
+    for(var i=0; i<arrCount ;i++){
+      // console.log(arr[i])
+      count++ ;
+      arr[i].onload = function(){
+        console.log("loaded: " + count);
+      }
 
+    }
+    // arr.forEach(function(element) {
+    //     console.log(element);
+    // });
 })
 
 document.ondrag = function(event) {
