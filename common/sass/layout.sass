@@ -50,7 +50,7 @@ body
     height: 600vh
     min-width: inherit
     left: calc(50% - 300vh)
-    top: calc(100vh - 180px)
+    top: calc(100vh - 20vh)
 
     @include transitionTransform(1s)
 
@@ -123,7 +123,7 @@ body
             #building-S-03
                 left: 55%
         .wrapper-container
-            top: calc(-100vh + 180px)
+            top: calc(-100vh + 20vh)
             position: absolute
             height: 100vh
             width: 100vw
@@ -192,7 +192,7 @@ body
                             vertical-align: middle
                         &[type='submit']
                             display: block
-                            margin: 40px auto 10px
+                            margin: 3vh auto 1vh
                             background-color: $red-light
                             border: none
                             padding: 4%
@@ -375,20 +375,23 @@ body
                         height: 8vmin
                         margin: 0 auto
                         margin-bottom: -2px
+
+                $wheelSize: 55vmin
                 #wheelRotate
                     width: 600px
                     height: 600px
-                    width: calc(50vmin)
-                    height: calc(50vmin)
+                    width: $wheelSize
+                    height: $wheelSize
 
                     position: relative
                 .wheelPart
                     // position: absolute
+
                     background: url(../img/wheel_round.png) no-repeat center
                     background-size: contain
                     width: 100%
                     height: 100%
-                    border-radius: 50vmin
+                    border-radius: $wheelSize
                     cursor: pointer
                     position: relative
                     .wheel_num
@@ -419,6 +422,7 @@ body
                     @include transform(translate(-50%,-50%))
                     background: url(../img/wheelCenter.png) no-repeat center
                     background-size: contain
+                    pointer-events: none
                 .pointPointer
                     position: absolute
                     background: $red-light
@@ -467,11 +471,13 @@ body
     height: 800vh
     min-width: inherit
     left: calc(50% - 400vh)
-    top: calc(100vh - 12vmax)
+    top: calc(100vh - 12vh)
     text-align: center
+    opacity: 0.9
     @include transition(top 0.4s)
     &:hover
-        top: calc(100vh - 18vmax)
+        top: calc(100vh - 18vh)
+        opacity: 1
     // .countdown-broad
     .loginUser
         position: absolute
@@ -489,14 +495,14 @@ body
     .loginUser
         color: $yellow
         position: absolute
-        top: 6vmax
+        top: 6vh
         left: calc(50%)
         @include transform(translate(-50%, -50%))
         a,span
             color: $yellow
             text-decoration: none
-            border: 0.2vmax solid $yellow
-            padding: 5px 15px
+            border: 0.2vh solid $yellow
+            padding: 0.4vh 1vh
             border-radius: 10px
             background-color: $red-light
             display: inline-block
@@ -506,14 +512,14 @@ body
             &:before, &:after
                 content: ''
                 position: absolute
-                height: 0.2vmax
+                height: 0.2vh
                 width: 100%
-                top: -5px
+                top: -0.45vh
                 left: 0
                 background-color: $yellow
             &:after
                 top: initial
-                bottom: -5px
+                bottom: -0.45vh
             &:hover:not(span)
                 color: $red-dark
                 background-color: $yellow
@@ -524,12 +530,12 @@ body
             height: 150%
             width: 100%
             top: -25%
-            left: calc(-50% - 1.5vmax)
+            left: calc(-50% - 1.5vh)
             background: url(../img/broadLogin.png) no-repeat center
             background-size: contain
         &:after
             @include transform(scaleX(-1))
-            right: calc(-50% - 1.5vmax)
+            right: calc(-50% - 1.5vh)
             left: initial
             // margin-: -18px
 
@@ -547,7 +553,7 @@ body
     .newYear
     .bottomMenu
         position: absolute
-        top: 12vmax
+        top: 12vh
         left: 50%
         @include transform(translateX(-50%))
         a

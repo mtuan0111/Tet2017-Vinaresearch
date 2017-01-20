@@ -7,13 +7,19 @@ body
                 width: 96%
                 .broad-content
                     width: calc(90%)
+                    max-height: 65vh
+                    &:hover
+                        max-height: 70vh
                     .broad-title
                         &:before, &:after
                             content: initial
                 &.small
                     width: calc(90vmin)
                     margin-left: calc((100vw - 90vmin)/10)
-
+                    .broad-content
+                        padding: 5vmin 10vmin
 #circle-footer
     .loginUsertop: 5vmax
+
+
 

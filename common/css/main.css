@@ -162,7 +162,7 @@ body {
   height: 600vh;
   min-width: inherit;
   left: calc(50% - 300vh);
-  top: calc(100vh - 180px);
+  top: calc(100vh - 20vh);
   -webkit-transition: -webkit-transform 1s;
   -o-transition: -o-transform 1s;
   transition: transform 1s, -o-transform 1s; }
@@ -276,7 +276,7 @@ body {
     #circle-world [class^='page-'].page-S #building-S-03 {
       left: 55%; }
   #circle-world [class^='page-'] .wrapper-container {
-    top: calc(-100vh + 180px);
+    top: calc(-100vh + 20vh);
     position: absolute;
     height: 100vh;
     width: 100vw;
@@ -352,7 +352,7 @@ body {
         vertical-align: middle; }
       #circle-world [class^='page-'] .wrapper-container .broad-obs .login-form input[type='submit'] {
         display: block;
-        margin: 40px auto 10px;
+        margin: 3vh auto 1vh;
         background-color: #A53030;
         border: none;
         padding: 4%;
@@ -541,15 +541,15 @@ body {
       #circle-world [class^='page-'] .wrapper-container .wheel-obs #wheelRotate {
         width: 600px;
         height: 600px;
-        width: calc(50vmin);
-        height: calc(50vmin);
+        width: 55vmin;
+        height: 55vmin;
         position: relative; }
       #circle-world [class^='page-'] .wrapper-container .wheel-obs .wheelPart {
         background: url(../img/wheel_round.png) no-repeat center;
         background-size: contain;
         width: 100%;
         height: 100%;
-        border-radius: 50vmin;
+        border-radius: 55vmin;
         cursor: pointer;
         position: relative; }
         #circle-world [class^='page-'] .wrapper-container .wheel-obs .wheelPart .wheel_num {
@@ -687,7 +687,8 @@ body {
         -o-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         background: url(../img/wheelCenter.png) no-repeat center;
-        background-size: contain; }
+        background-size: contain;
+        pointer-events: none; }
       #circle-world [class^='page-'] .wrapper-container .wheel-obs .pointPointer {
         position: absolute;
         background: #A53030;
@@ -742,13 +743,15 @@ body {
   height: 800vh;
   min-width: inherit;
   left: calc(50% - 400vh);
-  top: calc(100vh - 12vmax);
+  top: calc(100vh - 12vh);
   text-align: center;
+  opacity: 0.9;
   -webkit-transition: top 0.4s;
   -o-transition: top 0.4s;
   transition: top 0.4s; }
   #circle-footer:hover {
-    top: calc(100vh - 18vmax); }
+    top: calc(100vh - 18vh);
+    opacity: 1; }
   #circle-footer .loginUser {
     position: absolute;
     background-size: contain;
@@ -761,7 +764,7 @@ body {
   #circle-footer .loginUser {
     color: #FFCB4E;
     position: absolute;
-    top: 6vmax;
+    top: 6vh;
     left: calc(50%);
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -770,8 +773,8 @@ body {
     #circle-footer .loginUser a, #circle-footer .loginUser span {
       color: #FFCB4E;
       text-decoration: none;
-      border: 0.2vmax solid #FFCB4E;
-      padding: 5px 15px;
+      border: 0.2vh solid #FFCB4E;
+      padding: 0.4vh 1vh;
       border-radius: 10px;
       background-color: #A53030;
       display: inline-block;
@@ -783,14 +786,14 @@ body {
       #circle-footer .loginUser a:before, #circle-footer .loginUser a:after, #circle-footer .loginUser span:before, #circle-footer .loginUser span:after {
         content: "";
         position: absolute;
-        height: 0.2vmax;
+        height: 0.2vh;
         width: 100%;
-        top: -5px;
+        top: -0.45vh;
         left: 0;
         background-color: #FFCB4E; }
       #circle-footer .loginUser a:after, #circle-footer .loginUser span:after {
         top: initial;
-        bottom: -5px; }
+        bottom: -0.45vh; }
       #circle-footer .loginUser a:hover:not(span), #circle-footer .loginUser span:hover:not(span) {
         color: #932222;
         background-color: #FFCB4E; }
@@ -801,7 +804,7 @@ body {
       height: 150%;
       width: 100%;
       top: -25%;
-      left: calc(-50% - 1.5vmax);
+      left: calc(-50% - 1.5vh);
       background: url(../img/broadLogin.png) no-repeat center;
       background-size: contain; }
     #circle-footer .loginUser:after {
@@ -809,7 +812,7 @@ body {
       -ms-transform: scaleX(-1);
       -o-transform: scaleX(-1);
       transform: scaleX(-1);
-      right: calc(-50% - 1.5vmax);
+      right: calc(-50% - 1.5vh);
       left: initial; }
     #circle-footer .loginUser .span[class*='user'] {
       font-size: 80%; }
@@ -821,7 +824,7 @@ body {
         font-size: 50%; }
   #circle-footer .bottomMenu {
     position: absolute;
-    top: 12vmax;
+    top: 12vh;
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
@@ -833,19 +836,24 @@ body {
     color: #FFCB4E;
     text-decoration: none; }
 
-@media (max-width: 640px) {
+@media (max-width: 800px) {
   body {
     font-size: 4vmin; }
 
   #circle-world [class^='page-'] .wrapper-container .broad-obs {
     width: 96%; }
     #circle-world [class^='page-'] .wrapper-container .broad-obs .broad-content {
-      width: calc(90%); }
+      width: calc(90%);
+      max-height: 65vh; }
+      #circle-world [class^='page-'] .wrapper-container .broad-obs .broad-content:hover {
+        max-height: 70vh; }
       #circle-world [class^='page-'] .wrapper-container .broad-obs .broad-content .broad-title:before, #circle-world [class^='page-'] .wrapper-container .broad-obs .broad-content .broad-title:after {
         content: initial; }
     #circle-world [class^='page-'] .wrapper-container .broad-obs.small {
       width: calc(90vmin);
       margin-left: calc((100vw - 90vmin)/10); }
+      #circle-world [class^='page-'] .wrapper-container .broad-obs.small .broad-content {
+        padding: 5vmin 10vmin; }
 
   #circle-footer {
     .loginUsertop: 5vmax; } }
