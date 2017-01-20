@@ -764,7 +764,7 @@ body {
     #circle-footer .loginUser a, #circle-footer .loginUser span {
       color: #FFCB4E;
       text-decoration: none;
-      border: 2px solid #FFCB4E;
+      border: 0.2vmax solid #FFCB4E;
       padding: 5px 15px;
       border-radius: 10px;
       background-color: #A53030;
@@ -777,7 +777,7 @@ body {
       #circle-footer .loginUser a:before, #circle-footer .loginUser a:after, #circle-footer .loginUser span:before, #circle-footer .loginUser span:after {
         content: "";
         position: absolute;
-        height: 2px;
+        height: 0.2vmax;
         width: 100%;
         top: -5px;
         left: 0;
