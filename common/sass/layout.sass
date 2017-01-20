@@ -460,11 +460,11 @@ body
     height: 800vh
     min-width: inherit
     left: calc(50% - 400vh)
-    top: calc(100vh - 120px)
+    top: calc(100vh - 10vmax)
     text-align: center
     @include transition(top 0.4s)
     &:hover
-        top: calc(100vh - 180px)
+        top: calc(100vh - 20vmax)
     // .countdown-broad
     .loginUser
         position: absolute
@@ -482,7 +482,7 @@ body
     .loginUser
         color: $yellow
         position: absolute
-        top: 60px
+        top: 5vmax
         left: calc(50%)
         @include transform(translate(-50%, -50%))
         a,span
@@ -517,12 +517,12 @@ body
             height: 150%
             width: 100%
             top: -25%
-            left: calc(-50% - 18px)
+            left: calc(-50% - 1.5vmax)
             background: url(../img/broadLogin.png) no-repeat center
             background-size: contain
         &:after
             @include transform(scaleX(-1))
-            right: calc(-50% - 18px)
+            right: calc(-50% - 1.5vmax)
             left: initial
             // margin-: -18px
 
