@@ -736,7 +736,7 @@ body {
   height: 800vh;
   min-width: inherit;
   left: calc(50% - 400vh);
-  top: calc(100vh - 10vmax);
+  top: calc(100vh - 12vmax);
   text-align: center;
   -webkit-transition: top 0.4s;
   -o-transition: top 0.4s;
@@ -755,7 +755,7 @@ body {
   #circle-footer .loginUser {
     color: #FFCB4E;
     position: absolute;
-    top: 5vmax;
+    top: 6vmax;
     left: calc(50%);
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -815,7 +815,7 @@ body {
         font-size: 50%; }
   #circle-footer .bottomMenu {
     position: absolute;
-    top: 120px;
+    top: 12vmax;
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
