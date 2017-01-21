@@ -37,8 +37,47 @@ $(document).ready(function(){
     // });
 })
 
+var angleDrag = 0;
 document.ondrag = function(event) {
-    console.log(1);
+    if((event.x-angleDrag)!=0){
+        console.log(event.x-angleDrag);
+        angleDrag = event.x;
+
+
+        $({
+            deg: current_deg
+        }).animate({
+            deg: deg_rotate
+        }, {
+            duration: rotate_duration,
+            easing: "easeOutQuart",
+            specialEasing: "easeOutQuart",
+            step: function(now) {
+                elem.css({
+                    '-webkit-transform': "rotate(" + now + "deg)",
+                    '-moz-transform': "rotate(" + now + "deg)",
+                    '-ms-transform': "rotate(" + now + "deg)",
+                    '-o-transform': "rotate(" + now + "deg)",
+                    'transform': "rotate(" + now + "deg)"
+                });
+                //- elem.style.transform="rotate(" + now + "deg)";
+            },
+            done: function() {
+                $(document).on('click', "#rotate-wheel", function() {
+                    wheel_action(200);
+                });
+                //- console.log(point_peace);
+                $(".point-result").attr("data-score", points_array[point_peace]);
+                //- console.log(get_current_rotate("rotate-wheel"));
+            },
+        });
+
+
+    }
+    else{}
+
+    event.preventDefault();
+    return false;
 };
 
 $(window).load(function(){
