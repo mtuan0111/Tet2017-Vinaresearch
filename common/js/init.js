@@ -14,6 +14,8 @@ $(document).ready(function(){
         $("#circle-world").attr("class",page_target);
     });
 
+    $('[data-draggable="true"]').draggable();
+
     // console.log($("*").length);
     // var arr = document.getElementsByTagName("img");
     // console.log(arr);
@@ -37,32 +39,32 @@ $(document).ready(function(){
     // });
 })
 
-var angleDrag = 0;
-var elemRotate = document.getElementById("circle-world");
+// var angleDrag = 0;
+// var elemRotate = document.getElementById("circle-world");
 
-document.ondrag = function(event) {
-    var currentDeg = get_current_rotate("circle-world");
-    if(((event.x-angleDrag)!=0) && (event.x!=0)){
-        console.log(event.x-angleDrag);
+// document.ondrag = function(event) {
+//     var currentDeg = get_current_rotate("circle-world");
+//     if(((event.x-angleDrag)!=0) && (event.x!=0)){
+//         console.log(event.x-angleDrag);
 
-        var toRotated = currentDeg + (event.x - angleDrag);
-        console.log("currentDeg: ", currentDeg);
-        console.log("event.x: ", event.x);
-        console.log("angleDrag: ", angleDrag);
-        $(elemRotate).css({
-            '-webkit-transform': "rotate(" + toRotated + "deg)",
-            '-moz-transform': "rotate(" + toRotated + "deg)",
-            '-ms-transform': "rotate(" + toRotated + "deg)",
-            '-o-transform': "rotate(" + toRotated + "deg)",
-            'transform': "rotate(" + toRotated + "deg)"
-        });
-        angleDrag = event.x;
-    }
-    else{}
+//         var toRotated = currentDeg + (event.x - angleDrag)*5;
+//         console.log("currentDeg: ", currentDeg);
+//         console.log("event.x: ", event.x);
+//         console.log("angleDrag: ", angleDrag);
+//         $(elemRotate).css({
+//             '-webkit-transform': "rotate(" + toRotated + "deg)",
+//             '-moz-transform': "rotate(" + toRotated + "deg)",
+//             '-ms-transform': "rotate(" + toRotated + "deg)",
+//             '-o-transform': "rotate(" + toRotated + "deg)",
+//             'transform': "rotate(" + toRotated + "deg)"
+//         });
+//         angleDrag = event.x;
+//     }
+//     else{}
 
-    event.preventDefault();
-    return false;
-};
+//     event.preventDefault();
+//     return false;
+// };
 
 $(window).load(function(){
     var wheel = new Wheel();
