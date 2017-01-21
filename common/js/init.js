@@ -15,64 +15,48 @@ $(document).ready(function(){
     });
 
     // console.log($("*").length);
-    var arr = document.getElementsByTagName("img");
-    console.log(arr);
-    var arrCount = arr.length;
-      // typeof(arr)
-    // console.log(typeof(arr));
+    // var arr = document.getElementsByTagName("img");
     // console.log(arr);
-    var count = 0
-    for(var i=0; i<arrCount ;i++){
-      // console.log(arr[i])
-      count++ ;
-      // arr[i].onload = function(){
-      //   console.log("loaded: " + count);
-      // }
-      $(arr[i]).load(function(){
-        console.log("loaded: " + count);
-      })
-    }
+    // var arrCount = arr.length;
+    //   // typeof(arr)
+    // // console.log(typeof(arr));
+    // // console.log(arr);
+    // var count = 0
+    // for(var i=0; i<arrCount ;i++){
+    //   // console.log(arr[i])
+    //   count++ ;
+    //   // arr[i].onload = function(){
+    //   //   console.log("loaded: " + count);
+    //   // }
+    //   $(arr[i]).load(function(){
+    //     console.log("loaded: " + count);
+    //   })
+    // }
     // arr.forEach(function(element) {
     //     console.log(element);
     // });
 })
 
 var angleDrag = 0;
+var elemRotate = document.getElementById("circle-world");
+
 document.ondrag = function(event) {
-    if((event.x-angleDrag)!=0){
+    var currentDeg = get_current_rotate("circle-world");
+    if(((event.x-angleDrag)!=0) && (event.x!=0)){
         console.log(event.x-angleDrag);
-        angleDrag = event.x;
 
-
-        $({
-            deg: current_deg
-        }).animate({
-            deg: deg_rotate
-        }, {
-            duration: rotate_duration,
-            easing: "easeOutQuart",
-            specialEasing: "easeOutQuart",
-            step: function(now) {
-                elem.css({
-                    '-webkit-transform': "rotate(" + now + "deg)",
-                    '-moz-transform': "rotate(" + now + "deg)",
-                    '-ms-transform': "rotate(" + now + "deg)",
-                    '-o-transform': "rotate(" + now + "deg)",
-                    'transform': "rotate(" + now + "deg)"
-                });
-                //- elem.style.transform="rotate(" + now + "deg)";
-            },
-            done: function() {
-                $(document).on('click', "#rotate-wheel", function() {
-                    wheel_action(200);
-                });
-                //- console.log(point_peace);
-                $(".point-result").attr("data-score", points_array[point_peace]);
-                //- console.log(get_current_rotate("rotate-wheel"));
-            },
+        var toRotated = currentDeg + (event.x - angleDrag);
+        console.log("currentDeg: ", currentDeg);
+        console.log("event.x: ", event.x);
+        console.log("angleDrag: ", angleDrag);
+        $(elemRotate).css({
+            '-webkit-transform': "rotate(" + toRotated + "deg)",
+            '-moz-transform': "rotate(" + toRotated + "deg)",
+            '-ms-transform': "rotate(" + toRotated + "deg)",
+            '-o-transform': "rotate(" + toRotated + "deg)",
+            'transform': "rotate(" + toRotated + "deg)"
         });
-
-
+        angleDrag = event.x;
     }
     else{}
 
@@ -88,3 +72,27 @@ $(window).load(function(){
         notiBroad.setLoginForm();
     });
 })
+
+function get_current_rotate(id) {
+    var el = document.getElementById(id);
+    var st = window.getComputedStyle(el, null);
+    var tr = st.getPropertyValue("-webkit-transform") ||
+        st.getPropertyValue("-moz-transform") ||
+        st.getPropertyValue("-ms-transform") ||
+        st.getPropertyValue("-o-transform") ||
+        st.getPropertyValue("transform") ||
+        "FAIL";
+    if (tr !== "none") {
+        var values = tr.split('(')[1].split(')')[0].split(',');
+        var a = values[0];
+        var b = values[1];
+        var c = values[2];
+        var d = values[3];
+
+        var scale = Math.sqrt(a * a + b * b);
+        var sin = b / scale;
+        var angle = Math.round(Math.atan2(b, a) * (180 / Math.PI));
+        return angle;
+    } else
+     return 0;
+};
