@@ -1,20 +1,23 @@
 $(document).ready(function(){
-
-    var hashPage = window.location.hash.split("#")[1]
+    var _this = this;
+    var hashPage = window.location.hash.split("#")[1];
+    var currentPage = hashPage;
     if (hashPage){
         var targetPage = $("#circle-world .page-" + hashPage)[0];
         if(targetPage){
-            $("#circle-world").attr("class",hashPage);
+            $("#circle-world").removeClass((currentPage == hashPage)?"":currentPage).addClass(hashPage);
         };
     }
 
     $(document).on("click",".bottomMenu a",function(){
-        // console.log($(this).data('page-target'));
         var page_target = $(this).data('page-target')
-        $("#circle-world").attr("class",page_target);
+        $("#circle-world").removeClass((currentPage == page_target)?"":currentPage).addClass(page_target);
+        currentPage = page_target;
     });
 
-    $('[data-draggable="true"]').draggable();
+    $(document).on("mousedown",'[data-draggable]',function(e){
+        alert(e);
+    });
 
     // console.log($("*").length);
     // var arr = document.getElementsByTagName("img");
@@ -98,3 +101,49 @@ function get_current_rotate(id) {
     } else
      return 0;
 };
+
+
+$(function() {
+
+    // var a = new Dragdealer("circle-world", {
+    //     animationCallback: function(x, y) {
+    //         // $('#just-a-slider .value').text(Math.round(x * 100));
+    //         console.log("x: ", x);
+    //     }
+    // });
+
+    // var a = new Dragdealer("circle-world", ".wrapper-container");
+
+    // console.log(a);
+
+    touchInit();
+    // $('[data-draggable="true"]').on("touchstart",function(){
+    //     console.log(1);
+    // })
+})
+
+function touchHandler(event) {
+    var touch = event.changedTouches[0];
+
+    var simulatedEvent = document.createEvent("MouseEvent");
+        simulatedEvent.initMouseEvent({
+        touchstart: "mousedown",
+        touchmove: "mousemove",
+        touchend: "mouseup"
+    }[event.type], true, true, window, 1,
+        touch.screenX, touch.screenY,
+        touch.clientX, touch.clientY, false,
+        false, false, false, 0, null);
+
+    touch.target.dispatchEvent(simulatedEvent);
+    event.preventDefault();
+}
+
+function touchInit() {
+    document.addEventListener("touchstart", touchHandler, true);
+    document.addEventListener("touchmove", touchHandler, true);
+    document.addEventListener("touchend", touchHandler, true);
+    document.addEventListener("touchcancel", touchHandler, true);
+}
+
+
