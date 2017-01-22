@@ -704,6 +704,33 @@ a {
             #circle-world [class^='page-'] .wrapper-container .wheel-obs .wheelPart .wheel_num .pointValue[data-pointValue='300']:before {
               background: url(../img/point300.png) no-repeat center;
               background-size: contain; }
+            #circle-world [class^='page-'] .wrapper-container .wheel-obs .wheelPart .wheel_num .pointValue[data-pointValue='1000'] {
+              display: block;
+              position: absolute;
+              margin: 0;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              /* width: 10vmin */
+              -webkit-mask-image: url(../img/wheelPartMask.png);
+              mask-image: url(../img/wheelPartMask.png);
+              -webkit-mask-position: center top;
+              mask-position: center center;
+              -webkit-mask-repeat: no-repeat;
+              mask-repeat: no-repeat;
+              -webkit-mask-size: contain;
+              mask-size: contain; }
+              #circle-world [class^='page-'] .wrapper-container .wheel-obs .wheelPart .wheel_num .pointValue[data-pointValue='1000']:before {
+                -webkit-transform: rotate(-90deg);
+                -ms-transform: rotate(-90deg);
+                -o-transform: rotate(-90deg);
+                transform: rotate(-90deg);
+                width: 20vmin;
+                height: 20vmin;
+                left: -5vmin;
+                position: absolute;
+                top: -9vmin; }
       #circle-world [class^='page-'] .wrapper-container .wheel-obs .wheelCenter {
         position: absolute;
         height: 50%;

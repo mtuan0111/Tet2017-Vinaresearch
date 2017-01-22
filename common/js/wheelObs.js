@@ -7,7 +7,7 @@ function Wheel() {
     this.notiBroad = new notificationBroad($(".broad-obs.small"));
 
     // var points_array = [1, 1, 1, 1, 1, 1, 1, 1, 5, 5, 5, 5, 20, 20, 20, 30, 30, 50, 300, 1000];
-    var points_array = [1, 20, 1, 5, 1, 1000, 1, 20, 5, 300, 1, 20,1, 5, 30, 5, 1, 30,  1, 50];
+    var points_array = [1, 20, 1, 5, 1, 1000, 1, 20, 5, 30, 1, 20,1, 5, 300, 5, 1, 30,  1, 50];
     this.shuffleArray = points_array;
     // this.shuffleArray = shuffle(points_array);
 
@@ -51,7 +51,7 @@ Wheel.prototype.rotate = function(point_value='') {
     // console.log(_this.shuffleArray);
     // console.log("point_peace: ", point_peace);
     var loop = getRandomIntInclusive(4, 6);
-    var random_pointer = getRandomIntInclusive(-8,8);
+    var random_pointer = getRandomIntInclusive(-6,6);
     var rotate_duration = getRandomIntInclusive(10000, 12000);
     var horizontal_deg = 90;
     var deg_rotate = -(loop * 360 + (point_peace) * 18) + random_pointer + horizontal_deg;
