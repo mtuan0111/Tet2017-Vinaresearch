@@ -15,9 +15,41 @@ $(document).ready(function(){
         currentPage = page_target;
     });
 
-    $(document).on("mousedown",'[data-draggable]',function(e){
-        alert(e);
-    });
+
+    // $(document).on("mousedown",'#wrapper',function(e){
+    //     // alert(1);
+    //     var angleDrag = 0;
+    //     var elemRotate = document.getElementById("circle-world");
+    //     var toRotated = get_current_rotate("circle-world");
+
+    //     $(this).on("mouseover",function(e){
+    //         if(angleDrag != 0){
+    //             // console.log(e.pageX - angleDrag)
+    //             toRotated = elemRotate + e.pageX - angleDrag;
+    //         }
+    //         console.log("toRotated: ", toRotated);
+    //         angleDrag = e.pageX;
+    //         $(elemRotate).css({
+    //             '-webkit-transform': "rotate(" + toRotated + "deg)",
+    //             '-moz-transform': "rotate(" + toRotated + "deg)",
+    //             '-ms-transform': "rotate(" + toRotated + "deg)",
+    //             '-o-transform': "rotate(" + toRotated + "deg)",
+    //             'transform': "rotate(" + toRotated + "deg)"
+    //         });
+    //     })
+
+    //     $(this).on("mouseup",function(e){
+    //         $(this).off("mouseover");
+    //     });
+
+    //     $(this).on("mouseout",function(e){
+    //         $(this).off("mouseover",function(){
+    //             alert(123);
+    //         });
+    //     });
+
+    // });
+
 
     // console.log($("*").length);
     // var arr = document.getElementsByTagName("img");
@@ -104,26 +136,12 @@ function get_current_rotate(id) {
 
 
 $(function() {
-
-    // var a = new Dragdealer("circle-world", {
-    //     animationCallback: function(x, y) {
-    //         // $('#just-a-slider .value').text(Math.round(x * 100));
-    //         console.log("x: ", x);
-    //     }
-    // });
-
-    // var a = new Dragdealer("circle-world", ".wrapper-container");
-
-    // console.log(a);
-
-    touchInit();
-    // $('[data-draggable="true"]').on("touchstart",function(){
-    //     console.log(1);
-    // })
+    // touchInit();
 })
 
 function touchHandler(event) {
     var touch = event.changedTouches[0];
+    console.log(event.changedTouches);
 
     var simulatedEvent = document.createEvent("MouseEvent");
         simulatedEvent.initMouseEvent({
@@ -136,14 +154,17 @@ function touchHandler(event) {
         false, false, false, 0, null);
 
     touch.target.dispatchEvent(simulatedEvent);
+    event.stopPropagation();
     event.preventDefault();
+    console.log(event);
 }
 
 function touchInit() {
-    document.addEventListener("touchstart", touchHandler, true);
-    document.addEventListener("touchmove", touchHandler, true);
-    document.addEventListener("touchend", touchHandler, true);
-    document.addEventListener("touchcancel", touchHandler, true);
+    var a = document.getElementById("circle-world");
+    a.addEventListener("touchstart", touchHandler, true);
+    a.addEventListener("touchmove", touchHandler, true);
+    a.addEventListener("touchend", touchHandler, true);
+    a.addEventListener("touchcancel", touchHandler, true);
 }
 
 

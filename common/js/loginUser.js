@@ -1,7 +1,5 @@
 function loginUser(){
     this.loginForm = null;
-
-
 }
 
 loginUser.prototype.createForm = function(){
@@ -13,14 +11,14 @@ loginUser.prototype.createForm = function(){
     var username = document.createElement("input");
     username.setAttribute("id","username");
     username.setAttribute("type","text");
-    username.setAttribute("name","username");
+    username.setAttribute("name","lg_Username");
     username.setAttribute("placeholder","Tài khoản");
     username.setAttribute("class","type");
 
     var password = document.createElement("input");
     password.setAttribute("id","password");
     password.setAttribute("type","password");
-    password.setAttribute("name","password");
+    password.setAttribute("name","lg_Password");
     password.setAttribute("placeholder","Mật khẩu");
     password.setAttribute("class","type");
 
@@ -29,8 +27,12 @@ loginUser.prototype.createForm = function(){
     rememberMe.setAttribute("type","checkbox");
 
     var rememberLbl = document.createElement("label");
-    rememberLbl.setAttribute("for","rememberMe");
+    rememberLbl.setAttribute("for","lg_rememberMe");
     rememberLbl.append("Nhớ tài khoản")
+
+    var errorMessage = document.createElement("p");
+    errorMessage.setAttribute("class","error-message");
+    errorMessage.append("Lỗi đây")
 
     var submitBtn = document.createElement("input");
     submitBtn.setAttribute("id","submit");
@@ -41,34 +43,31 @@ loginUser.prototype.createForm = function(){
     form.append(password);
     form.append(rememberLbl);
     form.append(rememberMe);
+    form.append(errorMessage);
     form.append(submitBtn);
-
     _this.form = form;
-    alert(123);
-    $(document).on("submit",_this.form,function(e){
+
+    $(document).on("submit",form,function(e){
         var username=$("input[name='lg_Username']").val();
         var password=$("input[name='lg_Password']").val();
         var redirect=$("input[name='popup_redirect']").val();
         var remember=$("input[name='lg_rememberMe']").val();
-        alert(123);
-
         $.ajax({
             type: "POST",
             url: "/public/index/check-login-ajax",
             data:{'lg_Username':username, 'lg_Password':password, 'rememberMe':remember},
             success: function(data) {
-                    console.log("data: ", data)
-                    if(data=='1'){
-                        location.reload();
-                    }
-                    else{
-                        $(".error-message p").html(data).parent(".error-message").slideDown();
-                    }
+                if(data=='1'){
+                    location.reload();
+                    // window.location.href = document.referrer;
+                }
+                else{
+                    $(".error-message").html(data).slideDown();
+                }
             }
         });
-
         e.preventDefault();
-    })
+    });
 
     return form;
 }

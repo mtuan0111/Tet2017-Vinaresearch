@@ -3,16 +3,24 @@ function notificationBroad(obs="") {
     _this.Obj = obs;
     _this.title = _this.Obj.find(".broad-title");
     _this.messageContent = _this.Obj.find(".notificationMessage");
+    _this.slideUp();
 }
 
 // notificationBroad.prototype
-notificationBroad.prototype.setTitle = function(stringTitle = "Thông báo") {
+notificationBroad.prototype.setTitle = function(stringTitle = "Khai Xuân Đón Lộc") {
     this.title[0].innerHTML = stringTitle;
 }
 
-notificationBroad.prototype.setMessage = function(messageContent){
+notificationBroad.prototype.setContent = function(messageContent){
     this.messageContent.children().remove();
     this.messageContent.append(messageContent)
+}
+
+notificationBroad.prototype.setMessage = function(messageContent){
+    var messageAppend = document.createElement("p");
+    messageAppend.append(messageContent);
+
+    this.setContent(messageAppend);
 }
 
 notificationBroad.prototype.setTakePoint = function(pointValue){
@@ -28,22 +36,22 @@ notificationBroad.prototype.setTakePoint = function(pointValue){
     messageAppend.append(message);
     messageAppend.append(pointAppend);
     messageAppend.append(document.createTextNode(" điểm"));
-    _this.setMessage(messageAppend);
+    _this.setContent(messageAppend);
 }
 
 notificationBroad.prototype.setLoginForm = function(){
     var _this = this;
     _this.slideUp();
-    setTimeout(function(){
+    // setTimeout(function(){
         _this.setTitle("Đăng nhập");
-
         var lgUser = new loginUser();
-        _this.setMessage(lgUser.createForm());
-    },300)
+        _this.setContent(lgUser.createForm());
+    // },300);
+    $("[data-page-target='C']").click();
+    window.location.hash = "C";
 }
 
 notificationBroad.prototype.slideUp = function(){
     var _this = this;
-    // console.log(1);
     _this.messageContent.children().slideUp();
 }

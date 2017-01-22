@@ -192,6 +192,7 @@ a
                             display: block
                             text-align: center
                             font-size: 100%
+                            max-width: 100%
                             font-family: inherit
                             border: none
                             border-bottom: 2px solid $red-light
@@ -421,12 +422,32 @@ a
                             @include setRotate($i)
                         .pointValue
                             margin-top: 50px
-                            margin-top: 60%
+                            margin-top: 50%
                             display: inline-block
-                            @include transform(rotate(-90deg))
+                            // @include transform(rotate(-90deg))
                             font-size: 120%
                             font-size: 4vmin
                             color: $red-dark
+                            &:before
+                                content: attr(data-pointValue)
+                            &[data-pointValue='1000'], &[data-pointValue='300']
+                                &:before
+                                    content: ""
+                                    display: block
+                                    width: 5vmin
+                                    height: 6vmin
+                                    background: url(../img/point1000.png) no-repeat center
+                                    background-size: contain
+                                // &:hover
+                                //     &:before
+                                //         content: attr(data-pointValue)
+                                //         width: initial
+                                //         height: initial
+                            &[data-pointValue='300']
+                                &:before
+                                    background: url(../img/point300.png) no-repeat center
+                                    background-size: contain
+
                 .wheelCenter
                     position: absolute
                     height: 50%

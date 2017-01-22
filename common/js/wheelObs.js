@@ -4,6 +4,7 @@ function Wheel() {
     // this.clickObject = this.selector.find()
     this.rotateObject = this.selector.find('#wheelRotate');
     this.rotateObjs = this.rotateObject.find("[data-number]");
+    this.notiBroad = new notificationBroad($(".broad-obs.small"));
 
     // var points_array = [1, 1, 1, 1, 1, 1, 1, 1, 5, 5, 5, 5, 20, 20, 20, 30, 30, 50, 300, 1000];
     var points_array = [1, 20, 1, 5, 1, 1000, 1, 20, 5, 300, 1, 20,1, 5, 30, 5, 1, 30,  1, 50];
@@ -14,8 +15,9 @@ function Wheel() {
         for (i = 0; i < this.shuffleArray.length; i++) {
             var point_value = document.createElement("span");
             point_value.setAttribute("data-number", i + 1);
+            console.log(this.shuffleArray[i] == 1000);
             point_value.setAttribute("class", "pointValue");
-            point_value.innerHTML = this.shuffleArray[i];
+            point_value.setAttribute("data-pointValue", this.shuffleArray[i]);
             this.rotateObjs[i].innerHTML = "";
             this.rotateObjs[i].append(point_value);
         }
@@ -73,9 +75,7 @@ Wheel.prototype.rotate = function(point_value='') {
         },
         done: function(){
             // console.log(point_value);
-            var notiBroad = new notificationBroad($(".broad-obs.small"));
-            notiBroad.setTakePoint(point_value);
-
+            _this.notiBroad.setTakePoint(point_value);
             setTimeout(function(){
                 _this.rotating = false;
             },1000)
@@ -95,10 +95,42 @@ Wheel.prototype.clickToPlay= function(point_value=''){
     $(document).on("click",_this.rotateObject.selector,function(){
         // console.log(this);
         // console.log("_this.rotateObject: ", _this.rotateObject.selector);
-        if(!_this.rotating)
-            _this.rotate(point_value)
+        if(!_this.rotating){
+            // _this.rotate(point_value);
+            _this.getPointAndPlay();
+        };
     })
 }
+
+Wheel.prototype.getPointAndPlay = function() {
+        var _this = this;
+        $.ajax({
+            url: '/public/api-campaign/golden-wheel2017/ajax-get-lucky-number',
+            type: 'POST',
+            dataType: 'json',
+        })
+        .done(function(data) {
+           if(data.error == 0){
+               _this.rotate(data.data);
+             }else{
+                var error_message = data.data;
+                if(jQuery.inArray(data.error,[1,2]) != -1){
+                    var d = new Date();
+                    var day = d.getDate();
+                    var hour = d.getHours();
+                    if(hour >=0 && hour <=8){
+                     date = "hôm nay";
+                    }else{
+                     date = (day+1)+"/06";
+                    }
+                    error_message = error_message + '\n Vui lòng thử lại vào 9h30 ngày '+date+' nhé!';
+                }
+                _this.notiBroad.setMessage(error_message);
+            };
+
+        });
+    }
+
 
 function wheel_action(point_value) {
     var elem = $("#rotate-wheel").stop(true, false).removeClass("auto-wheel");
