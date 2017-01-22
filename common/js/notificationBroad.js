@@ -3,7 +3,7 @@ function notificationBroad(obs="") {
     _this.Obj = obs;
     _this.title = _this.Obj.find(".broad-title");
     _this.messageContent = _this.Obj.find(".notificationMessage");
-    _this.slideUp();
+    // _this.slideUp();
 }
 
 // notificationBroad.prototype

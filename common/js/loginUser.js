@@ -64,6 +64,10 @@ loginUser.prototype.createForm = function(){
                 else{
                     $(".error-message").html(data).slideDown();
                 }
+            },
+            error: function(error){
+                var data= "Kết nối không thành công.";
+                $(".error-message").html(data).slideDown();
             }
         });
         e.preventDefault();

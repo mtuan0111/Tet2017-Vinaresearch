@@ -104,6 +104,7 @@ Wheel.prototype.clickToPlay= function(point_value=''){
 
 Wheel.prototype.getPointAndPlay = function() {
         var _this = this;
+        _this.rotate();
         $.ajax({
             url: '/public/api-campaign/golden-wheel2017/ajax-get-lucky-number',
             type: 'POST',
