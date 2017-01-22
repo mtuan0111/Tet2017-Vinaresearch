@@ -529,11 +529,12 @@
 			}
 		},
 		{
-			"file": "common/js/wheelObs.js",
+			"file": "common/js/notificationBroad.js",
 			"settings":
 			{
-				"buffer_size": 8110,
-				"line_ending": "Unix"
+				"buffer_size": 1763,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
 			}
 		},
 		{
@@ -1173,19 +1174,19 @@
 				},
 				{
 					"buffer": 1,
-					"file": "common/js/wheelObs.js",
-					"semi_transient": true,
+					"file": "common/js/notificationBroad.js",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8110,
+						"buffer_size": 1763,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								883,
-								883
+								1639,
+								1639
 							]
 						],
 						"settings":
@@ -1197,8 +1198,8 @@
 								{
 									"1":
 									[
-										1276,
-										1277
+										1640,
+										1641
 									]
 								},
 								"icon":
@@ -1213,8 +1214,8 @@
 								{
 									"1":
 									[
-										630,
-										631
+										1355,
+										1356
 									]
 								},
 								"unmatched":
@@ -1283,7 +1284,7 @@
 							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1044.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
