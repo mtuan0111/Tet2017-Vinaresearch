@@ -167,8 +167,7 @@ a {
   max-width: 208px;
   top: 4vh;
   z-index: 10;
-  height: 100px;
-  width: 100px; }
+  height: 100px; }
 
 #contents {
   overflow: hidden;
@@ -966,6 +965,10 @@ a {
     #circle-footer .bottomMenu {
       top: 16vh; }
     #circle-footer:hover {
-      top: calc(100vh - 24vh); } }
+      top: calc(100vh - 24vh); }
+
+  .socialButton {
+    right: calc(50% - 29vw);
+    top: 5vh; } }
 
 /*# sourceMappingURL=main.css.map */
