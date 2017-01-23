@@ -201,6 +201,7 @@ function touchHandler(event)
 
           break;
         case "mouseup":
+          // $(elemRotate).removeAttr("style");
           break;
         default:
           return;
