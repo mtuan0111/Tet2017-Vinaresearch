@@ -116,6 +116,9 @@ Wheel.prototype.getPointAndPlay = function() {
              }else{
                 var error_message = data.data;
                 if(jQuery.inArray(data.error,[1,2]) != -1){
+                    var tomorrow = new Date();
+                    tomorrow.setDate(tomorrow.getDate() + 1);
+
                     var d = new Date();
                     var day = d.getDate();
                     var hour = d.getHours();

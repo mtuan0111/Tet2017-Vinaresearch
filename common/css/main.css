@@ -153,8 +153,8 @@ a {
 #top-logo {
   display: block;
   position: absolute;
-  left: calc(50% - 35vw);
-  max-width: 208px;
+  left: calc(50% - 400px);
+  max-width: 200px;
   top: 4vh;
   z-index: 10; }
   #top-logo img {
@@ -163,11 +163,9 @@ a {
 .socialButton {
   display: block;
   position: absolute;
-  right: calc(50% - 35vw);
-  max-width: 208px;
-  top: 4vh;
-  z-index: 10;
-  height: 100px; }
+  right: calc(50% - 300px);
+  top: 3.5vh;
+  z-index: 10; }
 
 #contents {
   overflow: hidden;
@@ -956,7 +954,8 @@ a {
     top: 5vh; }
 
   .socialButton {
-    right: calc(50% - 48vw); } }
+    right: calc(50% - 48vw);
+    top: 4vh; } }
 @media (max-width: 800px) and (orientation: landscape) {
   #circle-footer {
     top: calc(100vh - 16vh); }
