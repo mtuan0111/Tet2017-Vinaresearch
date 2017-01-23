@@ -150,6 +150,26 @@ a {
   font-weight: bold;
   font-size: 125%; }
 
+#top-logo {
+  display: block;
+  position: absolute;
+  left: calc(50% - 35vw);
+  max-width: 208px;
+  top: 4vh;
+  z-index: 10; }
+  #top-logo img {
+    max-width: 100%; }
+
+.socialButton {
+  display: block;
+  position: absolute;
+  right: calc(50% - 35vw);
+  max-width: 208px;
+  top: 4vh;
+  z-index: 10;
+  height: 100px;
+  width: 100px; }
+
 #contents {
   overflow: hidden;
   min-width: 1200px;
@@ -895,6 +915,14 @@ a {
   body {
     font-size: 4vmin; }
 
+  #top-logo {
+    left: calc(50% - 33vw);
+    max-width: 20vw;
+    top: 5vh; }
+
+  .socialButton {
+    right: calc(50% - 33vw); }
+
   #circle-world [class^='page-'] .wrapper-container .broad-obs {
     width: 96%; }
     #circle-world [class^='page-'] .wrapper-container .broad-obs .broad-content {
@@ -921,7 +949,15 @@ a {
   #circle-world .page-C .wrapper-container .broad-obs .broad-content {
     max-height: 30vh; }
   #circle-world .page-C .wrapper-container .broad-obs:hover {
-    max-height: initial; } }
+    max-height: initial; }
+
+  #top-logo {
+    left: calc(50% - 48vw);
+    max-width: 27vw;
+    top: 5vh; }
+
+  .socialButton {
+    right: calc(50% - 48vw); } }
 @media (max-width: 800px) and (orientation: landscape) {
   #circle-footer {
     top: calc(100vh - 16vh); }

@@ -25,6 +25,15 @@ html(lang="en")
       ga('set', 'dimension1', '118.69.191.135');
       ga('send', 'pageview');
     body
+      div#fb-root
+        script.
+          (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=1523657244529194";
+          fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));
     #wrapper
       #header
         .content-inner
@@ -259,6 +268,10 @@ html(lang="en")
           //-   span.countdown-hours 23
           //-   span.countdown-minutes 2
           //-   span.countdown-seconds 56
+          a#top-logo(href="https://vinaresearch.net/public/vong-quay-tet-2017")
+            img(src="common/img/vinaLogo.png" alt="Vinaresearch")
+          .socialButton
+            div.fb-like(data-href="https://vinaresearch.net/public/vong-quay-tet-2017" data-layout="button" data-action="like" data-size="large" data-show-faces="true" data-share="true")
           .loginUser
               a.loginButton(href="javascript:void(0)") Đăng nhập
               //- Check login
