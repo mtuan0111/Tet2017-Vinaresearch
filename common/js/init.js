@@ -15,6 +15,8 @@ $(document).ready(function(){
         $("#circle-world").removeClass((currentPage == page_target)?"":currentPage).addClass(page_target);
         currentPage = page_target;
     });
+
+    touchInit();
 })
 
 $(window).load(function(){
@@ -50,10 +52,6 @@ function get_current_rotate(id) {
      return 0;
 };
 
-
-$(function() {
-    touchInit();
-})
 
 var elemRotate = document.getElementById("circle-world");
 var currentDeg;
