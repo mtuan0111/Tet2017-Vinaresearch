@@ -1,0 +1,26 @@
+.wrapper-loading
+    position: fixed
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    z-index: 10
+    background: black
+    .processingBar
+        height: 10px
+        width: 50%
+        position: absolute
+        background: $red-dark
+        top: calc(50% - 5px)
+        left: calc(25%)
+        &:before
+            content: ""
+            position: absolute
+            top: 0
+            bottom: 0
+            left: 0
+            right: 0
+            background: url(../img/broadBar_bg.png) repeat-x center $yellow
+            @extend .processingAnimate
+
+

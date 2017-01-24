@@ -15,7 +15,7 @@ function Wheel() {
         for (i = 0; i < this.shuffleArray.length; i++) {
             var point_value = document.createElement("span");
             point_value.setAttribute("data-number", i + 1);
-            console.log(this.shuffleArray[i] == 1000);
+            // console.log(this.shuffleArray[i] == 1000);
             point_value.setAttribute("class", "pointValue");
             point_value.setAttribute("data-pointValue", this.shuffleArray[i]);
             this.rotateObjs[i].innerHTML = "";

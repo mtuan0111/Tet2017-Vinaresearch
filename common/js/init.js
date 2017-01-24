@@ -26,8 +26,11 @@ $(window).load(function(){
     $(document).on("click",".loginButton",function(){
         notiBroad.setLoginForm();
     });
-})
 
+    $(".wrapper-loading").fadeOut(300,function(){
+        $(this).remove();
+    });
+})
 function get_current_rotate(id) {
     var el = document.getElementById(id);
     var st = window.getComputedStyle(el, null);
@@ -60,6 +63,7 @@ var movePoint;
 var endPoint;
 var targetPageArr = new Array('N','C','S');
 var currentPagePos;
+var activeDrag = false;
 function touchHandler(event)
 {
     var touches = event.changedTouches,
@@ -79,18 +83,19 @@ function touchHandler(event)
     //                altKey, shiftKey, metaKey, button, relatedTarget);
 
 
-    // var simulatedEvent = document.createEvent("MouseEvent");
-    // simulatedEvent.initMouseEvent(type, true, true, window, 1,
-    //                               first.screenX, first.screenY,
-    //                               first.clientX, first.clientY, false,
-    //                               false, false, false, 0/*left*/, null);
+    var simulatedEvent = document.createEvent("MouseEvent");
+    simulatedEvent.initMouseEvent(type, true, true, window, 1,
+                                  first.screenX, first.screenY,
+                                  first.clientX, first.clientY, false,
+                                  false, false, false, 0/*left*/, null);
 
-    // first.target.dispatchEvent(simulatedEvent);
+    first.target.dispatchEvent(simulatedEvent);
     // event.preventDefault();
 
     switch(type)
     {
         case "mousedown":
+            activeDrag = false;
             currentDeg = get_current_rotate("circle-world");
             firstPoint = first.pageX;
             movePoint = first.pageX;
@@ -101,25 +106,31 @@ function touchHandler(event)
             });
             break;
         case "mousemove":
-            var toRotated = currentDeg + (first.pageX - movePoint)*3;
-            $(elemRotate).css({
-                '-webkit-transform': "rotate(" + toRotated + "deg)",
-                '-moz-transform': "rotate(" + toRotated + "deg)",
-                '-ms-transform': "rotate(" + toRotated + "deg)",
-                '-o-transform': "rotate(" + toRotated + "deg)",
-                'transform': "rotate(" + toRotated + "deg)"
-            });
+            var moveRange = first.pageX - firstPoint;
+            if(Math.abs(moveRange) > 100){
+                activeDrag = true;
+            }
+            if(activeDrag){
+                currentDeg += (first.pageX - movePoint);
+                $(elemRotate).css({
+                    '-webkit-transform': "rotate(" + currentDeg + "deg)",
+                    '-moz-transform': "rotate(" + currentDeg + "deg)",
+                    '-ms-transform': "rotate(" + currentDeg + "deg)",
+                    '-o-transform': "rotate(" + currentDeg + "deg)",
+                    'transform': "rotate(" + currentDeg + "deg)"
+                });
+            }
             movePoint = first.pageX;
           break;
         case "mouseup":
           endPoint = first.pageX;
           var moveRange = endPoint - firstPoint;
-          if (moveRange < -200){
+          if (moveRange < -150){
             var targetPage = targetPageArr[currentPagePos + 1];
             if(targetPage){
                 $(".bottomMenu a[data-page-target="+ targetPage +"]").click();
             }
-          }else if (moveRange > 200){
+          }else if (moveRange > 150){
             var targetPage = targetPageArr[currentPagePos - 1];
             if(targetPage){
                 $(".bottomMenu a[data-page-target="+ targetPage +"]").click();
@@ -134,7 +145,6 @@ function touchHandler(event)
     }
 }
 
-
 function touchInit() {
     var touchElement = document.body;
     touchElement.addEventListener("touchstart", touchHandler, true);
@@ -142,6 +152,3 @@ function touchInit() {
     touchElement.addEventListener("touchend", touchHandler, true);
     touchElement.addEventListener("touchcancel", touchHandler, true);
 }
-
-
-
