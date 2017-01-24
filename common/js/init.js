@@ -106,9 +106,12 @@ function touchHandler(event)
             });
             break;
         case "mousemove":
-            var moveRange = first.pageX - firstPoint;
-            if(Math.abs(moveRange) > 100){
+            var moveRange = Math.abs(first.pageX - firstPoint);
+            if((moveRange > 100) && ((moveRange < 200))){
                 activeDrag = true;
+            }
+            else{
+                activeDrag = false;
             }
             if(activeDrag){
                 currentDeg += (first.pageX - movePoint);
