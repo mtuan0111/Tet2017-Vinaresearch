@@ -1,6 +1,7 @@
 $(document).ready(function(){
     var _this = this;
     var hashPage = window.location.hash.split("#")[1];
+    hashPage = !hashPage?"C":hashPage;
     var currentPage = hashPage;
     if (hashPage){
         var targetPage = $("#circle-world .page-" + hashPage)[0];
@@ -8,101 +9,13 @@ $(document).ready(function(){
             $("#circle-world").removeClass((currentPage == hashPage)?"":currentPage).addClass(hashPage);
         };
     }
-    else{
-      $("#circle-world").addClass("C");
-    }
 
     $(document).on("click",".bottomMenu a",function(){
         var page_target = $(this).data('page-target')
         $("#circle-world").removeClass((currentPage == page_target)?"":currentPage).addClass(page_target);
         currentPage = page_target;
     });
-
-
-    // $(document).on("mousedown",'#wrapper',function(e){
-    //     // alert(1);
-    //     var angleDrag = 0;
-    //     var elemRotate = document.getElementById("circle-world");
-    //     var toRotated = get_current_rotate("circle-world");
-
-    //     $(this).on("mouseover",function(e){
-    //         if(angleDrag != 0){
-    //             // console.log(e.pageX - angleDrag)
-    //             toRotated = elemRotate + e.pageX - angleDrag;
-    //         }
-    //         console.log("toRotated: ", toRotated);
-    //         angleDrag = e.pageX;
-    //         $(elemRotate).css({
-    //             '-webkit-transform': "rotate(" + toRotated + "deg)",
-    //             '-moz-transform': "rotate(" + toRotated + "deg)",
-    //             '-ms-transform': "rotate(" + toRotated + "deg)",
-    //             '-o-transform': "rotate(" + toRotated + "deg)",
-    //             'transform': "rotate(" + toRotated + "deg)"
-    //         });
-    //     })
-
-    //     $(this).on("mouseup",function(e){
-    //         $(this).off("mouseover");
-    //     });
-
-    //     $(this).on("mouseout",function(e){
-    //         $(this).off("mouseover",function(){
-    //             alert(123);
-    //         });
-    //     });
-
-    // });
-
-
-    // console.log($("*").length);
-    // var arr = document.getElementsByTagName("img");
-    // console.log(arr);
-    // var arrCount = arr.length;
-    //   // typeof(arr)
-    // // console.log(typeof(arr));
-    // // console.log(arr);
-    // var count = 0
-    // for(var i=0; i<arrCount ;i++){
-    //   // console.log(arr[i])
-    //   count++ ;
-    //   // arr[i].onload = function(){
-    //   //   console.log("loaded: " + count);
-    //   // }
-    //   $(arr[i]).load(function(){
-    //     console.log("loaded: " + count);
-    //   })
-    // }
-    // arr.forEach(function(element) {
-    //     console.log(element);
-    // });
 })
-
-// var angleDrag = 0;
-// var elemRotate = document.getElementById("circle-world");
-
-// document.ondrag = function(event) {
-//     var currentDeg = get_current_rotate("circle-world");
-//     if(((event.x-angleDrag)!=0) && (event.x!=0)){
-//         console.log(event.x-angleDrag);
-
-//         var toRotated = currentDeg + (event.x - angleDrag)*5;
-//         console.log("currentDeg: ", currentDeg);
-//         console.log("event.x: ", event.x);
-//         console.log("angleDrag: ", angleDrag);
-//         $(elemRotate).css({
-//             '-webkit-transform': "rotate(" + toRotated + "deg)",
-//             '-moz-transform': "rotate(" + toRotated + "deg)",
-//             '-ms-transform': "rotate(" + toRotated + "deg)",
-//             '-o-transform': "rotate(" + toRotated + "deg)",
-//             'transform': "rotate(" + toRotated + "deg)"
-//         });
-//         angleDrag = event.x;
-//     }
-//     else{}
-
-//     event.preventDefault();
-//     return false;
-// };
 
 $(window).load(function(){
     var wheel = new Wheel();
@@ -140,15 +53,15 @@ function get_current_rotate(id) {
 
 $(function() {
     touchInit();
-    // document.body.addEventListener('touchstart', function(e){
-    //     console.log(e.changedTouches[0].pageX);
-    // }, false)
 })
 
-var angleDrag = 0;
 var elemRotate = document.getElementById("circle-world");
 var currentDeg;
-var prePoint;
+var startPoint;
+var movePoint;
+var endPoint;
+var targetPageArr = new Array('N','C','S');
+var currentPagePos;
 function touchHandler(event)
 {
     var touches = event.changedTouches,
@@ -162,32 +75,35 @@ function touchHandler(event)
         default:           return;
     }
 
+    // Default intruction
     // initMouseEvent(type, canBubble, cancelable, view, clickCount,
     //                screenX, screenY, clientX, clientY, ctrlKey,
     //                altKey, shiftKey, metaKey, button, relatedTarget);
 
-    var simulatedEvent = document.createEvent("MouseEvent");
-    simulatedEvent.initMouseEvent(type, true, true, window, 1,
-                                  first.screenX, first.screenY,
-                                  first.clientX, first.clientY, false,
-                                  false, false, false, 0/*left*/, null);
 
-    first.target.dispatchEvent(simulatedEvent);
-    console.log(type);
-    console.log(first.pageX);
+    // var simulatedEvent = document.createEvent("MouseEvent");
+    // simulatedEvent.initMouseEvent(type, true, true, window, 1,
+    //                               first.screenX, first.screenY,
+    //                               first.clientX, first.clientY, false,
+    //                               false, false, false, 0/*left*/, null);
+
+    // first.target.dispatchEvent(simulatedEvent);
     // event.preventDefault();
 
     switch(type)
     {
         case "mousedown":
             currentDeg = get_current_rotate("circle-world");
-            prePoint = first.pageX;
-            // console.log()
+            firstPoint = first.pageX;
+            movePoint = first.pageX;
+            elemRotate.getAttribute("class").split(" ").forEach(function(el){
+                if(targetPageArr.indexOf(el) != -1){
+                    currentPagePos = targetPageArr.indexOf(el);
+                }
+            });
             break;
         case "mousemove":
-            console.log(first.pageX - prePoint);
-
-            var toRotated = currentDeg + (first.pageX - prePoint)*2;
+            var toRotated = currentDeg + (first.pageX - movePoint)*3;
             $(elemRotate).css({
                 '-webkit-transform': "rotate(" + toRotated + "deg)",
                 '-moz-transform': "rotate(" + toRotated + "deg)",
@@ -195,57 +111,39 @@ function touchHandler(event)
                 '-o-transform': "rotate(" + toRotated + "deg)",
                 'transform': "rotate(" + toRotated + "deg)"
             });
-
-
-            prePoint = first.pageX;
-
+            movePoint = first.pageX;
           break;
         case "mouseup":
-          // $(elemRotate).removeAttr("style");
+          endPoint = first.pageX;
+          var moveRange = endPoint - firstPoint;
+          if (moveRange < -200){
+            var targetPage = targetPageArr[currentPagePos + 1];
+            if(targetPage){
+                $(".bottomMenu a[data-page-target="+ targetPage +"]").click();
+            }
+          }else if (moveRange > 200){
+            var targetPage = targetPageArr[currentPagePos - 1];
+            if(targetPage){
+                $(".bottomMenu a[data-page-target="+ targetPage +"]").click();
+            }
+          }
+
+          $(elemRotate).removeAttr("style");
+
           break;
         default:
           return;
     }
 }
 
-// function touchHandler(event) {
-//     var touch = event.changedTouches[0];
-//     // var touch_sc = event.changedTouches[0];
-//     // console.log(event.changedTouches);
-
-//     var simulatedEvent = document.createEvent("MouseEvent");
-//         simulatedEvent.initMouseEvent({
-//         touchstart: "mousedown",
-//         touchmove: "mousemove",
-//         touchend: "mouseup"
-//     }[event.type], true, true, window, 1,
-//         touch.screenX, touch.screenY,
-//         touch.clientX, touch.clientY, false,
-//         false, false, false, 0, null);
-
-//     touch.target.dispatchEvent(simulatedEvent);
-//     // event.stopPropagation();
-//     // event.preventDefault();
-//     console.log(event);
-//     console.log(touch);
-// }
 
 function touchInit() {
-    var a = document.body;
-    a.addEventListener("touchstart", touchHandler, true);
-    a.addEventListener("touchmove", touchHandler, true);
-    a.addEventListener("touchend", touchHandler, true);
-    a.addEventListener("touchcancel", touchHandler, true);
-
-    // var b = document.getElementById("footer");
-    // b.addEventListener("touchstart", eStop, true);
-    // b.addEventListener("touchmove", eStop, true);
-    // b.addEventListener("touchend", eStop, true);
-    // b.addEventListener("touchcancel", eStop, true);
+    var touchElement = document.body;
+    touchElement.addEventListener("touchstart", touchHandler, true);
+    touchElement.addEventListener("touchmove", touchHandler, true);
+    touchElement.addEventListener("touchend", touchHandler, true);
+    touchElement.addEventListener("touchcancel", touchHandler, true);
 }
 
-function eStop(event){
-    event.stopPropagation();
-}
 
 
