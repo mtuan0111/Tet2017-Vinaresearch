@@ -58,12 +58,13 @@ function get_current_rotate(id) {
 
 var elemRotate = document.getElementById("circle-world");
 var currentDeg;
+var firstDeg;
 var startPoint;
 var movePoint;
 var endPoint;
 var targetPageArr = new Array('N','C','S');
 var currentPagePos;
-var activeDrag = false;
+var activeRotate = false;
 function touchHandler(event)
 {
     var touches = event.changedTouches,
@@ -95,8 +96,9 @@ function touchHandler(event)
     switch(type)
     {
         case "mousedown":
-            activeDrag = false;
+            activeRotate = false;
             currentDeg = get_current_rotate("circle-world");
+            firstDeg = currentDeg;
             firstPoint = first.pageX;
             movePoint = first.pageX;
             elemRotate.getAttribute("class").split(" ").forEach(function(el){
@@ -107,21 +109,22 @@ function touchHandler(event)
             break;
         case "mousemove":
             var moveRange = Math.abs(first.pageX - firstPoint);
-            if((moveRange > 100) && ((moveRange < 200))){
-                activeDrag = true;
-            }
-            else{
-                activeDrag = false;
-            }
-            if(activeDrag){
+            // console.log(moveRange);
+            activeRotate = ((moveRange > 100) && (moveRange < 150));
+            if(activeRotate){
                 currentDeg += (first.pageX - movePoint);
-                $(elemRotate).css({
-                    '-webkit-transform': "rotate(" + currentDeg + "deg)",
-                    '-moz-transform': "rotate(" + currentDeg + "deg)",
-                    '-ms-transform': "rotate(" + currentDeg + "deg)",
-                    '-o-transform': "rotate(" + currentDeg + "deg)",
-                    'transform': "rotate(" + currentDeg + "deg)"
-                });
+                console.log("firstDeg: ", firstDeg);
+                console.log("currentDeg: ", currentDeg);
+                console.log("currentDeg - firstDeg: ", Math.abs(currentDeg - firstDeg));
+                if(Math.abs(currentDeg - firstDeg) < 15){
+                    $(elemRotate).css({
+                        '-webkit-transform': "rotate(" + currentDeg + "deg)",
+                        '-moz-transform': "rotate(" + currentDeg + "deg)",
+                        '-ms-transform': "rotate(" + currentDeg + "deg)",
+                        '-o-transform': "rotate(" + currentDeg + "deg)",
+                        'transform': "rotate(" + currentDeg + "deg)"
+                    });
+                }
             }
             movePoint = first.pageX;
           break;
