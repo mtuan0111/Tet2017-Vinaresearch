@@ -73,10 +73,10 @@ a
     position: fixed
     background-color: $red-light
     border-radius: 100000px
-    width: 600vh
-    height: 600vh
+    width: 600vmax
+    height: 600vmax
     min-width: inherit
-    left: calc(50% - 300vh)
+    left: calc(50% - 300vmax)
     top: calc(100vh - 20vh)
 
     @include transitionTransform(1s)
@@ -86,9 +86,9 @@ a
         width: 100vw
         margin: 0 auto
         position: absolute
-        left: calc(300vh - 50%)
+        left: calc(300vmax - 50%)
         right: 0
-        height: 300vh
+        height: 300vmax
         @include transformOrigin(50% 100%)
 
         [id^='building-']
@@ -552,11 +552,11 @@ a
 #circle-footer
     position: fixed
     background-color: $red-dark
-    border-radius: 800vh
-    width: 800vh
-    height: 800vh
+    border-radius: 800vmax
+    width: 800vmax
+    height: 800vmax
     min-width: inherit
-    left: calc(50% - 400vh)
+    left: calc(50% - 400vmax)
     top: calc(100vh - 12vh)
     text-align: center
     opacity: 0.9

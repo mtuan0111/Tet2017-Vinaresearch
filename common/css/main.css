@@ -247,10 +247,10 @@ a {
   position: fixed;
   background-color: #A53030;
   border-radius: 100000px;
-  width: 600vh;
-  height: 600vh;
+  width: 600vmax;
+  height: 600vmax;
   min-width: inherit;
-  left: calc(50% - 300vh);
+  left: calc(50% - 300vmax);
   top: calc(100vh - 20vh);
   -webkit-transition: -webkit-transform 1s;
   -o-transition: -o-transform 1s;
@@ -260,9 +260,9 @@ a {
     width: 100vw;
     margin: 0 auto;
     position: absolute;
-    left: calc(300vh - 50%);
+    left: calc(300vmax - 50%);
     right: 0;
-    height: 300vh;
+    height: 300vmax;
     -webkit-transform-origin: 50% 100%;
     -moz-transform-origin: 50% 100%;
     -ms-transform-origin: 50% 100%;
@@ -871,11 +871,11 @@ a {
 #circle-footer {
   position: fixed;
   background-color: #932222;
-  border-radius: 800vh;
-  width: 800vh;
-  height: 800vh;
+  border-radius: 800vmax;
+  width: 800vmax;
+  height: 800vmax;
   min-width: inherit;
-  left: calc(50% - 400vh);
+  left: calc(50% - 400vmax);
   top: calc(100vh - 12vh);
   text-align: center;
   opacity: 0.9;
@@ -1001,6 +1001,11 @@ a {
     #circle-world [class^='page-'] .wrapper-container .wheel-obs .wheelPart #wheelRotate {
       width: 65vmin;
       height: 65vmin; }
+  #circle-world [class^='page-'] .building {
+    min-width: 100vw; }
+  #circle-world [class^='page-'] [id^='building-'] {
+    max-width: 25vw;
+    max-height: 25vw; }
 
   #circle-footer {
     .loginUsertop: 5vmax; } }

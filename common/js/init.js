@@ -113,9 +113,9 @@ function touchHandler(event)
             activeRotate = ((moveRange > 100) && (moveRange < 150));
             if(activeRotate){
                 currentDeg += (first.pageX - movePoint);
-                console.log("firstDeg: ", firstDeg);
-                console.log("currentDeg: ", currentDeg);
-                console.log("currentDeg - firstDeg: ", Math.abs(currentDeg - firstDeg));
+                // console.log("firstDeg: ", firstDeg);
+                // console.log("currentDeg: ", currentDeg);
+                // console.log("currentDeg - firstDeg: ", Math.abs(currentDeg - firstDeg));
                 if(Math.abs(currentDeg - firstDeg) < 15){
                     $(elemRotate).css({
                         '-webkit-transform': "rotate(" + currentDeg + "deg)",
