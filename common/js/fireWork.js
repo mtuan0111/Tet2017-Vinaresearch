@@ -376,13 +376,13 @@ $(function(){
     // var initialLaunchCount = 10;
   // while(initialLaunchCount--){
     var check = true;
+    window.onfocus = function(){
+      check = true;
+    }
+    window.onblur = function(){
+      check = false;
+    }
     setInterval(function(){
-      window.onfocus = function(){
-        check = true;
-      }
-      window.onblur = function(){
-        check = false;
-      }
       if(check){
         self.fireworks.push(new Firework(self.cw/2, self.ch, rand(50, self.cw-50), rand(50, self.ch/2)-50));
       };
