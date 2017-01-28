@@ -375,7 +375,7 @@ $(function(){
 
     // var initialLaunchCount = 10;
   // while(initialLaunchCount--){
-    var check = false;
+    var check = true;
     setInterval(function(){
       window.onfocus = function(){
         check = true;
