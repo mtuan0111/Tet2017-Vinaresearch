@@ -3,11 +3,11 @@ $(function(){
   /*=============================================================================*/
   /* FPS Tracker
   /*=============================================================================*/
-  var stats = new Stats();
-  stats.getDomElement().style.position = 'absolute';
-  stats.getDomElement().style.right = '250px';
-  stats.getDomElement().style.top = '0px';
-  document.body.appendChild( stats.getDomElement() );
+  // var stats = new Stats();
+  // stats.getDomElement().style.position = 'absolute';
+  // stats.getDomElement().style.right = '250px';
+  // stats.getDomElement().style.top = '0px';
+  // document.body.appendChild( stats.getDomElement() );
 
   var Fireworks = function(){
     /*=============================================================================*/
@@ -368,7 +368,7 @@ $(function(){
       self.updateParticles();
       self.drawFireworks();
       self.drawParticles();
-      stats.update();
+      // stats.update();
     };
 
     self.init();
