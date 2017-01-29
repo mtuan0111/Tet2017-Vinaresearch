@@ -375,7 +375,7 @@ $(function(){
 
     // var initialLaunchCount = 10;
   // while(initialLaunchCount--){
-    var check = true;
+    var check = false;
     window.onfocus = function(){
       check = true;
     };
@@ -383,7 +383,7 @@ $(function(){
       check = false;
     };
     setInterval(function(){
-      console.log("check: ", check);
+      // console.log("check: ", check);
       if(check){
         self.fireworks.push(new Firework(rand(50, self.cw-50), self.ch, rand(50, self.cw-50), rand(50, self.ch/2)-50));
       };

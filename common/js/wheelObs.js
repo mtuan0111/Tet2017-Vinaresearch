@@ -13,13 +13,66 @@ function Wheel() {
 
     this.bindingPoint = function() {
         for (i = 0; i < this.shuffleArray.length; i++) {
-            var point_value = document.createElement("span");
-            point_value.setAttribute("data-number", i + 1);
-            // console.log(this.shuffleArray[i] == 1000);
-            point_value.setAttribute("class", "pointValue");
-            point_value.setAttribute("data-pointValue", this.shuffleArray[i]);
-            this.rotateObjs[i].innerHTML = "";
-            $(this.rotateObjs[i]).append(point_value);
+            var point_value;
+            if (this.shuffleArray[i] == 1000){
+              point_value = document.createElementNS('http://www.w3.org/2000/svg','svg');
+
+              var defs = document.createElement('defs');
+              var defs_mask = document.createElement('mask');
+              var defs_image = document.createElement('image');
+              var point_image = document.createElement('image');
+
+              // point_value.setAttribute('class','svgMask');
+              point_value.setAttribute('version','1.2');
+              // defs_image.setAttribute('xmlns:xlink','http://www.w3.org/1999/xlink');
+              defs_image.setAttribute('xlink:href','common/img/wheelPartMask_svg.png');
+              defs_image.setAttribute('height','100%');
+              defs_image.setAttribute('width','100%');
+
+              defs_mask.setAttribute('id','svgmask2');
+
+              point_image.setAttribute('mask', 'url(#svgmask2)');
+              // point_image.setAttribute('xmlns:xlink','http://www.w3.org/1999/xlink');
+              point_image.setAttribute('xlink:href','common/img/point1000_svg.png');
+              point_image.setAttribute('height','100%');
+              point_image.setAttribute('width','100%');
+              // console.log("point_image: ", point_image);
+              $(defs_mask).append(defs_image);
+              $(defs).append(defs_mask);
+              $(point_value).append(defs);
+              $(point_value).append(point_image);
+              console.log("point_value: " ,point_value);
+
+              // point_value.innerHTML = "\
+              // <svg class='svgMask' version='1.2'>\
+              //   <defs>\
+              //     <mask id='svgmask'>\
+              //       <image xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href='common/img/wheelPartMask_svg.png'></image>\
+              //     </mask>\
+              //   </defs>\
+              //   <image mask='url(#svgmask)' xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href='common/img/point1000_svg.png'></image>\
+              // </svg>";
+
+                // <svg class="svgMask" version="1.2">
+                //   <defs>
+                //     <mask id="svgmask">
+                //       <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="common/img/wheelPartMask_svg.png">
+                //     </mask>
+                //   </defs>
+                //   <image mask="url(#svgmask)" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="common/img/point1000_svg.png">
+                // </svg>
+            }
+            else
+            {
+              point_value = document.createElement("span");
+              point_value.setAttribute("data-number", i + 1);
+              // console.log(this.shuffleArray[i] == 1000);
+              point_value.setAttribute("class", "pointValue");
+              point_value.setAttribute("data-pointValue", this.shuffleArray[i]);
+            }
+              this.rotateObjs[i].innerHTML = "";
+              $(this.rotateObjs[i]).append(point_value);
+
         }
     }
     this.bindingPoint();

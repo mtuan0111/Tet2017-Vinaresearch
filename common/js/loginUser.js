@@ -28,7 +28,7 @@ loginUser.prototype.createForm = function(){
 
     var rememberLbl = document.createElement("label");
     rememberLbl.setAttribute("for","lg_rememberMe");
-    rememberLbl.append("Nhớ tài khoản")
+    $(rememberLbl).append("Nhớ tài khoản")
 
     var errorMessage = document.createElement("p");
     errorMessage.setAttribute("class","error-message");
@@ -39,12 +39,12 @@ loginUser.prototype.createForm = function(){
     submitBtn.setAttribute("type","submit");
     submitBtn.setAttribute("value","Đăng nhập");
 
-    form.append(username);
-    form.append(password);
-    form.append(rememberLbl);
-    form.append(rememberMe);
-    form.append(errorMessage);
-    form.append(submitBtn);
+    $(form).append(username);
+    $(form).append(password);
+    $(form).append(rememberLbl);
+    $(form).append(rememberMe);
+    $(form).append(errorMessage);
+    $(form).append(submitBtn);
     _this.form = form;
 
     $(document).on("submit",form,function(e){
