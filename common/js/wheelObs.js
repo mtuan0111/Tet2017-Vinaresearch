@@ -19,7 +19,7 @@ function Wheel() {
             point_value.setAttribute("class", "pointValue");
             point_value.setAttribute("data-pointValue", this.shuffleArray[i]);
             this.rotateObjs[i].innerHTML = "";
-            this.rotateObjs[i].append(point_value);
+            $(this.rotateObjs[i]).append(point_value);
         }
     }
     this.bindingPoint();

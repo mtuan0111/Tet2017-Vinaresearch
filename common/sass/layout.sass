@@ -24,6 +24,7 @@ body
     background: url(../img/pattern-bg.png) repeat center
     font-size: 24px
     // font-size: 2.5vm
+    // font-size: 2.5vm
     // font-size: 2.5vmin
 
     line-height: 1.5
@@ -85,9 +86,12 @@ a
     position: fixed
     background-color: $red-light
     border-radius: 100000px
+    width: 600vw
     width: 600vmax
+    height: 600vw
     height: 600vmax
     min-width: inherit
+    left: calc(50% - 300vw)
     left: calc(50% - 300vmax)
     top: calc(100vh - 20vh)
 
@@ -98,8 +102,10 @@ a
         width: 100vw
         margin: 0 auto
         position: absolute
+        left: calc(300vw - 50%)
         left: calc(300vmax - 50%)
         right: 0
+        height: 300vw
         height: 300vmax
         @include transformOrigin(50% 100%)
 
@@ -197,10 +203,13 @@ a
                     display: inline-block
                     vertical-align: top
                     width: 500px
+                    width: calc(50vm)
                     width: calc(50vmin)
+                    height: calc(50vm)
                     height: calc(50vmin)
                     min-width: initial
                     margin-left: -10px
+                    margin-left: calc((100vw - 100vm - 10px)/4)
                     margin-left: calc((100vw - 100vmin - 10px)/4)
                     .broad-content
                         padding: 50px
@@ -259,6 +268,7 @@ a
 
                 .broadBar-top, .broadBar-bottom
                     position: relative
+                    height: 3vm
                     height: 3vmin
                     max-height: 15px
                     background: url(../img/broadBar_bg.png) repeat-x center $yellow
@@ -268,6 +278,7 @@ a
                     @include transition(background-position-x 0.8s)
                     -webkit-box-shadow: inset 0px -6px 0px 0px rgba(0, 0, 0, 0.5)
                     -moz-box-shadow: inset 0px -6px 0px 0px rgba(0, 0, 0, 0.5)
+                    box-shadow: inset 0px -1vm 0px 0px rgba(0, 0, 0, 0.5)
                     box-shadow: inset 0px -1vmin 0px 0px rgba(0, 0, 0, 0.5)
                     &:before,&:after
                         content: ""
@@ -292,6 +303,7 @@ a
                     margin: 0 auto
                     text-align: center
                     padding: 50px 100px
+                    padding: 5vm 10vm
                     padding: 5vmin 10vmin
                     min-height: 10vh
                     max-height: 55vh
@@ -354,6 +366,7 @@ a
                             left: 10px
                             width: 90px
                             height: 90px
+                            max-width: 20vm
                             max-width: 20vmin
                         &:after
                             @include transform(scaleX(-1))
@@ -378,6 +391,7 @@ a
                             left: 10px
                             width: 90px
                             height: 90px
+                            max-width: 20vm
                             max-width: 20vmin
                         &:after
                             right: 10px
@@ -398,6 +412,7 @@ a
                         width: 4px
                         background-color: $red-dark
                         height: 80px
+                        height: 8vm
                         height: 8vmin
                         margin: 0 auto
                         margin-bottom: -2px
@@ -417,10 +432,12 @@ a
                         width: 4px
                         background: #932222
                         height: 80px
+                        height: 8vm
                         height: 8vmin
                         margin: 0 auto
                         margin-bottom: -2px
 
+                $wheelSize: 55vm
                 $wheelSize: 55vmin
                 #wheelRotate
                     width: 600px
@@ -456,6 +473,7 @@ a
                             display: inline-block
                             // @include transform(rotate(-90deg))
                             font-size: 120%
+                            font-size: 4vm
                             font-size: 4vmin
                             color: $red-dark
                             &:before
@@ -464,7 +482,9 @@ a
                                 &:before
                                     content: ""
                                     display: block
+                                    width: 5vm
                                     width: 5vmin
+                                    height: 6vm
                                     height: 6vmin
                                     background: url(../img/point1000.png) no-repeat center
                                     background-size: contain
@@ -486,6 +506,7 @@ a
                                 bottom: 0
                                 left: 0
                                 right: 0
+                                /* width: 10vm */
                                 /* width: 10vmin */
                                 // background: url(../img/point1000.png) no-repeat center
                                 -webkit-mask-image: url(../img/wheelPartMask.png)
@@ -498,10 +519,14 @@ a
                                 mask-size: contain
                                 &:before
                                     @include transform(rotate(-90deg))
+                                    width: 20vm
                                     width: 20vmin
+                                    height: 20vm
                                     height: 20vmin
+                                    left: -5vm
                                     left: -5vmin
                                     position: absolute
+                                    top: -9vm
                                     top: -9vmin
                                     // -webkit-mask-image: url(../img/wheelPart.png)
                                     // mask-image: url(../img/wheelPart.png)
@@ -532,8 +557,10 @@ a
             .pendant_obs
                 position: absolute
                 top: 100%
+                height: 20vm
                 height: 20vmin
                 max-height: 120px
+                width: 6vm
                 width: 6vmin
                 max-width: 40px
                 background: url(../img/pendant_obs01.png) no-repeat center top
@@ -548,26 +575,34 @@ a
                         right: 33%
                 &.middle:not(.left):not(.right)
                     left: 50%
+                    height: 28vm
                     height: 28vmin
                     max-height: 180px
+                    width: 12vm
                     width: 12vmin
                     max-width: 60px
                     @include transform(translate(-50%, -8px))
                 &.large
                     background: url(../img/pendant_obs02.png) no-repeat center top
                     background-size: contain
+                    height: 28vm
                     height: 28vmin
                     max-height: 180px
+                    width: 12vm
                     width: 12vmin
                     max-width: 60px
 
 #circle-footer
     position: fixed
     background-color: $red-dark
+    border-radius: 800vw
     border-radius: 800vmax
+    width: 800vw
     width: 800vmax
+    height: 800vw
     height: 800vmax
     min-width: inherit
+    left: calc(50% - 400vw)
     left: calc(50% - 400vmax)
     top: calc(100vh - 12vh)
     text-align: center
