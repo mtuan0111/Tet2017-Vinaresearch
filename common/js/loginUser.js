@@ -32,7 +32,7 @@ loginUser.prototype.createForm = function(){
 
     var errorMessage = document.createElement("p");
     errorMessage.setAttribute("class","error-message");
-    errorMessage.append("Lỗi đây")
+    $(errorMessage).append("Lỗi đây")
 
     var submitBtn = document.createElement("input");
     submitBtn.setAttribute("id","submit");
