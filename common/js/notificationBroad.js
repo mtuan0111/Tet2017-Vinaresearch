@@ -1,8 +1,16 @@
-function notificationBroad(obs="") {
+function notificationBroad(obs) {
     var _this = this;
+    if (!obs)
+    {
+      _this.Obj = $($(".broad-obs")[0]).clone();
+    }
+    else
     _this.Obj = obs;
+
     _this.title = _this.Obj.find(".broad-title");
-    _this.messageContent = _this.Obj.find(".notificationMessage");
+    _this.messageContent = _this.title.next();
+    _this.loginUser;
+    // console.log(_this.messageContent);
     // _this.slideUp();
 }
 
@@ -44,11 +52,20 @@ notificationBroad.prototype.setLoginForm = function(){
     _this.slideUp();
     // setTimeout(function(){
         _this.setTitle("Đăng nhập");
-        var lgUser = new loginUser();
-        _this.setContent(lgUser.createForm());
+        _this.loginUser = new loginUser();
+        _this.setContent(_this.loginUser.createForm());
     // },300);
-    $("[data-page-target='C']").click();
-    window.location.hash = "C";
+    // $("[data-page-target='C']").click();
+    // window.location.hash = "C";
+}
+
+notificationBroad.prototype.showLoginForm = function(){
+  var _this = this;
+  // console.log("go there?", _this.Obj);
+  if ((_this.Obj[0].getAttribute("class").split(" ")).indexOf('loginBroad') == -1){
+      _this.Obj[0].className += " loginBroad";
+  }
+  $(_this.Obj).fadeIn(300).insertBefore("#circle-world");
 }
 
 notificationBroad.prototype.slideUp = function(){

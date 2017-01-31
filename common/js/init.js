@@ -22,9 +22,18 @@ $(document).ready(function(){
 $(window).load(function(){
     var wheel = new Wheel();
     wheel.clickToPlay();
-    var notiBroad = new notificationBroad($(".broad-obs.small"));
+    // var notiBroad = new notificationBroad($(".broad-obs.small"));
+    // var notiBroad = new notificationBroad($(".broad-obs"));
+    var loginBroad;
     $(document).on("click",".loginButton",function(){
-        notiBroad.setLoginForm();
+        if(!loginBroad){
+            loginBroad = new notificationBroad();
+            loginBroad.setLoginForm();
+        }else{
+            $(loginBroad.loginUser.loginForm).submit();
+        }
+        // console.log("loginBroad: ", loginBroad);
+        loginBroad.showLoginForm();
     });
 
     $(".wrapper-loading").fadeOut(300,function(){
@@ -101,7 +110,7 @@ function touchHandler(event)
             firstDeg = currentDeg;
             firstPoint = first.pageX;
             movePoint = first.pageX;
-            elemRotate.getAttribute("class").split(" ").forEach(function(el){
+            elemRotate.className.split(" ").forEach(function(el){
                 if(targetPageArr.indexOf(el) != -1){
                     currentPagePos = targetPageArr.indexOf(el);
                 }
@@ -109,7 +118,6 @@ function touchHandler(event)
             break;
         case "mousemove":
             var moveRange = Math.abs(first.pageX - firstPoint);
-            // console.log(moveRange);
             activeRotate = ((moveRange > 100) && (moveRange < 150));
             if(activeRotate){
                 currentDeg += (first.pageX - movePoint);
@@ -142,7 +150,7 @@ function touchHandler(event)
                 $(".bottomMenu a[data-page-target="+ targetPage +"]").click();
             }
           }
-
+          window.location.hash = targetPage;
           $(elemRotate).removeAttr("style");
 
           break;

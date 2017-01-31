@@ -39,13 +39,19 @@ loginUser.prototype.createForm = function(){
     submitBtn.setAttribute("type","submit");
     submitBtn.setAttribute("value","Đăng nhập");
 
+    var skipBtn = document.createElement("a");
+    skipBtn.setAttribute("class","skipLogin");
+    skipBtn.setAttribute("href","javascript:void(0)");
+    $(skipBtn).append("Trở lại");
+
     $(form).append(username);
     $(form).append(password);
     $(form).append(rememberLbl);
     $(form).append(rememberMe);
     $(form).append(errorMessage);
     $(form).append(submitBtn);
-    _this.form = form;
+    $(form).append(skipBtn);
+    _this.loginForm = form;
 
     $(document).on("submit",form,function(e){
         var username=$("input[name='lg_Username']").val();
@@ -70,6 +76,14 @@ loginUser.prototype.createForm = function(){
                 $(".error-message").html(data).slideDown();
             }
         });
+        e.preventDefault();
+    });
+
+    $(document).on("click",".skipLogin",function(e){
+        $(this).parents(".broad-obs").fadeOut(300,function(){
+          $(this).remove();
+        });
+        // console.log("skipBtn: ", this);
         e.preventDefault();
     });
 

@@ -11,21 +11,7 @@ body
 #circle-world
     [class^='page-']
         .wrapper-container
-            .broad-obs
-                width: 96%
-                .broad-content
-                    width: calc(90%)
-                    max-height: 65vh
-                    &:hover
-                        max-height: 70vh
-                    .broad-title
-                        &:before, &:after
-                            content: initial
-                &.small
-                    width: calc(90vmin)
-                    margin-left: calc((100vw - 90vmin)/10)
-                    .broad-content
-                        padding: 5vmin 10vmin
+
             .wheel-obs
                 $wheelSize: 65vmin
                 .wheelPart
@@ -38,7 +24,26 @@ body
         [id^='building-']
             max-width: 25vw
             max-height: 25vw
-
+.broad-obs
+    width: 96%
+    .broad-content
+        width: calc(90%)
+        max-height: 65vh
+        &:hover
+            max-height: 70vh
+        .broad-title
+            &:before, &:after
+                content: initial
+    &.small
+        width: calc(90vmin)
+        margin-left: calc((100vw - 90vmin)/10)
+        .broad-content
+            padding: 5vmin 10vmin
+    .login-form
+        input
+            width: initial
+            &[type='submit']
+                padding: 4%
 #circle-footer
     .loginUsertop: 5vmax
 
