@@ -53,7 +53,7 @@ loginUser.prototype.createForm = function(){
     $(form).append(skipBtn);
     _this.loginForm = form;
 
-    $(document).on("submit",form,function(e){
+    $(document).on("submit",_this.loginForm,function(e){
         var username=$("input[name='lg_Username']").val();
         var password=$("input[name='lg_Password']").val();
         var redirect=$("input[name='popup_redirect']").val();
