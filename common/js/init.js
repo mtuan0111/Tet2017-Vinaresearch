@@ -25,7 +25,7 @@ $(window).load(function(){
     // var notiBroad = new notificationBroad($(".broad-obs.small"));
     // var notiBroad = new notificationBroad($(".broad-obs"));
     var loginBroad;
-    $(document).on("click",".loginButton",function(){
+    $(document).on("click",".loginButton",function(e){
         if(!loginBroad){
             loginBroad = new notificationBroad();
             loginBroad.setLoginForm();
@@ -34,6 +34,7 @@ $(window).load(function(){
         }
         // console.log("loginBroad: ", loginBroad);
         loginBroad.showLoginForm();
+        e.stopPropagation()
     });
 
     $(".wrapper-loading").fadeOut(300,function(){
@@ -150,7 +151,8 @@ function touchHandler(event)
                 $(".bottomMenu a[data-page-target="+ targetPage +"]").click();
             }
           }
-          window.location.hash = targetPage;
+          if (targetPage)
+              window.location.hash = targetPage;
           $(elemRotate).removeAttr("style");
 
           break;

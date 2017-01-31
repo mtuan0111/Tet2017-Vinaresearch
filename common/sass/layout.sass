@@ -350,43 +350,43 @@ a
                     right: -3%
                     top: 50%
                     @include transform(translate(-50%, -50%))
-            .pendant_obs
-                position: absolute
-                top: 100%
-                height: 20vm
-                height: 20vmin
-                max-height: 120px
-                width: 6vm
-                width: 6vmin
-                max-width: 40px
-                background: url(../img/pendant_obs01.png) no-repeat center top
-                background-size: contain
-                &.left
-                    left: 10px
-                    &.middle
-                        left: 33%
-                &.right
-                    right: 10px
-                    &.middle
-                        right: 33%
-                &.middle:not(.left):not(.right)
-                    left: 50%
-                    height: 28vm
-                    height: 28vmin
-                    max-height: 180px
-                    width: 12vm
-                    width: 12vmin
-                    max-width: 60px
-                    @include transform(translate(-50%, -8px))
-                &.large
-                    background: url(../img/pendant_obs02.png) no-repeat center top
-                    background-size: contain
-                    height: 28vm
-                    height: 28vmin
-                    max-height: 180px
-                    width: 12vm
-                    width: 12vmin
-                    max-width: 60px
+.pendant_obs
+    position: absolute
+    top: 100%
+    height: 20vm
+    height: 20vmin
+    max-height: 120px
+    width: 6vm
+    width: 6vmin
+    max-width: 40px
+    background: url(../img/pendant_obs01.png) no-repeat center top
+    background-size: contain
+    &.left
+        left: 10px
+        &.middle
+            left: 33%
+    &.right
+        right: 10px
+        &.middle
+            right: 33%
+    &.middle:not(.left):not(.right)
+        left: 50%
+        height: 28vm
+        height: 28vmin
+        max-height: 180px
+        width: 12vm
+        width: 12vmin
+        max-width: 60px
+        @include transform(translate(-50%, -8px))
+    &.large
+        background: url(../img/pendant_obs02.png) no-repeat center top
+        background-size: contain
+        height: 28vm
+        height: 28vmin
+        max-height: 180px
+        width: 12vm
+        width: 12vmin
+        max-width: 60px
 .broad-obs
     position: relative
     margin: 0 auto

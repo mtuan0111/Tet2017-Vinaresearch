@@ -53,7 +53,7 @@ loginUser.prototype.createForm = function(){
     $(form).append(skipBtn);
     _this.loginForm = form;
 
-    $(document).on("submit",_this.loginForm,function(e){
+    $(document).on("submit",form,function(e){
         var username=$("input[name='lg_Username']").val();
         var password=$("input[name='lg_Password']").val();
         var redirect=$("input[name='popup_redirect']").val();
@@ -83,8 +83,19 @@ loginUser.prototype.createForm = function(){
         $(this).parents(".broad-obs").fadeOut(300,function(){
           $(this).remove();
         });
-        // console.log("skipBtn: ", this);
         e.preventDefault();
+    });
+
+    $(document).on("click","body",function(e){
+        if($(".skipLogin").parents(".broad-obs")[0]){
+          $(".skipLogin").parents(".broad-obs").fadeOut(300,function(){
+          });
+        }
+        e.preventDefault();
+    });
+
+    $(document).on("click",".broad-obs.loginBroad .broad-content",function(e){
+        e.stopPropagation();
     });
 
     return form;
